@@ -60,11 +60,11 @@
 57,bagel bites,2,35,wheat flour,88 g,190 ,410 ,27 ,6 ,7 ,"wheat, milk",1,usa,5.0
 58,dried spaghetti,4,1,organic durum wheat semolina,56 Gg,210 ,0 ,43 ,1 ,6 ,none,0,italy,2.0
 59,stella rosa wine,1,6,wine,150 mL,100,0 ,14 ,0 ,0 ,sulfites,0,italy,4.0
-60,sea salt roasted seaweed,3,3,seaweed*,5g,30 ,40 ,1 ,2,1,n/a - not specified on the nutrition facts,0,usa,1.0
-61,san pellegrino sparkling natural mineral water,1,1,carbonated mineral water,8 fl oz,0 ,10 ,0 ,0 ,0 ,n/a - not specified on the nutrition facts,0,italy,1.0
+60,sea salt roasted seaweed,3,3,seaweed*,5g,30 ,40 ,1 ,2,1,none,0,usa,1.0
+61,san pellegrino sparkling natural mineral water,1,1,carbonated mineral water,8 fl oz,0 ,10 ,0 ,0 ,0 ,none,0,italy,1.0
 62,tillamook vanilla bean ice cream,2,10,cream,95 g,210 ,55 ,22 ,13 ,4 ,"eggs, milk",0,usa,4.0
 63,kirkland shredded mexican-style blend cheese,2,21,monterey jack cheese,28 g,110 ,170 ,1 ,8 ,6 ,milk,0,usa,5.0
-64,fire roasted diced tomatoes,4,7,organic fire roasted tomatoes,120 g,25 ,190 ,5 ,0 ,none,n/a - not specified on the nutrition facts,0,usa,2.0
+64,fire roasted diced tomatoes,4,7,organic fire roasted tomatoes,120 g,25 ,190 ,5 ,0 ,none,none,0,usa,2.0
 65,sriracha sauce,2,9,chili,1 tsp (5g),0,70 ,none,0,0,none,0,usa,none
 66,gelato,2,16,milk,131g,290,65,37,14,5,"milk, cream, milk fat",0,usa,3.0
 67,chi sparkling water,1,9,carbonated water,330mL,0,15,5,0,0,none,0,china,3.0
