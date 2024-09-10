@@ -1,0 +1,415 @@
+Item Name,What kind of item is it?,Total number of ingredients,Name of first (main) ingredient,Serving Size,Calories per serving,Total Sodium,Total Carbohydrates,Total Fat,Total Protein,What allergens does it contain?,Does it contain GMO crops?,Where was it made?,"How Processed is it?
+(see instructions for ranking)"
+Lemonade,Drink,4,Filtered Water,9 fl oz,110,20 mg,29 g,0g,0g,None,No,"Apoka, FL",2
+Red Machine Naked Juice,Fridge,14,Apple Juice From Concentrate,15.2 Fl Oz,270 Cal,25 mg,56 g,4 g,4 g,N/A,No,U.S.A.,2
+Gatorade(Cool Blue),Drink,12,Water,591 ml,140 Cal,270 mg,36 g, 0 g,0 g,none,Yes,U.S.A.,4
+Häagen-Dazs,Freezer,5,Cream,90g,210 Cal,45 mg,20 g,8 g,3 g,Skim milk and cane sugar,No,"Tilloy-lès-Mofflaines, France",3
+Sour Cream,Fridge,1,Cultured Cream,30 g,60 Cal,15 mg,1 g,5 g,1 g,milk,Yes,U.S.A.,2
+Doritos Dinamita(Flamin hot),Snack,50+,Corn,1 package,170 Cal,160 mg,20 g,9 g,2 g,dairy,Yes,Mexico,5
+Capri Sun fruit punch,Drink,6,Apple,177ml,90,25mg,20g,0g,0g,none,No,Germany,4
+Beijing Yogurt (Matcha),Fridge,7,Cultured Pasteurized Milk,176 g,120 Cal,70 mg,22 g,5 g,4 g,milk,No,U.S.A.,3
+Cuttlefish Ball,Freezer,14,Cuttlefish,20 g,31.6 Cal,165.6 mg,2.3 g,1.7 g,1.8 g,"fish, molluscs, soy, egg, milk",No,Thailand,5
+Organic Almond Milk,Fridge,14,"Organic Almond Base (water, organic almonds)",240 mL,30 Cal,110 mg,1 g,3 g,1 g,Almonds,No,U.S.A.,2
+Beans,Canned/Dried,6,Prepared dark red kidney beans,130g,110 cal,370mg,20g,0g,7g,n/a,no,USA,2
+Smart food popcorn,Snack,8,Popcorn,1 package,160 Cal,200 mg,15 g,10 g,3 g,Milk,Yes,U.S.A.,3
+Plain Greek Yogurt,Fridge,6,Pasteurized Grade A Milk,170g (3/4 cup),170,80 mg,6 g,14 g,7 g,Milk,No,USA,2
+Coca Cola,Drink,6,Carbonated Water,20 fl oz,240,75 mg,65 mg,0 g,0 g,n/a,No,USA,5
+Coconut Water,Drink,1,Organic Coconut Water,328 g,50,130 mg,13 g,0 g,0 g,,No,Vietnam,0
+Yogurt Drink,Drink,14,Organic Cultured Low Fat Milk,296ml,180,25mg,28g,3g,9g,Milk,no,U.S.A.,2
+peas,Freezer,1,green peas,85 g,70,0,12,0,4,,no,,
+freeze dried strawberries,Canned/Dried,1,freeze dried strawberries,1 bag,130 cal,5 mg,29 g,.5 g,2 g,none,no,U.S.A.,1.5
+Nature valley,Snack,16,Whole grain oats,42g,90,160mg,29g,6g,4g,peanuts,yes,USA,3
+Strawberries,Freezer,1,Whole Strawberries,140 g,45 Cal,0 mg,11 g,0 g,less than 1 g,None,idk,U.S.A.,2
+Gatorade (Zero),Drink,10,Water,355 mL,0 Cal,160 mg,< 1 g, 0 g,0 g,Red 40 and blue 1,No,U.S.A.,3 or 4
+Garbanzos,Canned/Dried,3,Organic prepared garbanzos (chickpeas),1/2 cup,120,85mg,20g,2g,6g,None,No,U.S.A.,2
+Clovis Farms Organic Super Smoothie,Freezer,6,Berries,227g,100 Cal,25 mg,24g,1g,3g,Fruit,No,U.S.A.,1
+Ice Cream Bars,Freezer,17,Cream,78 g,280 cal,40 mg, 22 g,21 g,4 g,"Almonds, Milk, Soy, Egg",Yes,U.S.A.,4
+Strawberry Yogurt,Fridge,10,Cultured reduced fatmilk,150g,120,50mg,11g,3g,12g,milk,No,US,3
+Poppi Strawberry Lemon Prebiotic Soda,Drink,8,Sparkling Water,12 fl oz,25 Cal,0 mg,7 g,0 g,0 g,None,No,U.S.A.,3
+Bagel Bites,Freezer,35,Wheat Flour,88 g,190 Cal,410 mg,27 g,6 g,7 g,"Wheat, Milk",Yes,U.S.A.,5
+spindrift ,Drink,4,Carbonated water,1 can (12oz),12,0mg,3g,0g,0g,none ,no,US,3
+Yogurt,Snack,4,Strained Yogurt,150g,180 Cal,40mg,28g,2.5g,12g,milk,No,U.S.A.,4
+ GF pasta (pre-made),Canned/Dried,5,rice flour,56 g,190 cal,0,44g,1 g,4g,None,Yes,USA,4
+,Canned/Dried,5,Water,86g,190,40mg,42g,0g,4g,None,No,Japan,2
+Cheese Stick,Fridge,1,Low Moisture Part-Skim Mozzarella Cheese,28g,80 Cal,200mg,1g,6g,6g,milk,No,U.S.A.,3
+Strawberry Mochi,Freezer,12,Nonfat Milk,192g,470,60mg,80g,14g,6g,"milk, egg",No,U.S.A.,4
+Mini Pizza Bagels,Freezer,100+,Bagel,84 g,200 Cal,1140 mg,58 g,15 g,22 g,dairy,No,U.S.A.,3
+Coke Zero,Drink,10,Carbonated Water,1 bottle,0,40 mg,0g,0g,0g,Phenylalanine,No,U.S.A.,5
+Raspberry Sorbet,Freezer,6,Raspberries,131 g,150 Cal,0 mg,38 g,0.5 g,<1 g,,No,USA,2.5-3
+Dried Mango,Snack,1,Dried Mango,4 pieces,130,0 mg,32 g,0 g,<1 g,none,Yes,Mexico,1
+Coconut Milk,Canned/Dried,3,Organic Coconut ,80 g,120,30 mg,1 g,12 g,<1 g,Coconut,No,Vietnam,2
+Arizona Iced Tea,Drink,17,Carbonated Filtered Water,12 fl oz,120,0 mg,30 g,0 g,0 g,none,no,U.S.A.,4
+,Freezer,6,Pasteurized Milk,96g,200,50mg,20g,11g,4g,Milk,No,U.S.A.,2
+Frozen Edamame,Freezer,1,Soybeans,75g,110,0mg,10g,4g,9g,soybean,Yes,Taiwan,2
+Garbanzo Beans,Canned/Dried,5,Garbanzo Beans,1/2 cup (110 g),90,140 mg,16 g,0.5 g,5 g,N/A,No,U.S.A.,2
+Kimchi,Fridge,11,Radish,28 g,10 Cal,240 mg,2 g,0 g,1 g,"fish, crustacean",No,South Korea,3
+Carrot ginger turmeric juice,Drink,4,carrot juice,240ml,80,90mg,17g,0g,2g,?,no,U.S.A.,1
+BwuttErR,Fridge,12,Vegtable Oil,1 tbsp,80 Cal,100 mg,0 g,8.5 g ,0,Soy,Non GMO,U.S.A.,0
+"""Sparkling Ice"" black cherry",Drink,15,Carbonated water,1 bottle (17 fl oz),5,0,0,0,0,none,unknown,USA,3
+Coca Cola,Drink,6,Carbonated Water,12 fl oz,140,45 mg,39 g,o g,0 g,N/A,No,U.S.A.,4
+Diced Tomatoes,Canned/Dried,5,Organic tomatoes,120g,25,220 mg,5g,0g,1g,n/a,No,USA,2
+Cheese sticks (Colby Jack),Fridge,3,Cultured pasteurized milk,21g,80 Cal,125 mg,0 g,7 g,5 g,Milk,No,U.S.A.,2
+Sweetened Condensed Milk,Canned/Dried,2,Milk,39 g,130 Cal,45 mg,22 g,3.5 g,2 g,milk,No,Chile,
+Frozen peas,Freezer,1,Organic green peas,85g,70 cal,n/a,12g,n/a,4g,n/a,no,USA,2
+Korean somen noodles,Fridge,6,flour,200g,560,510mg,126g,2g,12g,wheat,yes,Korea,3
+spindrift,Drink,3,Carbonated water,I Can,5,0,1g,0,0,,no,U.S.A,3
+Cherry Cola OLIPOP,Drink,12,carbonated water,355 mL,50 Cal,30 mg,16g,0g,0g,none,No,U.S.A.,3
+Tortillas,Fridge,5,Organic Wheat Flour,50 g,150 Cal,240 mg,23 g,5 g,4 g,Wheat,No,U.S.A.,4
+Ice cream sandwich,Freezer,14,Milk,56g,150,120 mg,24g,5g,2g,"wheat, milk, soy",No,Can't find,5
+Chunk Light Tuna,Canned/Dried,4,Light Tuna,2 oz,80 Cal,150 mg,0 g,3 g,14 g,Fish,No,,
+Organic Kansas City Style BBQ Sauce,Fridge,14,Organic Tomato Puree,36 g,45 Cal,250 mg,11 g,0 g,0 g,,No,U.S.A.,3
+Double Chocolate Croissants,Freezer,34,Unbleached Enriched Flour,85 g (1 croissant),340,250 mg,36 g,19 g,6 g,"Milk, soy, wheat, may contain egg, almond",No,U.S.A.,4
+Monster Energy Zero Ultra,Drink,19,Carbonated water,473 mL,10,380 mg,6g,0g,0g,n/a,can't find,USA,5
+Mini pretzels,Snack,15,Enriched flour,26g,100,230mg,21g,0.5g,3g,wheat,NO,U.S.A,4
+Corn,Canned/Dried,3,Orgnaic sweet corn,125g,70,1050 mg,45.5,0g,7g,none,no,clifornia,1
+tru fru strawberry,Freezer,12,strawberries,1 oz,90,15 mg,9 g ,5 g,1 g,"soy, peanuts, tree nuts",maybe,UTAH,3
+Hint Water,Drink,2,Purified Water,1 bottle,0,0g,0g,0g,0g,none,No,U.S.A.,1
+Royal Milk Tea,Drink,7,Water,265 ml,120,35 mg,21 g,2.5 g,2 g,milk,no,Japan,2
+Chunk Light Skipjack Tuna,Canned/Dried,3,Skipjack Tuna,85 g,70 Cal,270 mg,0 g,0.5 g,15 g,fish (tuna),No,Thailand,0
+whipped cream,Fridge,8,Heavy Cream,6g,25cal,0mg,1g,2g,0g,milk,no,U.S.A.,3
+Chi Forest - Grape Delight,Drink,8,Carbonated Water,330 mL,0 Cal,15 mg,5 g,0 g,0 g,N/A,Yes,China,3
+veggie spring rolls,Freezer,22,Cabbage(filling) wheat flour(wrapper,102g,200cal,400mg,24g,10g,5g,"soy, wheat, seasame",no,U.S.A.,5
+Popping Candy,Snack,8,Sugar,1.5 g, 5 Cal, 0 mg,1 g,0 g,0,milk,No,China,4
+Crispy ramen snack,Snack,28,wheat flour,28 g ,140,210 mg,18 g,6 g,2 g,"wheat, soybean",No,Taiwan,4
+Veggie Straws,Snack,24,Potato Starch,28 g,130 Cal,370 mg,17 g,7 g,<1 g,milk,No,USA,4.2
+Haagen-Dazs vanilla bean ice cream,Freezer,6,cream,129g,350,65mg (per serving),29g (per serving),23g (per serving),5g (per serving),Milk and egg,No,USA,3
+Canned tomatoes/herbs,Canned/Dried,9,Tomatoes,127 g,25 cal,220 mg,6 g,0 g,1g,none,no,U.S.A.,2
+Oat Milk,Drink,4,Oatmilk,8 fl oz (240 mL),130 Cal,115 mg,13 g,7 g,2 g,Nuts,No,,
+Orange Sports Drink,Drink,12,Filtered Water,591 ML,130,270 mg,32g,0g,0g,N/A,No,USA,3
+Roasted Nut Mix,Canned/Dried,14,Cashews,30g,170,90mg,10g,14g,5g,"Peanuts, other Tree Nuts",no,N/A,1
+Frozen Pineapple,Freezer,1,Organic Pineapple Chunks,139g,70,0mg,0mg,0mg,1g,Pineapple ,No,Costa Rica,2
+Organic tart cherry  (juice),Drink,2,Filtered water,8 fl oz ,140,30 mg,35 g,0 g,0 g ,N/A,No,U.S.A.,3
+Hint water,Drink,2,Purified water,474ml,n/a,n/a,n/a,n/a,n/a,n/a,no,USA,1
+Frozen Blueberries,Freezer,1,Organic Blueberries,1 cup,70,0 mg,17 g,1 g,<1 g,none,No,Texas,2
+Cream cheese,Fridge,4,Pastuerized milk and cream ,31g,80 cal,130mg,3g,7g,2g,Milk,no,USA,2
+Ice Cream,Freezer,27,Organic Pasteurized Milk,97 g,210,65 mg,22 g,12 g,5 g,milk,No,U.S.A.,3
+King's Hawaiian Buns,Canned/Dried,5,Enriched Flour,28g,90 Cal,75mg,15g,2g,3g,"egg, milk, soy, wheat",No,U.S.A.,2
+Pink Lemonade Spindrift,Drink,5,Carbonated Water,355ml,10,0mg,2g,0g,0g,N/A,No,US,2
+Smoked Norwegian Salmon Slices,Fridge,29,Atlantic Salmon,341 g,120 cal,690 mg,4 g,7 g,11 g,,No,Norway,3
+cottage cheese,Fridge,17,milk,113g,90,420 mg,4g,2.5g,12g,milk,nuh uh,AMERICAAA,2
+Double Egg Yolk Mooncake,Snack,22,Lotus Seed Paste,175 g,750 Cal,120 mg,103 g,35 g,8 g,"Wheat, Duck Egg, Chicken Egg, Soybean Oil, Peanut Oil",No,Taiwan,5
+Whole milk yogurt,Fridge,5,Cuiltured pasteurized oragnic whole milk,1 tub,140,75 mg,18g,5g,5g,Milk ingrediants,No,USA,4
+Protien bar,Snack,18,Milk protein blend,55g,200 cal,120mg,19g,8g,20g,"Milk, soybeans",no,USA,4
+Canned Lentil soup,Canned/Dried,17,Water,411g,270,540mg,41g,7g,11g,N/A,No,Unknown,4
+bloks,Snack,16,tapioca syrup,30g,100cal,50mg,24g,0g,0g,caffeine,yes,USA,4
+Cookie dough,Fridge,8,Sugar enriched flour bleached,29g,120,130mg,18g,4.5g,1g,"wheat, eggs",NO,U.S.A,3
+Flavored Mineral Water,Drink,2,Carbonated Mineral Water,330 mL,0 Cal,10 mg,0 g,0 g,0 g,None,No,Italy,1
+annies mac and cheese,Canned/Dried,9,organic wheat flour,1 cup,270,460mg,48g,4.5g,9g,"wheat,milk",idk,US,
+Apple Cider Vinegar,Fridge,2,Organic Apple Cider Vinegar,15 mL,0 Cal,0 mg,0 g,0 g,0 g,none,No,U.S.A.,1
+Royal Milk Tea,Drink,7,Water,265 ml,120,35 mg,21 g,2.5 g,2 g,none,No,Japan,3
+coca cola,Drink,6,carbonated water,1 can(355 ml),160,40 mg,42g,0,0,none,no,usa,5
+Cream of Chicken soup,Canned/Dried,22,chicken stock,120ml,70,410mg,9g,2.5g,2g,"soy,milk?",Probably?,U.S.A.,5
+Beans,Canned/Dried,2,Cannellini Beans,130g,120,10mg,18g,0.5g,6g,none,No,Egypt,2
+Diet Coke Caff Free,Drink,7,Carbonated Water,355 ml,0,40 mg,0 mg,0 mg,0 mg,n/a,no,usa,3
+Almond Milk,Drink,5,Organic Almondmilk,240 mL,50 Cal,170 mg,8 g,2 g,1 g,almond,No,U.S.A.,2
+Seaweed,Snack,3,Seaweed,"3,5g",20,30mg,1g,1.5g,<1g,,No,U.S.A,2
+Doritos Chips,Snack,31,Corn,1 package,260 Cal,360 mg,31 g,13 g,4 g,milk,Yes,U.S.A.,4
+Peeled Tomato (paste),Fridge,4,San Marzano Whole Peeled Tomatoes,115g,30,40mg,6g,0g,1g,N/A,No,Italy,2
+Beef Barley Soup,Canned/Dried,29,Water,242 g,110 Cal,680 mg,10 mg,2 g,6 g,Soy ingredients ,Yes,USA,4-5
+Fanta Orange,Drink,13,Carbonated water,1 can,160,55mg,44mg,0g,0g,None,no,U.S.A.,5
+Mustard,Fridge,6,Water,5 g,0 cal,55 mg,0 g,0 g,0 g,none,yes,U.S.A.,3
+Sea Salt Roasted Seaweed,Snack,3,Seaweed*,5g,30 Cal,40 g,1 g,2g,1g,N/A - not specified on the nutrition facts,No,U.S.A.,1
+Kefir,Drink,6,Milk,240ml,110,125mg,9g,2g,9g,milk,No,U.S.A.,
+Protein Shake,Drink,67,Filtered Water,330mL,240,270mg,30g,7g,16g,milk,Yes,U.S.A.,5
+Mango Popsicles,Freezer,5,Mango,1 bar,120 Cal,0 mg,31 g,0 g,0,No?,Non GMO,U.S.A.,3
+Vegetable Classics Progresso Garden Vegetable ,Canned/Dried,28,Water,235g,90,650mg,18g,0g,3g,none,Yes,U.S.A.,2
+Broth,Fridge,3,Filtered Water,8 fl oz,50,150 mg,0 g,0 g,13 g,none,Yes,California,1
+Vanilla Ice Cream,Freezer,6,Cream,129 g,320,75 mg,26 g,21 g,6 g,"milk, egg",yes,usa,3.5
+Kombucha,Drink,8,GT's Kombucha,16 fl oz,50,10mg,12g,0g,0g,none,Yes,"CA, USA",3
+,Fridge,7,Sugar,100g,552.1033,250mg,52g,34g,8.4g,"Milk, Hazelnuts",No,Switzerland,3
+Kvass,Drink,12,Biotic Raw Kvass,1 bottle,20,140 mg,4 g,0 g,0 g,none,No,California,1
+Health-Ade Kombucha,Drink,5,Organic Kombucha,1 pint,70 Cal,0 mg,16 g,0 g,0 g,,No,U.S.A.,3
+zero sugar lemonade,Drink,10,filtered water,240ml,0,20mg,1g,0g,0g,none,NO,U.S.A,2
+Coconut water,Drink,3,Coconut water,"""1 container"" 8 fl oz",60,50mg,15g,0g,0g,,No,U.S.A,2
+Frozen Natto,Freezer,28,Fermented Soy Beans,154 g,290 Cal,800 mg,22 g,14 g,23 g,"Fish, Weat, Soybeans",No,Japan,4.7
+Cheddar cheese,Fridge,4,Cultured milk,1 slice,110,180mg,1g,9g,6g,Milk,no,U.S.A,2
+protein bar,Snack,14,organic rolled oats,1 bar,250,780 mg,258g,36g,60g,"nuts, whef,soy,milk,sesame",no,clifornia,2
+organic ice cream,Freezer,6,cream,2/3 cup,270,35mg,22g,19g,4g,"milk,",no,US,2?
+Key Lime La Croix Sparkling Water,Drink,2,Carbonated Water,355 mL,0 kcal,0 mg,0 g,0 g,0 g,none,No,Doesn't say,1
+Cheez-It Crackers,Snack,8,Enriched Flour,28 g,140 Cal,210 mg,16 g,7 g,3 g,"wheat, milk, soy",Yes,U.S.A.,4
+Almond Butter Cups,Snack,7,Organic Dark Chocolate,40 g,230 Cal,120 mg,20 g,15 g,3 g,"almonds, may contain tree nuts, peanuts, milk, soy, wheat, sesame",No,U.S.A.,
+Canned Tomatoes,Canned/Dried,5,Organic Tomatoes,120 g,25 Cal,220 mg,5 g,0 g,1 g,N/A,No,U.S.A.,2
+Salted Butter,Fridge,2,Pasteurized Cream,1 Tbsp (14 g),100 Cal,90 mg,0 g,11 g,0 g,milk,No,U.S.A.,3
+Honeyd Corn flakes,Canned/Dried,"45,387",Corn Meal,1 cup,160,140 mg,36g,0g,3g,"is made in a facility that uses tree nuts, peanuts, and soy",No,USA,4
+Hong Kong Butter Cookies,Snack,8,Wheat Flour,100 g,546 Cal,202 mg,54 g,33 g,N/A,"soy, eggs, milk, gluten",Yes,Hong Kong,4
+Hummus,Fridge,10,Cooked organic chickpeas,30 g,80,120 mg,6g,5g,2g,Sesame,no,U.S.A.,1
+Cottage Cheese,Fridge,14,Organic Nonfat Milk,113g,90,420mg,4g,2.5g,14g,milk,No,USA,1
+Maple Pecans Glazed Mix,Snack,11,Pecans,42.5 g,230 kcal,180 mg,22 g,15 g,3 g,"pecan, walnut",No,USA,2
+milk,Drink,4,milk,1 cup,140,140 mg,13 g,5 g,10 g,milk,no,USA,0
+Organic Mixed Vegetables,Freezer,4,"Organic Carrots, Organic Corn, Organic Peas, Organic Green Beans",90g (2/3 cup),50,20 mg,10 g,0.5 g,2 g,None,No,USA,3
+Baby Carrots,Fridge,1,Carrot,453.5 g,186 cal,0 mg,45 g,0 g,4.5 g,,No,U.S.A.,1
+Plantain Chips,Canned/Dried,3,Green Planatains,28 g,150 cal,125 mg,18 g,8 g,1 g,none,no,ecuador,1
+Salami,Fridge,12,Pork,1 oz.,100,340mg,2g,7g,7g,Milk,Yes,U.S.A.,4
+Yogurt,Fridge,14,Grade A Pasteurized Whole Milk,227 g,310 cal,115 mg,38 g,14 g,11g,milk,No,U.S.A.,3
+Box mac and cheese,Snack,9,Wheat flour,71g,270,560mg,48g,4g,9g,"wheat, milk",no,U.S.A.,4.5
+Canned Wild Pink Salmon,Canned/Dried,2,Wild Pink Salmon,85 g,90 kcal,200 mg,0 g,2 g,18 g,fish,No,North Pacific,2
+Roasted Chestnuts,Snack,1,Organic Roasted Chestnut Kernels,50 g,100 Cal,0 mg,17 g,0.5 g,2 g,nuts,No,China,1
+Fire Roasted Diced Tomatoes,Canned/Dried,7,Organic Fire Roasted Tomatoes,120 g,25 Cal,190 mg,5 g,0 g,<1 g,N/A - not specified on the nutrition facts,No,U.S.A.,2
+Eggo Mini Pancakes,Freezer,21,Enriched Wheat Flour,110 g,270 Cal,560 mg,44 g,8 g,6 g,"wheat, milk, soy, egg",Yes,U.S.A.,5
+bag of freeze dried strawberrys,Snack,1,freeze drired strawberries,1 bag (34g),120,5mg,30g,0g,1g,none ,idk,US,1 i think
+,Snack,8,Wheat Flour,31g,150,115mg,23g,6g,2g,"Wheat, Soy.",No,"Lembeke, Belgium",4
+Granola Bar,Snack,28,Granola,24 g,100 Cal,35 mg,18 g,3 g,1 g,"soy, milk, coconut, wheat",Yes,U.S.A.,4
+Great Northern Beans,Canned/Dried,3,Organic Great Northern Beans,1/2 cup,110,40 mg,20 g,0.5 g,5 g,none,No,"Clinton, Michigan",2
+Sparkling Water,Drink,2,Purified Carbonated Water,12 fl oz,0 g,0 g,0 g,0 g,0 g,N/A,No,U.S.A.,2
+egg tarts,Freezer,19,wheat flour,100g,380,190 mg,42 g,22g,4g,"wheat, soybean, milk",nuh uh,xi jin pings house,5
+Milk,Drink,5,Organic Milk,240 mL,140 Cal,140 mg,13 g,5 g,10 g,milk,No,U.S.A.,1
+Strawberries & Crème Pancake & Waffle Mix,Canned/Dried,13,Unbleached Enriched Flour,65 g,370 Cal,600 mg,62 g,11 g,7 g,"milk, soy, wheat",Yes,U.S.A.,5
+Pop Corners,Snack,4,Yellow Corn,28.3g,130,110mg,22g,4g,2g,No,No,USA,4
+Peach Sparkling Water,Drink,8,Carbonated Water,330 mL,0 Cal,15 mg,5 g,0 g,0 g,N/A,No,China,2
+Banana,Snack,1,Banana,136 g,120 Cal,0 mg,31g,0g,1g,None,No,Guatemala,0
+apple chips,Snack,2,apples,1 package,60 Cal,0,14g,0,0,,no,U.S.A,1
+garbanzo chickpeas,Canned/Dried,3,organic prepared garbanzos (chickpeas),130 g,120 cal,85 mg,20 g,2 g,6 g,none,no,usa,2
+Apple blossoms ,Freezer,15,Apples,114 g ,340,300 mg,43 g,17 g,4 g,"milk, egg, wheat ",No,Canada,5
+Stella Rosa Wine,Drink,6,Wine,150 mL,100,0 mg,14 g,0 g,0 g,Sulfites,No,Italy,4
+Ketchup,Fridge,7,Organic tomato concentrate from red pipe organic tomatoes,17g,20,190mg,5g,0g,0g,Cellery,No,U.S.A.,3
+Sprite,Drink,6,Carbonated Water,12 fl oz,130 Cal,70 mg,39 g,0 g,0 g,None,No,USA,3.7
+Yogurt,Fridge,6,Cultured Pastureized Milk,1 container (176 g),120,70 mg,26 g,5 g,6 g,Dairy,"No idea, but I don't think so",China,3
+Dried Prunes,Canned/Dried,1,Organic pitted prunes (dried plums),40g,100,0 mg,24 g,0 g,1 g,n/a,No,Argentina,1
+cheddar cheese,Fridge,3,milk,1 slice (23g),90,160mg,<1g,7g,5g,milk,idk,US,2?
+,Snack,8,Enriched Wheat Flour,18g,80,150mg,11g,3.5g,2g,Wheat,No,U.S.A.,4
+Pringles (Cheddar Cheese),Snack,9,Dried Potatoes,40 g (1 can),210,260 mg,22 g,13 g,2 g,"Milk, wheat",No,U.S.A.,3
+Matcha Ice Cream,Freezer,6,Cream,0.67 cup,310,65mg,25g,21g,5g,Milk and egg,Yes,U.S.A.,4
+Cheese Sticks,Fridge,5,Pasteurized Milk,28g,90,190 mg,1 mg,6 g,7 g,"milk, wheat, soy, eggs",Yes,USA,4
+Strawberry Granola bites,Snack,14,Pure Gluten Free Oats,24g,100,5mg,17g,3g,2g,N/A,No,Canada,4
+Greek Yogurt,Fridge,2,Grade A Pasturized Skim Milk and Cream,170 g,160,60 mg,5 g,9 g,15 g,milk,no,U.S.A.,1
+clover unsalted stick butter,Fridge,3,pasteurized cream,1 tbsp,100 cal,0 mg,0 g,11 g,0 g,milk,no,U.S.A.,1.5
+Shredded Parmesan Cheese,Fridge,3,Parmesan Cheese,1/4 cup,110,350mg,1g,8g,<1g,milk,No,Not Stated,2
+Cheese,Fridge,3,Cultured Milk,21 g,90 Cal,150 mg,1 g,7 g,5 g,milk,No,U.S.A.,1
+frozen peas,Freezer,1,peas,2/3,70,0mg,13g,0g,5g,none,no,USa,2
+Vitamin Water (Lemonade Flavor),Drink,16,Reverse Osmosis Water,1 Bottle,0,0mg,1g,0g,0g,None,No,USA,1
+Dried Pineapple,Canned/Dried,1,Pineapple,56 g,188 Cal,0 mg,43 g,0.2 g,1.7 g,None,No,USA,1
+ZBar,Snack,16,Rolled Oats,36g,140,105mg,24g,5g,2g,"Soy, Tree Nuts",no,U.S.A.,4
+Lay's Barbecue flavoured chips,Snack,23,Potatoes,28g,150,200mg,16g,9g,2g,soybeans,Yes,U.S.A.,4
+"Milk choclate, caramel, pretzels",Snack,24,Pretzel (Unbleached enriched wheat flour),37g,160,300mg,26g,5g,2g,"Milk, soy, and wheat",No,"Minneapolis, MN",4
+Izze,Drink,8,Sparkling Water,248 ml,70,10 mg,16 g,0 g,0 g,none,no,U.S.A.,
+Thai Shrimp Gyoza,Freezer,19,Shrimp,85 g,160,230 mg,24 g,4.5 g,6 g,"shrimp, soy, wheat, sesame",yes,thailand,
+Dried Mango,Canned/Dried,1,Dried Mango,38g,130,0mg,32g,0mg,less than 1g,Mango,No,Mexico,2
+Organic Valley Cream Cheese,Fridge,6,Organic Pasturized Milk,2 tbsp,110 Cal,100 mg,2 g,10 g,2 g,None,No,,
+Amazon Fresh Creamy Peanut Butter,Fridge,4,Peanuts,2 Tbsp/32g,180 Cal,140 mg,8g,15g,7g,Peanuts,Yes,U.S.A.,3
+Trail mix,Canned/Dried,5,cashews,30 g,120 cal,30 mg,14g,7g,8g,tree nuts,no,USA,1
+Avocado Ice Cream,Freezer,10,Pasteurized Milk & Cream,96 g,210 Cal,100 mg,21 g,13 g,4 g,Milk,No,U.S.A.,4
+Dried Sweetened Cranberries,Canned/Dried,3,Cranberries,1/3 cup or 40g,140 Cal,0 mg,33 g,0 g,0 g,Cranberries and sunflower oil,No,U.S.A.,2
+simply raspberry lemonade,Drink,5,pure filtered water,8 fl oz,110 cal,15 mg,28 g,0 g,0 g,none,no,U.S.A.,1
+Tillamook Vanilla Bean Ice Cream,Freezer,10,Cream,95 g,210 Cal,55 mg,22 g,13 g,4 g,"Eggs, Milk",No,U.S.A.,4
+Konjac Shuang (red),Snack,30,Water,36g,40,470mg,4g,2.5g,<1g,"soybean, wheat",Yes,China,4
+Pineapple Juice,Drink,1,Pineapple Juice,250 mL (1 can),110,35 mg,27 g,0 g,0 g,None,No,U.S.A.,0
+Graham crackers,Snack,12,Organic whole wheat flour,31 g,130,130 mg,24g,3g,2g,"wheat, milk, soy",no,U.S.A.,4
+Milk,Fridge,1,Pasteurized organic milk,240mL,160,75mg,11g,9g,9g,milk,No,U.S.A.,2
+wasabi beans,Snack,18,green peas,30g,130,200mg,19g,4g,5g,wheat,no,Japan,4
+Melona Popsicle (Mango),Freezer,14,Water,80mL,130,40mg,21g,4.5g,1g,Milk,No,Korea,1
+Rice Vinegar ,Canned/Dried,1,Rice Vinegar Diluted with water to 4.3% Acidity,15mL,0,0mg,0mg,0mg,0mg,N/A,No,U.S.A.,1
+mini chocolate croissant,Snack,17,Enriched Wheat Flour,45g,180,160 mg,21g,9g,3g,"wheat, eggs and milk",nuh uh,where my goat macron lives,5
+Mtn DEW,Drink,19,Carbonated Water,591mL,10,85mg,<1g,0g,0g,N/A,No,USA,3
+honest lemonade blend,Drink,10,water,IT DOES NOT SAY (1 box),35,15 mg,8g,0 g,0 g,none,nuh uh,AMERICAAA,3
+goldfish bag,Snack,10,Cheddar,28g,130,240mg,19g,4.5g,3g,"wheat, milk",yes,USA,
+Beans,Canned/Dried,3,Organic prepared dark red kidney beans,1/2 cup,110 Cal,85 mg,20 g,0 g,7 g,None,No,USA,2.1
+Olives,Fridge,5,Organic Castelvetrano Whole Olives,12 g,17,260 mg,0 g,2 g,0 g,,No,Italy,3
+Dried Mango,Canned/Dried,1,Organic Dried Mango,1/8 cup (30 g),110,0 mg,26 g,0 g,0 g,None,I don't think so,U.S.A.,2
+Tomato Paste,Fridge,2,Organic Tomato Paste,33 g,30 Cal,25 mg,7 g,0 g,less than 1 g,None,No,idk,2
+tomato,Fridge,1,tomato,1 tomato(182 g),33,9mg,7g,0g,2g,none,no,USA,1
+Milk,Drink,3,organic nonfat milk,1 cup,90 cal,130 mg,12 g,0 g,9 g,milk,no,U.S.A.,0
+Cranberry Juice,Drink,4,Filtered water,8 fl oz,110 Cal,30 mg,27 g,0 g,0 g,,No,U.S.A.,1
+Izze,Drink,5,sparkling water,8.4 fl oz,70,10mg,16g,0g,0g,none,No,U.S.A.,4
+Veggie Crisps,Snack,7,Rice Flour,1 package,130 Cal,140 mg,19 g,5 g,3 g,None,No,,
+Nature Valley Crunchy Granola Bars,Snack,10,Whole Grain Oats,42 g,190 Cal,140 mg,29 g,7 g,3 g,"soy, peanut, almond, pecan",Yes,U.S.A.,4
+Kimchi(Napa),Fridge,15,Napa Cabbage,28 g,10 Cal,180 mg,2 g,0 g,>1 g,none,No,U.S.A.,2
+Canned Corn,Canned/Dried,3,corn,125g,60,320mg,13g,1g,1g,none,No,USA,2
+b&j ice cream,Freezer,17,Cream,141g,370,150mg,37g,22g,6g,"egg, milk, soy, wheat",yes,USA,4
+Ice cream,Freezer,6,raspberries,2/3 cup 131g,150,0 mg,38g,0.5g,<1g,none,No,"NJ, USA",2
+Cinnamon Apple Sauce,Snack,4,Organic Apple,90 g,70 Cal,0 mg,16 g,0 g,0 g,N/A,No,U.S.A.,1
+dried mango,Canned/Dried,5,mango,35g,120,25mg,29g,0g,<1g,none,no,thailand,3
+Belvita,Snack,16,whole grain blend,50g,230,220mg,35g,8g,4g,wheat and soy,I dont think so,USA,3-4
+Dragon Fruit Smoothie Pack,Freezer,1,Organic Dragon Fruit Puree,100 g,65,4 mg,14 g,0 g,2 g,none,No,U.S.A.,1
+nesquick,Drink,8,cacoa,13g,150cal,135mg,24g,2.5g,9g,milk and wheat,yes,switzerland,4
+Red & Yellow Bell Pepper Crisps,Canned/Dried,3,Red Bell Peppers,40 g,90,410 mg,13 g,1.5 g,4 g,None,No,Turkey,1
+Grass Jelly,Canned/Dried,3,Chinese Jelly Herb,110 g,8 Cal,205 mg,2 g,0 g,0 g,,No,Taiwan,2
+La Croix (fizzy water),Drink,1,Water,354.88 g,0 cal,0 mg,0 g,0 g,0 g,none,no,U.S.A.,2
+Less Sodium Soy Sauce,Fridge,6,Water,15mL,10,590mg,1g,0g,1g,None,No,Brewed in the USA,5
+Roasted seaweed,Canned/Dried,14,organic seaweed,5g,30,40mg,1g,2g,1g,"soy, seaseme",YES,U.S.A,4
+Green Tea with Pomelo Flavor,Drink,12,Water,12 fl oz.,120,30 mg,29 g,0 g,0 g,None,No,China,5
+Greek Yogurt,Fridge,6,Organic pasteurized grade A nonfat milk,170,100,60mg,7g,0g,18g,milk,no,U.S.A.,1
+soy sauce ,Fridge,4,soybeans,1 tbsp,15,850 mg,2 g,0 g,2 g,soy,maybe,JAPAN,2
+San Marzano Tomatoes,Canned/Dried,2,Whole Peeled Tomatoes,130 g,45 Cal,50 mg,7 g,0 g,2 g,N/A,No,Italy,1
+roasted seaweed,Canned/Dried,4,seaweed,1/5 pack,20,40 mg,0 g,1.5 g,1 g,sesame,no,KOREA,1
+Sugar (Granulated),Canned/Dried,1,Sugar,8 g,30 Cal,0 mg,8 g,0 g,0 g,None,idk,U.S.A.,1
+Kettle Jalapeno Chips,Snack,13,Potatoes,28 g,150,170 mg,15g,0g,2g,None,No,U.S.A.,1
+,Drink,27,Water,330ml,160,230mg,9g,4.5g,25g,Milk,No,U.S.A.,5
+Frozen Ravioli,Freezer,33,Wheat Flour,94 g,250 Cal,620 mg,31 g,10 g,9 g,"milk, egg, wheat, soy",Not Listed,U.S.A.,2
+Paradise Green Dried Mango ,Canned/Dried,３,Mangoes,40 g,140,60 mg,33 g,0 g,< 1 g,none,No,Thailand,2
+Parmesan Cheese,Fridge,3,Cultured Milk,28g,110,230 mg,1g,8g,9g,milk,No,U.S.A.,
+Maple Syrup,Fridge,1,Organic Maple Syrup,30mL,110,0mg,27g,0g,0g,None,No,U.S.A and Canada,0
+Dad's Old Fashioned Rood Beer,Drink,5,Carbonated Water,355 mL,170,45 mg,44 g,0 g,0 g,N/A,No,U.S.A.,4
+Fruit Bar,Snack,9,Apple Puree Concentrate,18 g,60 Cal,0 mg,15 g,0 g,0 g,N/A,No,U.S.A.,2
+Dino Nuggets,Freezer,17,Boneless Skinless Chicken ,76 g,180 Cal,260 mg,13 g,10 g,9 g,wheat,No,Canada,5
+Canned Pumpkin,Canned/Dried,1,Pumpkin,120 g,40 Cal,5 mg,10 g,0 g,1 g,none,Yes,U.S.A.,2
+Frozen Strawberries,Freezer,1,Whole Strawberries,10 pieces,50,0mg,13g,0g,1g,none,No,Mexico,3
+Mixed Frozen Fruit,Freezer,4,Mangos,1 1/4 cups (144 g),70 Cal,0 mg,17 g,0 g,1 g,None,No,U.S.A.,1.5
+Strawberry icecream,Freezer,5,Cream,133g,310,65mg,29g,19g,5g,"milk, eggs",NO,U.S.A,2
+Granola bar,Snack,9,Whole grain oats,2 bars (1 package),190,140mg,29g,7g,3g,"Soy, peanuts, almond, pecans",Yes,U.S.A,4
+Instant Boba Kit,Freezer,8,Water,65 g,110 Cal,5 mg,28 g,0 g,0 g,None,Yes,Taiwan,5
+Crab Meat,Canned/Dried,3,Lump white crab meat,120g,80,670mg,<1g,1g,17g,Shellfish,No,Indonesia,2
+Casa Sanchez Thin and Light Delgados Tortilla Chips,Snack,3,Stone Ground Corn Flour,10-11 chips/28g,130 Cal,105 mg,19g,6g,2g,Corn,No,U.S.A.,4
+Morning Round ,Freezer,28,Unbleached Inriched flour.,60g,160,190mg,32g,1g,5g,"wheat,made in peanut factory",non-gmo,Canada,4
+100% Whole Grain Wheat Thins,Snack,10,Whole Grain Wheat Flour,31 g,140 Cal,200 mg,22 g,5 g,2 g,Wheat,Yes,U.S.A.,4
+Japanese Barbecue Sauce,Fridge,11,Soy Sauce,19 g,35,520 mg,8 g,0 g,0 g,"Wheat, Soy, Sesame",No,U.S.A.,3
+Peanut Butter & Jelly Sandwich,Freezer,25,Enriched Unbleached Flour,1 sandwich,320 Cal,290 mg,36 g,17 g,10 g,"peanut, wheat, hazelnut, milk",Yes,U.S.A.,5
+tomato sauce,Canned/Dried,4,tomato puree,63g,25,220 mg,6 g,0 g,1 g,none,nuh uh,AMERICAAA,1.5-2 ig?
+popcorn,Snack,3,popcorn,3.75 cups,150,75mg,15g,10g,2g,none,No,U.S.A.,1
+Beans,Canned/Dried,2,Organic Cannellini Beans,130 g,120,10 mg,18 g,0.5 g,6 g,N/A,No,U.S.A.,2
+Salad Mix,Fridge,6,spinach,100 g,80 cal,0,0,o,13 g,none,no,USA,2
+Nutella,Snack,7,Sugar,37 g,200 Cal,15 mg,22 g,11 g,2 g,"tree nuts, milk, soy",No,Canada,4
+Coconut Milk,Canned/Dried,5,Coconut,1/3 cup,150,20mg,5g,14g,1g,tree nut(coconut),No,Thailand,3
+Spinach Egg White Fritata,Freezer,16,Vegetable Blend,57g,70,190mg,5g,4g,5g,"Egg, milk",No,US,3
+Won Ton Wrappers,Freezer,7,Enriched Wheat Flour,23 g,70 Cal,55 mg,13 g,0 g,2 g,"wheat, eggs",No,U.S.A.,
+Coffee Creamer,Fridge,11,Water,15 ml,35 Cal,5 mg,5 g,1.5 g,0 g,Milk derivative,Yes,U.S.A. or Switzerland,3
+California Pizza Kitchen - Sicilian Recipe,Freezer,26,Enriched Wheat Flour,147 g,350 Cal,980 mg,31 g,17 g,18 g,"wheat, milk",Yes,U.S.A.,5
+Milk Chocolate Bar,Snack,6,Sugar,50g,270,30 mg,29g,16g,3g,"milk, soy",Can't find,Belgium,5
+Soybean Paste Stew Base,Fridge,33,Soybean Paste,1 1/3 tbsp (24g),40,970mg,N/A,1.5g,3g,"Soybean, Wheat, Fish (Anchovy)",Yes,China,4
+Gelato,Freezer,16,milk,131g,290,65mg,37g,14g,5g,"milk, cream, milk fat",no,USA,3
+Tortilla Chips,Snack,6,Corn masa flour,30 g,150 Cal,210 mg,19 g,8 g,2 g,soy,Yes,U.S.A.,2
+Potato Chips,Snack,3,Potatoes,1oz,130,125mg,18g,6g,2g,none,No,"MA, USA",4
+Mini chocolate chip cookies,Snack,9,unbleached enriched flour,57g,270,240 mg,37g,13g,3g,"Milk, egg, soy, wheat",Yes?,USA,4
+Milk (lactose free),Fridge,5,Milk,240mL,130,120mg,13g,5g,8g,Milk,No,USA,1
+Ritz Crackers,Snack,10,Unbleached Enriched Flour,5 crackers,80,130mg,10g,4.5g,<1g,"wheat, soy",Yes,Mexico,4
+Pinto beans,Canned/Dried,5,Pinto beans,0.50 cup,110,420mg,20g,0g,7g,none,No,U.S.A.,2
+San Pellegrino Sparkling Natural Mineral Water,Drink,1,Carbonated Mineral Water,8 fl oz,0 Cal,10 mg,0 g,0 g,0 g,N/A - not specified on the nutrition facts,No,Italy,1
+Cheez It,Snack,3,Enriched Wheat Flour,1 Pouch (42 g),210,320 mg,24 g,11 g,4 g,"wheat, milk, soy",Yes,U.S.A.,4
+Chips,Snack,3,potato,28 g,140,100 mg,17 g,7g,2g,none,no,USA,2
+Toast and Peanut Butter Sandwich Crackers,Snack,22,Peanut Butter,39g,190 Cal,300mg,24g,9g,3g,"wheat, soy, peanut, milk",Yes,U.S.A.,3
+Steamed Pork & Ginger Soup Dumplings,Freezer,18,Pork Filling,170 g,270 Cal,550 mg,30 g,11 g,14 g,"soy, sesame, wheat",No,U.S.A.,5
+Tamari,Drink,4,Water,15 mL,15 Cal,1 g,1 g,0 g,2 g,Soy,No,U.S.A.,2
+Oats and Honey Granola,Snack,11,Organic Rolled Oats,65 g,290,95 mg,46 g,9 g,6 g,"tree nuts, wheat, soy, seasame",no,U.S.A.,1
+kettle brand sea salt and vinegar chips,Snack,5,potatoes,1 oz,140 cal,180 mg,15 g,9 g,2 g,none,no,U.S.A.,2
+Organic Pinto Beans,Canned/Dried,3,Organic Pinto Beans,125 g,100 Cal,130 mg,19 g,0 g,7 g,,No,U.S.A.,2
+Lays Classic Potato Chips,Snack,3,Potatoes,1 Package,240,210mg,23g,15g,3g,None,No,USA,4
+Heinz Ketchup,Fridge,8,Tomato Concentrate,17g,20,180mg,5g,0g,0g,none,n/a,U.S.A.,3
+Seaweed,Snack,5,Seaweed,3.4g,29 cal,40 mg,0g,1.5g,1g,Sesame,No,Korea,1
+Breaded Chicken Strips,Freezer,16,Chicken,112g,120,380mg,4g,5g,21g,"Milk, Egg",No,Unknown but distributed in us,4
+Protein Bar,Snack,10,Peanut Butter,71 g,340 Cal,50 mg,27 g,19 g,17 g,"peanuts, milk, egg, sesame",No,U.S.A.,4
+Sweet Rice Balls,Freezer,3,Sweet Rice,99 g,250 Cal,5 mg,51 g,3 g,3 g,N/A,No,U.S.A.,2
+salad dressing,Fridge,14,rice vinegar,28 g,35 cal,350 mg,5 g,1.5 g,1 g,"soy, sesame",no,usa,3
+Apple Sauce,Drink,3,Organic Apple,90 g,70 cal,0 mg,16 g,0 g,0 g,,No,U.S.A.,2
+Progresso Chicken Noodle Soup,Canned/Dried,7 main (19 2% or less),Chicken Broth,1 cup (242 g),100 Cal,660 mg,13 g,2.5 g,7 g,"Egg, Soy, Wheat Ingredients",No,U.S.A.,3
+Raisins,Canned/Dried,1,California organic raisins,1/4 cup,120,10mg,31g,0g,1g,None,No,USA,1
+Mixed Crackers,Snack,23,Glutinous rice flour,30 g,130 Cal,150 mg,23 g,3 g,3 g,"Soybean, wheat, sesame seeds",Yes,Thailand,4
+Olives,Canned/Dried,4,Olives,3 olives,15,120mg,1g,1.5g,0g,None,No,U.S.A,2
+Dried Mango,Canned/Dried,1,Mango,40 g,130,0 mg,30 g,0 g,2 g,n/a,no,Mexico/Peru,0
+Supplant Dark Chocolate,Snack,6,Chocolate Liquor,30 g,150 Cal,0 mg,14 g,13 g,2 g,"made in proximity with peanuts, tree nuts, milk, soy",No,U.S.A.,0
+Granola,Snack,7,Organic Oats,1 oz,140,0 g,13 g,9 g,4 g,"nuts, wheat",No,U.S.A.,4
+dried peach,Canned/Dried,2,peaches,30g,114,2mg,25g,0,2g,none,no,usa,2
+Water,Drink,1,Water,500 ml,0 Cal,0 mg,0g,0g,0g,None,No,USA,0
+Sliced pepper jack cheese,Fridge,6,Pasterized cultured milk,28 g,110,180 mg,0.5 g,9 g,6 g,milk,No,U.S.A.,2
+Gatorade,Drink,12,water, 1 bottle,60,490 mg,14g,0g,0g,none,no,USA,2
+Dark Chocolate raisins,Canned/Dried,8,Dark Chocolate,30g ,120,10 mg,20 g ,6 g,1 g,"milk, soy",No,U.S.A.,4
+Chobani Zero Sugar - Peaches & Cream,Fridge,8,Nonfat Greek Yogurt,207 mL,50 Cal,70 mg,6 g,0 g,10 g,milk,No,U.S.A.,3
+Blueberry Yogurt,Fridge,12,Grade A Pasteurized Whole Milk,113 g,140 Cal,60 mg,17 g,6 g,5 g,dairy,Yes,U.S.A.,2
+Dried Pasta,Canned/Dried,9,Wheat,56 g,200 cal,15 mg,41 g,1 g,8 g,Wheat,No,U.S.A.,4
+Smoothie pack,Freezer,4,Mango,40g,110 cal,0,0,3g,5g,none,no,USA,3
+Taiwanese Beef Noodle Soup (Frozen),Freezer,16,Beef Shank,319 g,360,1820 mg,33 g,4 g,43 g,"wheat, soy",Does not say,USA,5
+POG Juice,Drink,9,Water,340 ml,150,15 mg,38 g,0 g,0 g,Juice,no,usa,1
+Pepperoni Pizza,Freezer,43,Cheese,1 pizza (105 g),310,740 mg,25 g,18 g,13 g,"Milk, Wheat, Soy","No idea, but I think so",Italy or U.S.A (doesn't specify),5
+Kirkland Seaweed,Snack,4,Organic Seaweed,3.4 g,20,40 mg,0 g,1.5 g,1 g,sesame,No,Korea,1-1
+Soy Milk,Fridge,10,Organic soybase,1 cup,80 Cal,110 mg,3 g,4 g,8 g,soy,No,U.S.A.,3
+La Croix,Drink,1,"Carbonated Water, Naturally Essenced",1 Can,0 Cal,0mg,0g,0g,0g,none,No,U.S.A.,1
+Tonkotsu Ramen,Canned/Dried,83,Potato Starch,101 g (1 Bowl),450,1550 mg,64 g,18 g,8 g,"Wheat, sesame, soy, anchovy, milk, tuna",Yes,U.S.A.,5
+Popcorn,Snack,3,Popcorn,3 3/4 cups,150,75mg,15g,10g,2g,None,No,U.S.A.,4
+gatorade,Drink,12,citric acid,12floz,0,160mg,<1g,0g,0g,none,yes,U.S.A.,3
+Van Leeuwen Honeycomb Ice cream,Freezer,9,Cream,108g,290,350mg,81g,43g,11g,"Eggs, milk, tree nuts (coconut)",No,"Brooklyn, NY",4?
+lays chips,Snack,3,potatoes,28,160,170mg,15g,10g,2g,none,no,Usa,5
+Milk,Fridge,2,Organic Milk,240ml,150,105 mg,12 g,8 g,8 g,milk,no,USA,1
+Pumpkin Seeds,Snack,1,Pumpkin Seeds in Shell,30g,170,10mg,<1g,15g,7g,N/A,Yes,Russia,1
+Coconut Milk,Canned/Dried,4,Coconut Extract,80 mL,150 Cal,26 mg,2 g,15 g, 2 g,,No,Thailand,2
+halo top cookie dough ice cream,Freezer,26,ultrafiltered skim milk,2/3 cup,12o cal,105 mg,25 g,3 g,6 g,"milk, soy, wheat",yes,,2.5
+Raw shrimp,Freezer,2,raw shrimp,113 g,80,220 mg,0g,0.5g,19g,shrimp,no,U.S.A.,1
+Cochon Volant BBQ Sauce,Fridge,21,Distilled Vinegar,39 g,50 Cal,125 mg,10 g,1 g,1 g,N/A,No,U.S.A.,2
+Cheese Crackers,Snack,18,Flour,28 g,140 cal,260 mg,17 g,7 g,3 g,"milk, wheat, soy",no,U.S.A.,4
+Chi Sparkling Water (Lychee Fizzy),Drink,8,Carbonated Water,1 can (330 ml),0,15 mg,5 g,0 g,0 g,None,No,China,3
+Ice cream,Freezer,6,Pasteurized organic cream,118g,270,25mg,28g,16g,4g,milk,No,U.S.A.,3
+Daisy Brand Sour Cream,Fridge,1,Cultured Cream,30 g,60,15 mg,1g,5g,1g,Milk,No,U.S.A.,2
+Sardines,Canned/Dried,3,Sardines,87 g,200 Cal,300 mg,0 g,14 g,18 g,none,No,U.S.A.,2
+Apricot Preserve,Canned/Dried,4,Organic Apricots,20g,50,0mg,13g,0g,0g,N/A,No,Canada,2
+Ice cream,Freezer,29,Cream,2/3 cup (137g),380,110mg,36g,24g,6g,"milk, eggs, soy, wheat",Yes,U.S.A,3
+Makhana Roasted Fox Nuts,Snack,15,Fox Nuts,30 g,160,220 mg,19 g,8 g,3 g,,No,India,3
+Canned Yellowfin Tuna,Canned/Dried,3,Yellowfin Tuna,113 g (1 can),230,380 mg,0 g,2.5 g,29 g,Fish,No,USA,3
+Golden Oolong Tea,Drink,3,Purified Water,315 mL,0 Cal,35 mg,0 g,0 g,0 g,None,idk,Taiwan,2
+Freezer Burrito,Freezer,36,Water (or like real ingredient Enriched Wheat Flour),142 g,220,440 mg,25 g,10 g,12 g,"wheat, soy, coconut",no,U.S.A.,5
+ice cream,Freezer,5,cream,130 g,330 cal,180 mg,73 g,55 g,16 g,"milk, egg ingredients",no,france,3
+Chocolate Peanut Butter Ice Cream,Freezer,12,Cream,95 g,250 Cal,100 mg,23 g,16 g,5 g,"egg, milk, peanut",No,U.S.A.,3
+Milk,Fridge,2,Organic Grade A Milk,240 ml,160,130 mg,13 g,9 g,9 g,none,No,U.S.A.,1
+tortilla chips,Snack,4,organic stone ground white corn,28g,140,85mg,16g,8g,1g,none,no,U.S.A.,4
+Cannellini beans,Canned/Dried,3,organic prepared cannellini beans,130 g,100,110 mg,19 g,0g,6g,,no,U.S.A.,2
+buttermilk brread,Fridge,20,Enriched Wheat Flour,38 g,100,150 mg,19g,0.5,3g,"wheat,soy,milk",Yes,U.S.A,1
+Kewpie Mayonaise,Fridge,11,Soybean Oil,15g,110,105mg,0g,11g,0g,Eggs,Yes,USA,2
+Simply Lemonade,Drink,4,Water,8 fl oz,120 Cal,15 mg,30 g,0 g,0,Non?,Non GMO,U.S.A.,1
+Apple,Fridge,1,Apple,182 g,95 Cal,2 mg,25 g,0.3 g,0.5 g,None,No,USA,0
+Ketchup,Fridge,6,Organic Tomato Purée,17 g,20 Cal,160 mg,4 g,0 g,0 g,N/A,No,U.S.A.,3
+Ben & Jerry's Phish Food Ice Cream,Freezer,19,Cream,143 g,390 Cal,105 mg,52 g,18 g,5 g,"eggs, milk, soy",No,U.S.A.,4
+Whole Milk Yogurt,Fridge,3,Pastuerized organic whole milk,17o g,120,85 mg,10 g,4.5 g,9 g,none,no,U.S.A.,
+Chocolate Chip Cookie Dough,Freezer,7,Enriched Flour Bleached,38g,170,135 mg,24g,8g,1g,"Wheat,Egg,SOY; MAY CONTAIN PEAANUT, MACADAAMIA AND MILK INGREDIENTS",yes,U.S.A.,4
+Cholula,Fridge,10,Water,1tsp,0,110mg,0g,0g,0g,none,Yes,Mexico,3
+Takis (Fuego),Snack,20,Corn Flour,28 g,140 Cal,420 mg,16 g,8 g,2 g,"soy, milk, egg, wheat, peanuts",Yes,Mexico,5
+Salt and Vinegar chip,Snack,5,Potatos,28g,140,180mg,15g,9g,2g,None,no,USA,4
+Vanilla Ice Cream,Freezer,11,Milk,89 g,200 cal,40 mg,21 g,12 g,3 g,"milk, soy",no,U.S.A.,2
+Chobani Yogurt,Fridge,10,Cultured Reduced Fat Milk,150 g,120 Cal,55 mg,10 g,3 g,12 g,milk,No,USA,3.9
+Canned Pink Salmon,Canned/Dried,2,Pink Salmon,85 g,80 Cal,240 mg,0 g,1.5 g,17 g,None,No,U.S.A.,1
+Whole Milk,Drink,2,Organic Milk,1 cup,160,125mg,12g,9g,8g,None,No,Usa,1
+Frozen pizza dough,Freezer,15(none of which are proecessed),Flour blend,57g,170,360mg,30g,4g,1g,wheat,no,U.S.A.,3
+Dried Spaghetti,Canned/Dried,1,Organic Durum Wheat Semolina,56 Gg,210 Cal,0 mg,43 g,1 g,6 g,N/A,No,Italy,2
+Graham Crackers,Snack,12,Enriched Wheat Flour,31 g,130 cal,120 mg,24 g,3.5 g,2 g,"soy, wheat",yes,canada,4
+Popsicles,Freezer,16,Water,148g,110,0 mg,28 mg,0 g,0 g,n/a,No,Italy,5
+Instant Rice,Canned/Dried,5,Water (or real ingredient is Jasmine Rice),125 g,220,200 mg,43 g,2.5 g,4 g,none?,no,U.S.A.,2
+Thin-Sliced Organic Bread,Fridge,36,Organic whole weat,1 slice,60,105mg,14g,1g,3g,Wheat,No,U.S.A.,3
+Sriracha Sauce,Fridge,9,chili,1 tsp (5g),0,70 mg,less than 1g,0g,0g,,no,USA,
+Justin's Honey Peanut Butter,Canned/Dried,6,Dry Roasted Peanuts,32g,210 Cal,90mg,6g,17g,7g,peanuts,No,U.S.A.,2
+Organic Unsalted Butter,Fridge,2,Pasteurized Organic Sweet Cream (Milk),14g (1 tbsp),100 Cal,0 mg,0 g,11 g,0 g,Milk,No,U.S.A.,1
+Sockeye Salmon,Freezer,1,Sockeye Salmon,168g,220,85mg,0g,8g,38g,None,No,U.S.A.,1
+Lychee Coconut Jelly,Snack,10,Water,100g,100,71 mg,25 g,0 g,0 g,None,No,Taiwan,5
+Cauliflower Puffs,Snack,17,Corn Meal,28g,140,180 mg,16 g,7 g,2 g,milk,No,USA,4
+Dried Mango,Canned/Dried,6,Mango,500g,372,390mg,438g,6.5g,6.5g,mango,No,China,4
+Pocky,Snack,14,wheat flour,15 pieces (30g),150,55mg,20g,6g,3g,"Wheat, milk, soy",Yes,Japan,4
+Fire grilled pork jerky,Snack,12,Pork,28 g,90 cal,290 mg,10 g,2 g,7 g,"Soy, Sesame",No,U.S.A.,2
+Spicy Black Beans,Canned/Dried,13,Organic Prepared Black Beans,130g,120,270mg,21g,1g,7g,N/A,No,US,2
+Annie's Canned Pasta(basically spaghetti o's,Canned/Dried,11,Water,242 g,130 Cal,660 mg,28 g,0.5 g,4 g,"wheat, milk",No,U.S.A.,2
+dried squid,Canned/Dried,2,squid,55g,150,520mg,<1g,1.5g,34g,squid,no,vietnam,1
+Sparkling Strawberry Juice,Drink,5,Strawberry juice,1 can (250 mL),60,0mg,16g,0g,0g,None,No,Vietnam,3
+Tru Fru (Chocolate Covered Strawberries),Freezer,6,Strawberries,1 oz,90 Cal,15 mg,10 g,5 g,1 g,Milk and soy,No,,
+frozen mac n cheese,Freezer,27,Enriched penne reggate,20 oz,460,1620 mg,102g,60g,53g,"Milk, Wheat",yes,new york,4
+Schär Gluten Free Bread,Freezer,17,"Sourdough (rice flour, water)",57 g,130,180 mg,28 g,2 g,2 g,Sesame,No,U.S.A.,4
+Diet Pepsi,Drink,11,Carbonated Water,12 oz,0 cal,35 mg,0 g,0 g,0 g,,No,U.S.A.,3
+Marinara,Fridge,8,Italian whole peeled tomotatoes,1.5 lbs,100,2100 mg,30g,36g,10g,none,no,New Jersey,1
+Dried Apricots,Canned/Dried,1,Organic Dried Apricots ,40 g,130 Cal,0 mg,31 g,0 g,1 g,N/A,No,Turkey,1
+Alec's triple chocolate blackout cookie ice ream,Freezer,32,Cream,122 g (2/3 cup),310,330 mg,76 g,48 g,11 g,"Milk, egg, coconut",No,U.S.A.,3
+,Fridge,4,Organic Reduced Fat Milk,240ml,140,150mg,15g,5g,10g,Milk,No,California,0
+Spam,Canned/Dried,9,Pork with ham,56g,180,570mg,1g,16g,7g,,No,U.S.A,4
+Whole Milk,Drink,2,Organic Milk,240 mL,160 Cal,130 mg,13 g,9 g,9 g,milk,No,U.S.A.,
+Pancake Mix,Canned/Dried,9,Flour,1/3 cup,150 Cal,0 mg,20 g,2 g,3 g,"Milk, Wheat, Eggs, Soy, Tree Nuts",Yes,U.S.A.,
+Roasted Sunflower Seeds (Caramel Flavor),Snack,6,Sunflower seeds,30 g,190 Cal,220 mg,6 g,15 g,7 g,Sunflower Seeds,idk,Thailand,3
+potato chips (vinegar),Snack,5,potatoes,1 oz,140,180 mg,15 g,9 g,2 g,nut oil,no,USA,4
+Cheese Ravioli,Freezer,19,Organic ricotta cheese,1 cup,260,510mg,31g,11g,11g,"Egg, milk, wheat",No,U.S.A.,3
+Oragnic Whole Milk,Fridge,1,Pasteurized Oragnic Milk,240 mL (1 cup),160,75 mg,11 g,9 g,9 g,Milk,No,U.S.A.,0
+Maria's Canned Artichoke Hearts,Canned/Dried,5,Artichoke Hearts,40g,10,150mg,2g,0g,<1g,None,Yes,Peru,3
+Raspberry Lemonade,Drink,5,Filtered Water,240 mL,110 Cal,15 mg,27 g,0 g,0 g,N/A,No,U.S.A.,1
+Miss Vickies Chips,Snack,3,Potatoes,38.9 g,210,125 mg,23 g,12 g,3 g,n/a,no,usa,1
+Vitamin Water (zero sugar),Drink,16,Reverse osmosis water,591 mL,0 Cal,0 mg,0 g,0 g,0 g,,Yes,Georgia,3
+pretzel crackers,Snack,6,Enriched Wheat Flour,28g,110cal,270mg,24g,0g,2g,wheat,yes,USA,1
+Maple Syrup,Fridge,1,maple syrup,30 mL,110,0mg,27g,0g,0g,n/a,No,Canada,0
+Chi Sparkling Water,Drink,9,Carbonated Water,330mL,0,15mg,5g,0g,0g,none,no,China,3
+Spam,Canned/Dried,6,Pork with Ham,56g,180,770mg,1g,16g,7g,None,No,"Austin, MN",4?
+Ice Cream,Freezer,10,Pasteurized Organic Cream and Organic Nonfat Milk,120g,330,30mg,28g,23g,4g,"milk, soy",No,USA,2
+ yogurt,Fridge,1,yogurt,125g,140cal,60mg,11g,4.5g,13g,yogurt,no,USA,1
+Taro Boba Ice Cream,Freezer,14,Taro Cube Paste Brix Add,80 g,143 Cal,31 mg,24 g,5 g,1 g,"milk, egg, soybean, gluten-containing Grain Products",Yes,Taiwan,4
+corn,Canned/Dried,2,corn,125 g,60 Cal,10 mg,0,1g,1g,,no,China,2
+milk,Drink,4,organic milk,250 g,140 cal,140 mg,13 g,5 g,10 g,none,no,california,1.5
+Nature Valley Oats 'N honey Granola Bars,Snack,13,Whole grain oats,42g,190 Cal,140 mg,29 g,7 g,3 g,"Peanuts, almonds, and Pecan",Yes,U.S.A.,4
+Kirkland Shredded Mexican-Style Blend Cheese,Fridge,21,Monterey Jack Cheese,28 g,110 Cal,170 mg,1 g,8 g,6 g,Milk,No,U.S.A.,5
+Seaweed,Snack,5,Organic Seaweed,1/5 pack (3.4 g),20 Cal,40 mg,0 g,1.5 g,1 g,Sesame,No,Korea,1
+Spindrift,Drink,3,Carbonated Water,355 ml,5,0 mg,1 g,0 mg,0 mg,n/a,no,usa,1
+Hint Sparkling Water,Drink,2,Purified water,474 mL,0 Cal,0 mg,0 g,0 g,0 g,N/A,No,U.S.A.,1
+SPAM 25% less sodium,Canned/Dried,6,Pork with Ham mechanically,56g,180 Cal,570mg,1g,16g,7g,Pork/Chicken,No,U.S.A.,4
+Ground Beef,Freezer,1,Beef,112 g,150 Cal,65 mg,0g,4.5 g,24 g,None,No,USA,2
+gogo squirts,Snack,4,apple,90g,70cal,0mg,16g,0g,0g,apple,no,USA,2
+dried fruit,Snack,3,dried pears,40 g, 140 cal,0 mg,33 g,0 g,1 g,none,no,"usa, peru",1.5
+,Snack,10,Unbleached Enriched Flour,16g,80,130mg,10g,4.5g,<1g,"Wheat, Soy.",Yes,Mexico,4
+Trü Frü Frozen Chocolate Strawberries,Freezer,3,Strawberries,28g,90 Cal,15mg,10g,5g,1g,"milk, soy, tree nuts, peanuts",No,U.S.A.,2
+Gatorade fruit punch + berry,Drink,13,Water,360mL,80,160mg,22g,0g,0g,N/A,Likely,Unknown but distributed in us,5
+Oven Roasted Turkey Breast,Fridge,6,Organic Turkey Breast,55 g,50 kcal,380 mg,1 g,0 g,11 g,none,No,Likely USA,3

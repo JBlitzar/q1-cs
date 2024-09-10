@@ -1,0 +1,415 @@
+,Item Name,What kind of item is it?,Total number of ingredients,Name of first (main) ingredient,Serving Size,Calories per serving,Total Sodium,Total Carbohydrates,Total Fat,Total Protein,What allergens does it contain?,Does it contain GMO crops?,Where was it made?,"How Processed is it?
+(see instructions for ranking)"
+0,lemonade,1,4.0,filtered water,9 ,110,20 ,29 ,0,0,none,0.0,"apoka, fl",2.0
+1,red machine naked juice,2,14.0,apple juice from concentrate,15.2,270 ,25 ,56 ,4 ,4 ,none,0.0,usa,2.0
+2,gatorade(cool blue),1,12.0,water,591 ,140 ,270 ,36 ,,0 ,none,1.0,usa,4.0
+3,häagen-dazs,2,5.0,cream,90,210 ,45 ,20 ,8 ,3 ,skim milk and cane sugar,0.0,"tilloy-lès-mofflaines, france",3.0
+4,sour cream,2,1.0,cultured cream,30 ,60 ,15 ,1 ,5 ,1 ,milk,1.0,usa,2.0
+5,doritos dinamita(flamin hot),3,none,corn,1 ,170 ,160 ,20 ,9 ,2 ,dairy,1.0,mexico,5.0
+6,capri sun fruit punch,1,6.0,apple,177,90,25,20,0,0,none,0.0,germany,4.0
+7,beijing yogurt (matcha),2,7.0,cultured pasteurized milk,176 ,120 ,70 ,22 ,5 ,4 ,milk,0.0,usa,3.0
+8,cuttlefish ball,2,14.0,cuttlefish,20 ,31.6,165.6,2.3,1.7,1.8,"fish, molluscs, soy, egg, milk",0.0,thailand,5.0
+9,organic almond milk,2,14.0,"organic almond base (water, organic almonds)",240 ,30 ,110 ,1 ,3 ,1 ,almonds,0.0,usa,2.0
+10,beans,4,6.0,prepared dark red kidney beans,130,110 ,370,20,0,7,none,0.0,usa,2.0
+11,smart food popcorn,3,8.0,popcorn,1 ,160 ,200 ,15 ,10 ,3 ,milk,1.0,usa,3.0
+12,plain greek yogurt,2,6.0,pasteurized grade a milk,170,170,80 ,6 ,14 ,7 ,milk,0.0,usa,2.0
+13,coca cola,1,6.0,carbonated water,20 ,240,75 ,65 ,0 ,0 ,none,0.0,usa,5.0
+14,coconut water,1,1.0,organic coconut water,328 ,50,130 ,13 ,0 ,0 ,none,0.0,vietnam,0.0
+15,yogurt drink,1,14.0,organic cultured low fat milk,296,180,25,28,3,9,milk,0.0,usa,2.0
+16,peas,2,1.0,green peas,85 ,70,0,12,0,4,none,0.0,none,none
+17,freeze dried strawberries,4,1.0,freeze dried strawberries,1 ,130 ,5 ,29 ,,2 ,none,0.0,usa,1.5
+18,nature valley,3,16.0,whole grain oats,42,90,160,29,6,4,peanuts,1.0,usa,3.0
+19,strawberries,2,1.0,whole strawberries,140 ,45 ,0 ,11 ,0 ,,none,none,usa,2.0
+20,gatorade (zero),1,10.0,water,355 ,0 ,160 ,,,0 ,red 40 and blue 1,0.0,usa,none
+21,garbanzos,4,3.0,organic prepared garbanzos (chickpeas),1/2,120,85,20,2,6,none,0.0,usa,2.0
+22,clovis farms organic super smoothie,2,6.0,berries,227,100 ,25 ,24,1,3,fruit,0.0,usa,1.0
+23,ice cream bars,2,17.0,cream,78 ,280 ,40 ,,21 ,4 ,"almonds, milk, soy, egg",1.0,usa,4.0
+24,strawberry yogurt,2,10.0,cultured reduced fatmilk,150,120,50,11,3,12,milk,0.0,us,3.0
+25,poppi strawberry lemon prebiotic soda,1,8.0,sparkling water,12 ,25 ,0 ,7 ,0 ,0 ,none,0.0,usa,3.0
+26,bagel bites,2,35.0,wheat flour,88 ,190 ,410 ,27 ,6 ,7 ,"wheat, milk",1.0,usa,5.0
+27,spindrift ,1,4.0,carbonated water,1 ,12,0,3,0,0,none ,0.0,us,3.0
+28,yogurt,3,4.0,strained yogurt,150,180 ,40,28,2.5,12,milk,0.0,usa,4.0
+29, gf pasta (pre-made),4,5.0,rice flour,56 ,190 ,0,44,1 ,4,none,1.0,usa,4.0
+30,none,4,5.0,water,86,190,40,42,0,4,none,0.0,japan,2.0
+31,cheese stick,2,1.0,low moisture part-skim mozzarella cheese,28,80 ,200,1,6,6,milk,0.0,usa,3.0
+32,strawberry mochi,2,12.0,nonfat milk,192,470,60,80,14,6,"milk, egg",0.0,usa,4.0
+33,mini pizza bagels,2,none,bagel,84 ,200 ,1140 ,58 ,15 ,22 ,dairy,0.0,usa,3.0
+34,coke zero,1,10.0,carbonated water,1 ,0,40 ,0,0,0,phenylalanine,0.0,usa,5.0
+35,raspberry sorbet,2,6.0,raspberries,131 ,150 ,0 ,38 ,0.5,,none,0.0,usa,none
+36,dried mango,3,1.0,dried mango,4 ,130,0 ,32 ,0 ,,none,1.0,mexico,1.0
+37,coconut milk,4,3.0,organic coconut ,80 ,120,30 ,1 ,12 ,,coconut,0.0,vietnam,2.0
+38,arizona iced tea,1,17.0,carbonated filtered water,12 ,120,0 ,30 ,0 ,0 ,none,0.0,usa,4.0
+39,none,2,6.0,pasteurized milk,96,200,50,20,11,4,milk,0.0,usa,2.0
+40,frozen edamame,2,1.0,soybeans,75,110,0,10,4,9,soybean,1.0,taiwan,2.0
+41,garbanzo beans,4,5.0,garbanzo beans,1/2,90,140 ,16 ,0.5,5 ,none,0.0,usa,2.0
+42,kimchi,2,11.0,radish,28 ,10 ,240 ,2 ,0 ,1 ,"fish, crustacean",0.0,south korea,3.0
+43,carrot ginger turmeric juice,1,4.0,carrot juice,240,80,90,17,0,2,?,0.0,usa,1.0
+44,bwutterr,2,12.0,vegtable oil,1 ,80 ,100 ,0 ,8.5,0,soy,none,usa,0.0
+45,"""sparkling ice"" black cherry",1,15.0,carbonated water,1 ,5,0,0,0,0,none,none,usa,3.0
+46,coca cola,1,6.0,carbonated water,12 ,140,45 ,39 ,,0 ,none,0.0,usa,4.0
+47,diced tomatoes,4,5.0,organic tomatoes,120,25,220 ,5,0,1,none,0.0,usa,2.0
+48,cheese sticks (colby jack),2,3.0,cultured pasteurized milk,21,80 ,125 ,0 ,7 ,5 ,milk,0.0,usa,2.0
+49,sweetened condensed milk,4,2.0,milk,39 ,130 ,45 ,22 ,3.5,2 ,milk,0.0,chile,none
+50,frozen peas,2,1.0,organic green peas,85,70 ,,12,,4,none,0.0,usa,2.0
+51,korean somen noodles,2,6.0,flour,200,560,510,126,2,12,wheat,1.0,korea,3.0
+52,spindrift,1,3.0,carbonated water,,5,0,1,0,0,none,0.0,usa,3.0
+53,cherry cola olipop,1,12.0,carbonated water,355 ,50 ,30 ,16,0,0,none,0.0,usa,3.0
+54,tortillas,2,5.0,organic wheat flour,50 ,150 ,240 ,23 ,5 ,4 ,wheat,0.0,usa,4.0
+55,ice cream sandwich,2,14.0,milk,56,150,120 ,24,5,2,"wheat, milk, soy",0.0,can't find,5.0
+56,chunk light tuna,4,4.0,light tuna,2 ,80 ,150 ,0 ,3 ,14 ,fish,0.0,none,none
+57,organic kansas city style bbq sauce,2,14.0,organic tomato puree,36 ,45 ,250 ,11 ,0 ,0 ,none,0.0,usa,3.0
+58,double chocolate croissants,2,34.0,unbleached enriched flour,85 ,340,250 ,36 ,19 ,6 ,"milk, soy, wheat, may contain egg, almond",0.0,usa,4.0
+59,monster energy zero ultra,1,19.0,carbonated water,473 ,10,380 ,6,0,0,none,none,usa,5.0
+60,mini pretzels,3,15.0,enriched flour,26,100,230,21,0.5,3,wheat,0.0,usa,4.0
+61,corn,4,3.0,orgnaic sweet corn,125,70,1050 ,45.5,0,7,none,0.0,clifornia,1.0
+62,tru fru strawberry,2,12.0,strawberries,1 ,90,15 ,9 ,5 ,1 ,"soy, peanuts, tree nuts",none,utah,3.0
+63,hint water,1,2.0,purified water,1 ,0,0,0,0,0,none,0.0,usa,1.0
+64,royal milk tea,1,7.0,water,265 ,120,35 ,21 ,2.5,2 ,milk,0.0,japan,2.0
+65,chunk light skipjack tuna,4,3.0,skipjack tuna,85 ,70 ,270 ,0 ,0.5,15 ,fish (tuna),0.0,thailand,0.0
+66,whipped cream,2,8.0,heavy cream,6,25,0,1,2,0,milk,0.0,usa,3.0
+67,chi forest - grape delight,1,8.0,carbonated water,330 ,0 ,15 ,5 ,0 ,0 ,none,1.0,china,3.0
+68,veggie spring rolls,2,22.0,cabbage(filling) wheat flour(wrapper,102,200,400,24,10,5,"soy, wheat, seasame",0.0,usa,5.0
+69,popping candy,3,8.0,sugar,1.5,,,1 ,0 ,0,milk,0.0,china,4.0
+70,crispy ramen snack,3,28.0,wheat flour,28 ,140,210 ,18 ,6 ,2 ,"wheat, soybean",0.0,taiwan,4.0
+71,veggie straws,3,24.0,potato starch,28 ,130 ,370 ,17 ,7 ,,milk,0.0,usa,4.2
+72,haagen-dazs vanilla bean ice cream,2,6.0,cream,129,350,65,29,23,5,milk and egg,0.0,usa,3.0
+73,canned tomatoes/herbs,4,9.0,tomatoes,127 ,25 ,220 ,6 ,0 ,1,none,0.0,usa,2.0
+74,oat milk,1,4.0,oatmilk,8 ,130 ,115 ,13 ,7 ,2 ,nuts,0.0,none,none
+75,orange sports drink,1,12.0,filtered water,591 ,130,270 ,32,0,0,none,0.0,usa,3.0
+76,roasted nut mix,4,14.0,cashews,30,170,90,10,14,5,"peanuts, other tree nuts",0.0,none,1.0
+77,frozen pineapple,2,1.0,organic pineapple chunks,139,70,0,0,0,1,pineapple ,0.0,costa rica,2.0
+78,organic tart cherry  (juice),1,2.0,filtered water,8 ,140,30 ,35 ,0 ,0 ,none,0.0,usa,3.0
+79,hint water,1,2.0,purified water,474,,,,,,none,0.0,usa,1.0
+80,frozen blueberries,2,1.0,organic blueberries,1 ,70,0 ,17 ,1 ,,none,0.0,texas,2.0
+81,cream cheese,2,4.0,pastuerized milk and cream ,31,80 ,130,3,7,2,milk,0.0,usa,2.0
+82,ice cream,2,27.0,organic pasteurized milk,97 ,210,65 ,22 ,12 ,5 ,milk,0.0,usa,3.0
+83,king's hawaiian buns,4,5.0,enriched flour,28,90 ,75,15,2,3,"egg, milk, soy, wheat",0.0,usa,2.0
+84,pink lemonade spindrift,1,5.0,carbonated water,355,10,0,2,0,0,none,0.0,us,2.0
+85,smoked norwegian salmon slices,2,29.0,atlantic salmon,341 ,120 ,690 ,4 ,7 ,11 ,none,0.0,norway,3.0
+86,cottage cheese,2,17.0,milk,113,90,420 ,4,2.5,12,milk,none,americaaa,2.0
+87,double egg yolk mooncake,3,22.0,lotus seed paste,175 ,750 ,120 ,103 ,35 ,8 ,"wheat, duck egg, chicken egg, soybean oil, peanut oil",0.0,taiwan,5.0
+88,whole milk yogurt,2,5.0,cuiltured pasteurized oragnic whole milk,1 ,140,75 ,18,5,5,milk ingrediants,0.0,usa,4.0
+89,protien bar,3,18.0,milk protein blend,55,200 ,120,19,8,20,"milk, soybeans",0.0,usa,4.0
+90,canned lentil soup,4,17.0,water,411,270,540,41,7,11,none,0.0,unknown,4.0
+91,bloks,3,16.0,tapioca syrup,30,100,50,24,0,0,caffeine,1.0,usa,4.0
+92,cookie dough,2,8.0,sugar enriched flour bleached,29,120,130,18,4.5,1,"wheat, eggs",0.0,usa,3.0
+93,flavored mineral water,1,2.0,carbonated mineral water,330 ,0 ,10 ,0 ,0 ,0 ,none,0.0,italy,1.0
+94,annies mac and cheese,4,9.0,organic wheat flour,1 ,270,460,48,4.5,9,"wheat,milk",none,us,none
+95,apple cider vinegar,2,2.0,organic apple cider vinegar,15 ,0 ,0 ,0 ,0 ,0 ,none,0.0,usa,1.0
+96,royal milk tea,1,7.0,water,265 ,120,35 ,21 ,2.5,2 ,none,0.0,japan,3.0
+97,coca cola,1,6.0,carbonated water,1 ,160,40 ,42,0,0,none,0.0,usa,5.0
+98,cream of chicken soup,4,22.0,chicken stock,120,70,410,9,2.5,2,"soy,milk?",none,usa,5.0
+99,beans,4,2.0,cannellini beans,130,120,10,18,0.5,6,none,0.0,egypt,2.0
+100,diet coke caff free,1,7.0,carbonated water,355 ,0,40 ,0 ,0 ,0 ,none,0.0,usa,3.0
+101,almond milk,1,5.0,organic almondmilk,240 ,50 ,170 ,8 ,2 ,1 ,almond,0.0,usa,2.0
+102,seaweed,3,3.0,seaweed,3,20,30,1,1.5,,none,0.0,usa,2.0
+103,doritos chips,3,31.0,corn,1 ,260 ,360 ,31 ,13 ,4 ,milk,1.0,usa,4.0
+104,peeled tomato (paste),2,4.0,san marzano whole peeled tomatoes,115,30,40,6,0,1,none,0.0,italy,2.0
+105,beef barley soup,4,29.0,water,242 ,110 ,680 ,10 ,2 ,6 ,soy ingredients ,1.0,usa,none
+106,fanta orange,1,13.0,carbonated water,1 ,160,55,44,0,0,none,0.0,usa,5.0
+107,mustard,2,6.0,water,5 ,0 ,55 ,0 ,0 ,0 ,none,1.0,usa,3.0
+108,sea salt roasted seaweed,3,3.0,seaweed*,5,30 ,40 ,1 ,2,1,none,0.0,usa,1.0
+109,kefir,1,6.0,milk,240,110,125,9,2,9,milk,0.0,usa,none
+110,protein shake,1,67.0,filtered water,330,240,270,30,7,16,milk,1.0,usa,5.0
+111,mango popsicles,2,5.0,mango,1 ,120 ,0 ,31 ,0 ,0,no?,none,usa,3.0
+112,vegetable classics progresso garden vegetable ,4,28.0,water,235,90,650,18,0,3,none,1.0,usa,2.0
+113,broth,2,3.0,filtered water,8 ,50,150 ,0 ,0 ,13 ,none,1.0,california,1.0
+114,vanilla ice cream,2,6.0,cream,129 ,320,75 ,26 ,21 ,6 ,"milk, egg",1.0,usa,3.5
+115,kombucha,1,8.0,gt's kombucha,16 ,50,10,12,0,0,none,1.0,"ca, usa",3.0
+116,none,2,7.0,sugar,100,552.1033,250,52,34,8.4,"milk, hazelnuts",0.0,switzerland,3.0
+117,kvass,1,12.0,biotic raw kvass,1 ,20,140 ,4 ,0 ,0 ,none,0.0,california,1.0
+118,health-ade kombucha,1,5.0,organic kombucha,1 ,70 ,0 ,16 ,0 ,0 ,none,0.0,usa,3.0
+119,zero sugar lemonade,1,10.0,filtered water,240,0,20,1,0,0,none,0.0,usa,2.0
+120,coconut water,1,3.0,coconut water,,60,50,15,0,0,none,0.0,usa,2.0
+121,frozen natto,2,28.0,fermented soy beans,154 ,290 ,800 ,22 ,14 ,23 ,"fish, weat, soybeans",0.0,japan,4.7
+122,cheddar cheese,2,4.0,cultured milk,1 ,110,180,1,9,6,milk,0.0,usa,2.0
+123,protein bar,3,14.0,organic rolled oats,1 ,250,780 ,258,36,60,"nuts, whef,soy,milk,sesame",0.0,clifornia,2.0
+124,organic ice cream,2,6.0,cream,2/3,270,35,22,19,4,"milk,",0.0,us,none
+125,key lime la croix sparkling water,1,2.0,carbonated water,355 ,0 ,0 ,0 ,0 ,0 ,none,0.0,doesn't say,1.0
+126,cheez-it crackers,3,8.0,enriched flour,28 ,140 ,210 ,16 ,7 ,3 ,"wheat, milk, soy",1.0,usa,4.0
+127,almond butter cups,3,7.0,organic dark chocolate,40 ,230 ,120 ,20 ,15 ,3 ,"almonds, may contain tree nuts, peanuts, milk, soy, wheat, sesame",0.0,usa,none
+128,canned tomatoes,4,5.0,organic tomatoes,120 ,25 ,220 ,5 ,0 ,1 ,none,0.0,usa,2.0
+129,salted butter,2,2.0,pasteurized cream,1 ,100 ,90 ,0 ,11 ,0 ,milk,0.0,usa,3.0
+130,honeyd corn flakes,4,45387.0,corn meal,1 ,160,140 ,36,0,3,"is made in a facility that uses tree nuts, peanuts, and soy",0.0,usa,4.0
+131,hong kong butter cookies,3,8.0,wheat flour,100 ,546 ,202 ,54 ,33 ,,"soy, eggs, milk, gluten",1.0,hong kong,4.0
+132,hummus,2,10.0,cooked organic chickpeas,30 ,80,120 ,6,5,2,sesame,0.0,usa,1.0
+133,cottage cheese,2,14.0,organic nonfat milk,113,90,420,4,2.5,14,milk,0.0,usa,1.0
+134,maple pecans glazed mix,3,11.0,pecans,42.5,230 ,180 ,22 ,15 ,3 ,"pecan, walnut",0.0,usa,2.0
+135,milk,1,4.0,milk,1 ,140,140 ,13 ,5 ,10 ,milk,0.0,usa,0.0
+136,organic mixed vegetables,2,4.0,"organic carrots, organic corn, organic peas, organic green beans",90,50,20 ,10 ,0.5,2 ,none,0.0,usa,3.0
+137,baby carrots,2,1.0,carrot,453.5,186 ,0 ,45 ,0 ,4.5,none,0.0,usa,1.0
+138,plantain chips,4,3.0,green planatains,28 ,150 ,125 ,18 ,8 ,1 ,none,0.0,ecuador,1.0
+139,salami,2,12.0,pork,1 ,100,340,2,7,7,milk,1.0,usa,4.0
+140,yogurt,2,14.0,grade a pasteurized whole milk,227 ,310 ,115 ,38 ,14 ,11,milk,0.0,usa,3.0
+141,box mac and cheese,3,9.0,wheat flour,71,270,560,48,4,9,"wheat, milk",0.0,usa,4.5
+142,canned wild pink salmon,4,2.0,wild pink salmon,85 ,90 ,200 ,0 ,2 ,18 ,fish,0.0,north pacific,2.0
+143,roasted chestnuts,3,1.0,organic roasted chestnut kernels,50 ,100 ,0 ,17 ,0.5,2 ,nuts,0.0,china,1.0
+144,fire roasted diced tomatoes,4,7.0,organic fire roasted tomatoes,120 ,25 ,190 ,5 ,0 ,,none,0.0,usa,2.0
+145,eggo mini pancakes,2,21.0,enriched wheat flour,110 ,270 ,560 ,44 ,8 ,6 ,"wheat, milk, soy, egg",1.0,usa,5.0
+146,bag of freeze dried strawberrys,3,1.0,freeze drired strawberries,1 ,120,5,30,0,1,none ,none,us,none
+147,none,3,8.0,wheat flour,31,150,115,23,6,2,"wheat, soy.",0.0,"lembeke, belgium",4.0
+148,granola bar,3,28.0,granola,24 ,100 ,35 ,18 ,3 ,1 ,"soy, milk, coconut, wheat",1.0,usa,4.0
+149,great northern beans,4,3.0,organic great northern beans,1/2,110,40 ,20 ,0.5,5 ,none,0.0,"clinton, michigan",2.0
+150,sparkling water,1,2.0,purified carbonated water,12 ,0 ,0 ,0 ,0 ,0 ,none,0.0,usa,2.0
+151,egg tarts,2,19.0,wheat flour,100,380,190 ,42 ,22,4,"wheat, soybean, milk",none,xi jin pings house,5.0
+152,milk,1,5.0,organic milk,240 ,140 ,140 ,13 ,5 ,10 ,milk,0.0,usa,1.0
+153,strawberries & crème pancake & waffle mix,4,13.0,unbleached enriched flour,65 ,370 ,600 ,62 ,11 ,7 ,"milk, soy, wheat",1.0,usa,5.0
+154,pop corners,3,4.0,yellow corn,28.3,130,110,22,4,2,no,0.0,usa,4.0
+155,peach sparkling water,1,8.0,carbonated water,330 ,0 ,15 ,5 ,0 ,0 ,none,0.0,china,2.0
+156,banana,3,1.0,banana,136 ,120 ,0 ,31,0,1,none,0.0,guatemala,0.0
+157,apple chips,3,2.0,apples,1 ,60 ,0,14,0,0,none,0.0,usa,1.0
+158,garbanzo chickpeas,4,3.0,organic prepared garbanzos (chickpeas),130 ,120 ,85 ,20 ,2 ,6 ,none,0.0,usa,2.0
+159,apple blossoms ,2,15.0,apples,114 ,340,300 ,43 ,17 ,4 ,"milk, egg, wheat ",0.0,canada,5.0
+160,stella rosa wine,1,6.0,wine,150 ,100,0 ,14 ,0 ,0 ,sulfites,0.0,italy,4.0
+161,ketchup,2,7.0,organic tomato concentrate from red pipe organic tomatoes,17,20,190,5,0,0,cellery,0.0,usa,3.0
+162,sprite,1,6.0,carbonated water,12 ,130 ,70 ,39 ,0 ,0 ,none,0.0,usa,3.7
+163,yogurt,2,6.0,cultured pastureized milk,1 ,120,70 ,26 ,5 ,6 ,dairy,none,china,3.0
+164,dried prunes,4,1.0,organic pitted prunes (dried plums),40,100,0 ,24 ,0 ,1 ,none,0.0,argentina,1.0
+165,cheddar cheese,2,3.0,milk,1 ,90,160,,7,5,milk,none,us,none
+166,none,3,8.0,enriched wheat flour,18,80,150,11,3.5,2,wheat,0.0,usa,4.0
+167,pringles (cheddar cheese),3,9.0,dried potatoes,40 ,210,260 ,22 ,13 ,2 ,"milk, wheat",0.0,usa,3.0
+168,matcha ice cream,2,6.0,cream,0.67,310,65,25,21,5,milk and egg,1.0,usa,4.0
+169,cheese sticks,2,5.0,pasteurized milk,28,90,190 ,1 ,6 ,7 ,"milk, wheat, soy, eggs",1.0,usa,4.0
+170,strawberry granola bites,3,14.0,pure gluten free oats,24,100,5,17,3,2,none,0.0,canada,4.0
+171,greek yogurt,2,2.0,grade a pasturized skim milk and cream,170 ,160,60 ,5 ,9 ,15 ,milk,0.0,usa,1.0
+172,clover unsalted stick butter,2,3.0,pasteurized cream,1 ,100 ,0 ,0 ,11 ,0 ,milk,0.0,usa,1.5
+173,shredded parmesan cheese,2,3.0,parmesan cheese,1/4,110,350,1,8,,milk,0.0,not stated,2.0
+174,cheese,2,3.0,cultured milk,21 ,90 ,150 ,1 ,7 ,5 ,milk,0.0,usa,1.0
+175,frozen peas,2,1.0,peas,2/3,70,0,13,0,5,none,0.0,usa,2.0
+176,vitamin water (lemonade flavor),1,16.0,reverse osmosis water,1 ,0,0,1,0,0,none,0.0,usa,1.0
+177,dried pineapple,4,1.0,pineapple,56 ,188 ,0 ,43 ,0.2,1.7,none,0.0,usa,1.0
+178,zbar,3,16.0,rolled oats,36,140,105,24,5,2,"soy, tree nuts",0.0,usa,4.0
+179,lay's barbecue flavoured chips,3,23.0,potatoes,28,150,200,16,9,2,soybeans,1.0,usa,4.0
+180,"milk choclate, caramel, pretzels",3,24.0,pretzel (unbleached enriched wheat flour),37,160,300,26,5,2,"milk, soy, and wheat",0.0,"minneapolis, mn",4.0
+181,izze,1,8.0,sparkling water,248 ,70,10 ,16 ,0 ,0 ,none,0.0,usa,none
+182,thai shrimp gyoza,2,19.0,shrimp,85 ,160,230 ,24 ,4.5,6 ,"shrimp, soy, wheat, sesame",1.0,thailand,none
+183,dried mango,4,1.0,dried mango,38,130,0,32,0,,mango,0.0,mexico,2.0
+184,organic valley cream cheese,2,6.0,organic pasturized milk,2 ,110 ,100 ,2 ,10 ,2 ,none,0.0,none,none
+185,amazon fresh creamy peanut butter,2,4.0,peanuts,2 ,180 ,140 ,8,15,7,peanuts,1.0,usa,3.0
+186,trail mix,4,5.0,cashews,30 ,120 ,30 ,14,7,8,tree nuts,0.0,usa,1.0
+187,avocado ice cream,2,10.0,pasteurized milk & cream,96 ,210 ,100 ,21 ,13 ,4 ,milk,0.0,usa,4.0
+188,dried sweetened cranberries,4,3.0,cranberries,1/3,140 ,0 ,33 ,0 ,0 ,cranberries and sunflower oil,0.0,usa,2.0
+189,simply raspberry lemonade,1,5.0,pure filtered water,8 ,110 ,15 ,28 ,0 ,0 ,none,0.0,usa,1.0
+190,tillamook vanilla bean ice cream,2,10.0,cream,95 ,210 ,55 ,22 ,13 ,4 ,"eggs, milk",0.0,usa,4.0
+191,konjac shuang (red),3,30.0,water,36,40,470,4,2.5,,"soybean, wheat",1.0,china,4.0
+192,pineapple juice,1,1.0,pineapple juice,250 ,110,35 ,27 ,0 ,0 ,none,0.0,usa,0.0
+193,graham crackers,3,12.0,organic whole wheat flour,31 ,130,130 ,24,3,2,"wheat, milk, soy",0.0,usa,4.0
+194,milk,2,1.0,pasteurized organic milk,240,160,75,11,9,9,milk,0.0,usa,2.0
+195,wasabi beans,3,18.0,green peas,30,130,200,19,4,5,wheat,0.0,japan,4.0
+196,melona popsicle (mango),2,14.0,water,80,130,40,21,4.5,1,milk,0.0,korea,1.0
+197,rice vinegar ,4,1.0,rice vinegar diluted with water to 4.3% acidity,15,0,0,0,0,0,none,0.0,usa,1.0
+198,mini chocolate croissant,3,17.0,enriched wheat flour,45,180,160 ,21,9,3,"wheat, eggs and milk",none,where my goat macron lives,5.0
+199,mtn dew,1,19.0,carbonated water,591,10,85,,0,0,none,0.0,usa,3.0
+200,honest lemonade blend,1,10.0,water,,35,15 ,8,0 ,0 ,none,none,americaaa,3.0
+201,goldfish bag,3,10.0,cheddar,28,130,240,19,4.5,3,"wheat, milk",1.0,usa,none
+202,beans,4,3.0,organic prepared dark red kidney beans,1/2,110 ,85 ,20 ,0 ,7 ,none,0.0,usa,2.1
+203,olives,2,5.0,organic castelvetrano whole olives,12 ,17,260 ,0 ,2 ,0 ,none,0.0,italy,3.0
+204,dried mango,4,1.0,organic dried mango,1/8,110,0 ,26 ,0 ,0 ,none,none,usa,2.0
+205,tomato paste,2,2.0,organic tomato paste,33 ,30 ,25 ,7 ,0 ,,none,0.0,idk,2.0
+206,tomato,2,1.0,tomato,1 ,33,9,7,0,2,none,0.0,usa,1.0
+207,milk,1,3.0,organic nonfat milk,1 ,90 ,130 ,12 ,0 ,9 ,milk,0.0,usa,0.0
+208,cranberry juice,1,4.0,filtered water,8 ,110 ,30 ,27 ,0 ,0 ,none,0.0,usa,1.0
+209,izze,1,5.0,sparkling water,8.4,70,10,16,0,0,none,0.0,usa,4.0
+210,veggie crisps,3,7.0,rice flour,1 ,130 ,140 ,19 ,5 ,3 ,none,0.0,none,none
+211,nature valley crunchy granola bars,3,10.0,whole grain oats,42 ,190 ,140 ,29 ,7 ,3 ,"soy, peanut, almond, pecan",1.0,usa,4.0
+212,kimchi(napa),2,15.0,napa cabbage,28 ,10 ,180 ,2 ,0 ,,none,0.0,usa,2.0
+213,canned corn,4,3.0,corn,125,60,320,13,1,1,none,0.0,usa,2.0
+214,b&j ice cream,2,17.0,cream,141,370,150,37,22,6,"egg, milk, soy, wheat",1.0,usa,4.0
+215,ice cream,2,6.0,raspberries,2/3,150,0 ,38,0.5,,none,0.0,"nj, usa",2.0
+216,cinnamon apple sauce,3,4.0,organic apple,90 ,70 ,0 ,16 ,0 ,0 ,none,0.0,usa,1.0
+217,dried mango,4,5.0,mango,35,120,25,29,0,,none,0.0,thailand,3.0
+218,belvita,3,16.0,whole grain blend,50,230,220,35,8,4,wheat and soy,none,usa,none
+219,dragon fruit smoothie pack,2,1.0,organic dragon fruit puree,100 ,65,4 ,14 ,0 ,2 ,none,0.0,usa,1.0
+220,nesquick,1,8.0,cacoa,13,150,135,24,2.5,9,milk and wheat,1.0,switzerland,4.0
+221,red & yellow bell pepper crisps,4,3.0,red bell peppers,40 ,90,410 ,13 ,1.5,4 ,none,0.0,turkey,1.0
+222,grass jelly,4,3.0,chinese jelly herb,110 ,8 ,205 ,2 ,0 ,0 ,none,0.0,taiwan,2.0
+223,la croix (fizzy water),1,1.0,water,354.88,0 ,0 ,0 ,0 ,0 ,none,0.0,usa,2.0
+224,less sodium soy sauce,2,6.0,water,15,10,590,1,0,1,none,0.0,brewed in the usa,5.0
+225,roasted seaweed,4,14.0,organic seaweed,5,30,40,1,2,1,"soy, seaseme",1.0,usa,4.0
+226,green tea with pomelo flavor,1,12.0,water,12 ,120,30 ,29 ,0 ,0 ,none,0.0,china,5.0
+227,greek yogurt,2,6.0,organic pasteurized grade a nonfat milk,170,100,60,7,0,18,milk,0.0,usa,1.0
+228,soy sauce ,2,4.0,soybeans,1 ,15,850 ,2 ,0 ,2 ,soy,none,japan,2.0
+229,san marzano tomatoes,4,2.0,whole peeled tomatoes,130 ,45 ,50 ,7 ,0 ,2 ,none,0.0,italy,1.0
+230,roasted seaweed,4,4.0,seaweed,1/5,20,40 ,0 ,1.5,1 ,sesame,0.0,korea,1.0
+231,sugar (granulated),4,1.0,sugar,8 ,30 ,0 ,8 ,0 ,0 ,none,none,usa,1.0
+232,kettle jalapeno chips,3,13.0,potatoes,28 ,150,170 ,15,0,2,none,0.0,usa,1.0
+233,none,1,27.0,water,330,160,230,9,4.5,25,milk,0.0,usa,5.0
+234,frozen ravioli,2,33.0,wheat flour,94 ,250 ,620 ,31 ,10 ,9 ,"milk, egg, wheat, soy",none,usa,2.0
+235,paradise green dried mango ,4,none,mangoes,40 ,140,60 ,33 ,0 ,,none,0.0,thailand,2.0
+236,parmesan cheese,2,3.0,cultured milk,28,110,230 ,1,8,9,milk,0.0,usa,none
+237,maple syrup,2,1.0,organic maple syrup,30,110,0,27,0,0,none,0.0,usa and canada,0.0
+238,dad's old fashioned rood beer,1,5.0,carbonated water,355 ,170,45 ,44 ,0 ,0 ,none,0.0,usa,4.0
+239,fruit bar,3,9.0,apple puree concentrate,18 ,60 ,0 ,15 ,0 ,0 ,none,0.0,usa,2.0
+240,dino nuggets,2,17.0,boneless skinless chicken ,76 ,180 ,260 ,13 ,10 ,9 ,wheat,0.0,canada,5.0
+241,canned pumpkin,4,1.0,pumpkin,120 ,40 ,5 ,10 ,0 ,1 ,none,1.0,usa,2.0
+242,frozen strawberries,2,1.0,whole strawberries,10 ,50,0,13,0,1,none,0.0,mexico,3.0
+243,mixed frozen fruit,2,4.0,mangos,1 1,70 ,0 ,17 ,0 ,1 ,none,0.0,usa,1.5
+244,strawberry icecream,2,5.0,cream,133,310,65,29,19,5,"milk, eggs",0.0,usa,2.0
+245,granola bar,3,9.0,whole grain oats,2 ,190,140,29,7,3,"soy, peanuts, almond, pecans",1.0,usa,4.0
+246,instant boba kit,2,8.0,water,65 ,110 ,5 ,28 ,0 ,0 ,none,1.0,taiwan,5.0
+247,crab meat,4,3.0,lump white crab meat,120,80,670,,1,17,shellfish,0.0,indonesia,2.0
+248,casa sanchez thin and light delgados tortilla chips,3,3.0,stone ground corn flour,10,130 ,105 ,19,6,2,corn,0.0,usa,4.0
+249,morning round ,2,28.0,unbleached inriched flour.,60,160,190,32,1,5,"wheat,made in peanut factory",none,canada,4.0
+250,100% whole grain wheat thins,3,10.0,whole grain wheat flour,31 ,140 ,200 ,22 ,5 ,2 ,wheat,1.0,usa,4.0
+251,japanese barbecue sauce,2,11.0,soy sauce,19 ,35,520 ,8 ,0 ,0 ,"wheat, soy, sesame",0.0,usa,3.0
+252,peanut butter & jelly sandwich,2,25.0,enriched unbleached flour,1 ,320 ,290 ,36 ,17 ,10 ,"peanut, wheat, hazelnut, milk",1.0,usa,5.0
+253,tomato sauce,4,4.0,tomato puree,63,25,220 ,6 ,0 ,1 ,none,none,americaaa,none
+254,popcorn,3,3.0,popcorn,3.75,150,75,15,10,2,none,0.0,usa,1.0
+255,beans,4,2.0,organic cannellini beans,130 ,120,10 ,18 ,0.5,6 ,none,0.0,usa,2.0
+256,salad mix,2,6.0,spinach,100 ,80 ,0,0,,13 ,none,0.0,usa,2.0
+257,nutella,3,7.0,sugar,37 ,200 ,15 ,22 ,11 ,2 ,"tree nuts, milk, soy",0.0,canada,4.0
+258,coconut milk,4,5.0,coconut,1/3,150,20,5,14,1,tree nut(coconut),0.0,thailand,3.0
+259,spinach egg white fritata,2,16.0,vegetable blend,57,70,190,5,4,5,"egg, milk",0.0,us,3.0
+260,won ton wrappers,2,7.0,enriched wheat flour,23 ,70 ,55 ,13 ,0 ,2 ,"wheat, eggs",0.0,usa,none
+261,coffee creamer,2,11.0,water,15 ,35 ,5 ,5 ,1.5,0 ,milk derivative,1.0,usa or switzerland,3.0
+262,california pizza kitchen - sicilian recipe,2,26.0,enriched wheat flour,147 ,350 ,980 ,31 ,17 ,18 ,"wheat, milk",1.0,usa,5.0
+263,milk chocolate bar,3,6.0,sugar,50,270,30 ,29,16,3,"milk, soy",none,belgium,5.0
+264,soybean paste stew base,2,33.0,soybean paste,1 1,40,970,,1.5,3,"soybean, wheat, fish (anchovy)",1.0,china,4.0
+265,gelato,2,16.0,milk,131,290,65,37,14,5,"milk, cream, milk fat",0.0,usa,3.0
+266,tortilla chips,3,6.0,corn masa flour,30 ,150 ,210 ,19 ,8 ,2 ,soy,1.0,usa,2.0
+267,potato chips,3,3.0,potatoes,1,130,125,18,6,2,none,0.0,"ma, usa",4.0
+268,mini chocolate chip cookies,3,9.0,unbleached enriched flour,57,270,240 ,37,13,3,"milk, egg, soy, wheat",none,usa,4.0
+269,milk (lactose free),2,5.0,milk,240,130,120,13,5,8,milk,0.0,usa,1.0
+270,ritz crackers,3,10.0,unbleached enriched flour,5 ,80,130,10,4.5,,"wheat, soy",1.0,mexico,4.0
+271,pinto beans,4,5.0,pinto beans,0.50,110,420,20,0,7,none,0.0,usa,2.0
+272,san pellegrino sparkling natural mineral water,1,1.0,carbonated mineral water,8 ,0 ,10 ,0 ,0 ,0 ,none,0.0,italy,1.0
+273,cheez it,3,3.0,enriched wheat flour,1 ,210,320 ,24 ,11 ,4 ,"wheat, milk, soy",1.0,usa,4.0
+274,chips,3,3.0,potato,28 ,140,100 ,17 ,7,2,none,0.0,usa,2.0
+275,toast and peanut butter sandwich crackers,3,22.0,peanut butter,39,190 ,300,24,9,3,"wheat, soy, peanut, milk",1.0,usa,3.0
+276,steamed pork & ginger soup dumplings,2,18.0,pork filling,170 ,270 ,550 ,30 ,11 ,14 ,"soy, sesame, wheat",0.0,usa,5.0
+277,tamari,1,4.0,water,15 ,15 ,1 ,1 ,0 ,2 ,soy,0.0,usa,2.0
+278,oats and honey granola,3,11.0,organic rolled oats,65 ,290,95 ,46 ,9 ,6 ,"tree nuts, wheat, soy, seasame",0.0,usa,1.0
+279,kettle brand sea salt and vinegar chips,3,5.0,potatoes,1 ,140 ,180 ,15 ,9 ,2 ,none,0.0,usa,2.0
+280,organic pinto beans,4,3.0,organic pinto beans,125 ,100 ,130 ,19 ,0 ,7 ,none,0.0,usa,2.0
+281,lays classic potato chips,3,3.0,potatoes,1 ,240,210,23,15,3,none,0.0,usa,4.0
+282,heinz ketchup,2,8.0,tomato concentrate,17,20,180,5,0,0,none,none,usa,3.0
+283,seaweed,3,5.0,seaweed,3.4,29 ,40 ,0,1.5,1,sesame,0.0,korea,1.0
+284,breaded chicken strips,2,16.0,chicken,112,120,380,4,5,21,"milk, egg",0.0,unknown but distributed in us,4.0
+285,protein bar,3,10.0,peanut butter,71 ,340 ,50 ,27 ,19 ,17 ,"peanuts, milk, egg, sesame",0.0,usa,4.0
+286,sweet rice balls,2,3.0,sweet rice,99 ,250 ,5 ,51 ,3 ,3 ,none,0.0,usa,2.0
+287,salad dressing,2,14.0,rice vinegar,28 ,35 ,350 ,5 ,1.5,1 ,"soy, sesame",0.0,usa,3.0
+288,apple sauce,1,3.0,organic apple,90 ,70 ,0 ,16 ,0 ,0 ,none,0.0,usa,2.0
+289,progresso chicken noodle soup,4,none,chicken broth,1 ,100 ,660 ,13 ,2.5,7 ,"egg, soy, wheat ingredients",0.0,usa,3.0
+290,raisins,4,1.0,california organic raisins,1/4,120,10,31,0,1,none,0.0,usa,1.0
+291,mixed crackers,3,23.0,glutinous rice flour,30 ,130 ,150 ,23 ,3 ,3 ,"soybean, wheat, sesame seeds",1.0,thailand,4.0
+292,olives,4,4.0,olives,3 ,15,120,1,1.5,0,none,0.0,usa,2.0
+293,dried mango,4,1.0,mango,40 ,130,0 ,30 ,0 ,2 ,none,0.0,mexico/peru,0.0
+294,supplant dark chocolate,3,6.0,chocolate liquor,30 ,150 ,0 ,14 ,13 ,2 ,"made in proximity with peanuts, tree nuts, milk, soy",0.0,usa,0.0
+295,granola,3,7.0,organic oats,1 ,140,0 ,13 ,9 ,4 ,"nuts, wheat",0.0,usa,4.0
+296,dried peach,4,2.0,peaches,30,114,2,25,0,2,none,0.0,usa,2.0
+297,water,1,1.0,water,500 ,0 ,0 ,0,0,0,none,0.0,usa,0.0
+298,sliced pepper jack cheese,2,6.0,pasterized cultured milk,28 ,110,180 ,0.5,9 ,6 ,milk,0.0,usa,2.0
+299,gatorade,1,12.0,water,,60,490 ,14,0,0,none,0.0,usa,2.0
+300,dark chocolate raisins,4,8.0,dark chocolate,30,120,10 ,20 ,6 ,1 ,"milk, soy",0.0,usa,4.0
+301,chobani zero sugar - peaches & cream,2,8.0,nonfat greek yogurt,207 ,50 ,70 ,6 ,0 ,10 ,milk,0.0,usa,3.0
+302,blueberry yogurt,2,12.0,grade a pasteurized whole milk,113 ,140 ,60 ,17 ,6 ,5 ,dairy,1.0,usa,2.0
+303,dried pasta,4,9.0,wheat,56 ,200 ,15 ,41 ,1 ,8 ,wheat,0.0,usa,4.0
+304,smoothie pack,2,4.0,mango,40,110 ,0,0,3,5,none,0.0,usa,3.0
+305,taiwanese beef noodle soup (frozen),2,16.0,beef shank,319 ,360,1820 ,33 ,4 ,43 ,"wheat, soy",none,usa,5.0
+306,pog juice,1,9.0,water,340 ,150,15 ,38 ,0 ,0 ,juice,0.0,usa,1.0
+307,pepperoni pizza,2,43.0,cheese,1 ,310,740 ,25 ,18 ,13 ,"milk, wheat, soy",none,italy or usa (doesn't specify),5.0
+308,kirkland seaweed,3,4.0,organic seaweed,3.4,20,40 ,0 ,1.5,1 ,sesame,0.0,korea,none
+309,soy milk,2,10.0,organic soybase,1 ,80 ,110 ,3 ,4 ,8 ,soy,0.0,usa,3.0
+310,la croix,1,1.0,"carbonated water, naturally essenced",1 ,0 ,0,0,0,0,none,0.0,usa,1.0
+311,tonkotsu ramen,4,83.0,potato starch,101 ,450,1550 ,64 ,18 ,8 ,"wheat, sesame, soy, anchovy, milk, tuna",1.0,usa,5.0
+312,popcorn,3,3.0,popcorn,3 3,150,75,15,10,2,none,0.0,usa,4.0
+313,gatorade,1,12.0,citric acid,12,0,160,,0,0,none,1.0,usa,3.0
+314,van leeuwen honeycomb ice cream,2,9.0,cream,108,290,350,81,43,11,"eggs, milk, tree nuts (coconut)",0.0,"brooklyn, ny",none
+315,lays chips,3,3.0,potatoes,28,160,170,15,10,2,none,0.0,usa,5.0
+316,milk,2,2.0,organic milk,240,150,105 ,12 ,8 ,8 ,milk,0.0,usa,1.0
+317,pumpkin seeds,3,1.0,pumpkin seeds in shell,30,170,10,,15,7,none,1.0,russia,1.0
+318,coconut milk,4,4.0,coconut extract,80 ,150 ,26 ,2 ,15 ,,none,0.0,thailand,2.0
+319,halo top cookie dough ice cream,2,26.0,ultrafiltered skim milk,2/3,12,105 ,25 ,3 ,6 ,"milk, soy, wheat",1.0,none,2.5
+320,raw shrimp,2,2.0,raw shrimp,113 ,80,220 ,0,0.5,19,shrimp,0.0,usa,1.0
+321,cochon volant bbq sauce,2,21.0,distilled vinegar,39 ,50 ,125 ,10 ,1 ,1 ,none,0.0,usa,2.0
+322,cheese crackers,3,18.0,flour,28 ,140 ,260 ,17 ,7 ,3 ,"milk, wheat, soy",0.0,usa,4.0
+323,chi sparkling water (lychee fizzy),1,8.0,carbonated water,1 ,0,15 ,5 ,0 ,0 ,none,0.0,china,3.0
+324,ice cream,2,6.0,pasteurized organic cream,118,270,25,28,16,4,milk,0.0,usa,3.0
+325,daisy brand sour cream,2,1.0,cultured cream,30 ,60,15 ,1,5,1,milk,0.0,usa,2.0
+326,sardines,4,3.0,sardines,87 ,200 ,300 ,0 ,14 ,18 ,none,0.0,usa,2.0
+327,apricot preserve,4,4.0,organic apricots,20,50,0,13,0,0,none,0.0,canada,2.0
+328,ice cream,2,29.0,cream,2/3,380,110,36,24,6,"milk, eggs, soy, wheat",1.0,usa,3.0
+329,makhana roasted fox nuts,3,15.0,fox nuts,30 ,160,220 ,19 ,8 ,3 ,none,0.0,india,3.0
+330,canned yellowfin tuna,4,3.0,yellowfin tuna,113 ,230,380 ,0 ,2.5,29 ,fish,0.0,usa,3.0
+331,golden oolong tea,1,3.0,purified water,315 ,0 ,35 ,0 ,0 ,0 ,none,none,taiwan,2.0
+332,freezer burrito,2,36.0,water (or like real ingredient enriched wheat flour),142 ,220,440 ,25 ,10 ,12 ,"wheat, soy, coconut",0.0,usa,5.0
+333,ice cream,2,5.0,cream,130 ,330 ,180 ,73 ,55 ,16 ,"milk, egg ingredients",0.0,france,3.0
+334,chocolate peanut butter ice cream,2,12.0,cream,95 ,250 ,100 ,23 ,16 ,5 ,"egg, milk, peanut",0.0,usa,3.0
+335,milk,2,2.0,organic grade a milk,240 ,160,130 ,13 ,9 ,9 ,none,0.0,usa,1.0
+336,tortilla chips,3,4.0,organic stone ground white corn,28,140,85,16,8,1,none,0.0,usa,4.0
+337,cannellini beans,4,3.0,organic prepared cannellini beans,130 ,100,110 ,19 ,0,6,none,0.0,usa,2.0
+338,buttermilk brread,2,20.0,enriched wheat flour,38 ,100,150 ,19,0.5,3,"wheat,soy,milk",1.0,usa,1.0
+339,kewpie mayonaise,2,11.0,soybean oil,15,110,105,0,11,0,eggs,1.0,usa,2.0
+340,simply lemonade,1,4.0,water,8 ,120 ,15 ,30 ,0 ,0,non?,none,usa,1.0
+341,apple,2,1.0,apple,182 ,95 ,2 ,25 ,0.3,0.5,none,0.0,usa,0.0
+342,ketchup,2,6.0,organic tomato purée,17 ,20 ,160 ,4 ,0 ,0 ,none,0.0,usa,3.0
+343,ben & jerry's phish food ice cream,2,19.0,cream,143 ,390 ,105 ,52 ,18 ,5 ,"eggs, milk, soy",0.0,usa,4.0
+344,whole milk yogurt,2,3.0,pastuerized organic whole milk,17,120,85 ,10 ,4.5,9 ,none,0.0,usa,none
+345,chocolate chip cookie dough,2,7.0,enriched flour bleached,38,170,135 ,24,8,1,"wheat,egg,soy; may contain peaanut, macadaamia and milk ingredients",1.0,usa,4.0
+346,cholula,2,10.0,water,1,0,110,0,0,0,none,1.0,mexico,3.0
+347,takis (fuego),3,20.0,corn flour,28 ,140 ,420 ,16 ,8 ,2 ,"soy, milk, egg, wheat, peanuts",1.0,mexico,5.0
+348,salt and vinegar chip,3,5.0,potatos,28,140,180,15,9,2,none,0.0,usa,4.0
+349,vanilla ice cream,2,11.0,milk,89 ,200 ,40 ,21 ,12 ,3 ,"milk, soy",0.0,usa,2.0
+350,chobani yogurt,2,10.0,cultured reduced fat milk,150 ,120 ,55 ,10 ,3 ,12 ,milk,0.0,usa,3.9
+351,canned pink salmon,4,2.0,pink salmon,85 ,80 ,240 ,0 ,1.5,17 ,none,0.0,usa,1.0
+352,whole milk,1,2.0,organic milk,1 ,160,125,12,9,8,none,0.0,usa,1.0
+353,frozen pizza dough,2,none,flour blend,57,170,360,30,4,1,wheat,0.0,usa,3.0
+354,dried spaghetti,4,1.0,organic durum wheat semolina,56 ,210 ,0 ,43 ,1 ,6 ,none,0.0,italy,2.0
+355,graham crackers,3,12.0,enriched wheat flour,31 ,130 ,120 ,24 ,3.5,2 ,"soy, wheat",1.0,canada,4.0
+356,popsicles,2,16.0,water,148,110,0 ,28 ,0 ,0 ,none,0.0,italy,5.0
+357,instant rice,4,5.0,water (or real ingredient is jasmine rice),125 ,220,200 ,43 ,2.5,4 ,none?,0.0,usa,2.0
+358,thin-sliced organic bread,2,36.0,organic whole weat,1 ,60,105,14,1,3,wheat,0.0,usa,3.0
+359,sriracha sauce,2,9.0,chili,1 ,0,70 ,,0,0,none,0.0,usa,none
+360,justin's honey peanut butter,4,6.0,dry roasted peanuts,32,210 ,90,6,17,7,peanuts,0.0,usa,2.0
+361,organic unsalted butter,2,2.0,pasteurized organic sweet cream (milk),14,100 ,0 ,0 ,11 ,0 ,milk,0.0,usa,1.0
+362,sockeye salmon,2,1.0,sockeye salmon,168,220,85,0,8,38,none,0.0,usa,1.0
+363,lychee coconut jelly,3,10.0,water,100,100,71 ,25 ,0 ,0 ,none,0.0,taiwan,5.0
+364,cauliflower puffs,3,17.0,corn meal,28,140,180 ,16 ,7 ,2 ,milk,0.0,usa,4.0
+365,dried mango,4,6.0,mango,500,372,390,438,6.5,6.5,mango,0.0,china,4.0
+366,pocky,3,14.0,wheat flour,15 ,150,55,20,6,3,"wheat, milk, soy",1.0,japan,4.0
+367,fire grilled pork jerky,3,12.0,pork,28 ,90 ,290 ,10 ,2 ,7 ,"soy, sesame",0.0,usa,2.0
+368,spicy black beans,4,13.0,organic prepared black beans,130,120,270,21,1,7,none,0.0,us,2.0
+369,annie's canned pasta(basically spaghetti o's,4,11.0,water,242 ,130 ,660 ,28 ,0.5,4 ,"wheat, milk",0.0,usa,2.0
+370,dried squid,4,2.0,squid,55,150,520,,1.5,34,squid,0.0,vietnam,1.0
+371,sparkling strawberry juice,1,5.0,strawberry juice,1 ,60,0,16,0,0,none,0.0,vietnam,3.0
+372,tru fru (chocolate covered strawberries),2,6.0,strawberries,1 ,90 ,15 ,10 ,5 ,1 ,milk and soy,0.0,none,none
+373,frozen mac n cheese,2,27.0,enriched penne reggate,20 ,460,1620 ,102,60,53,"milk, wheat",1.0,new york,4.0
+374,schär gluten free bread,2,17.0,"sourdough (rice flour, water)",57 ,130,180 ,28 ,2 ,2 ,sesame,0.0,usa,4.0
+375,diet pepsi,1,11.0,carbonated water,12 ,0 ,35 ,0 ,0 ,0 ,none,0.0,usa,3.0
+376,marinara,2,8.0,italian whole peeled tomotatoes,1.5,100,2100 ,30,36,10,none,0.0,new jersey,1.0
+377,dried apricots,4,1.0,organic dried apricots ,40 ,130 ,0 ,31 ,0 ,1 ,none,0.0,turkey,1.0
+378,alec's triple chocolate blackout cookie ice ream,2,32.0,cream,122 ,310,330 ,76 ,48 ,11 ,"milk, egg, coconut",0.0,usa,3.0
+379,none,2,4.0,organic reduced fat milk,240,140,150,15,5,10,milk,0.0,california,0.0
+380,spam,4,9.0,pork with ham,56,180,570,1,16,7,none,0.0,usa,4.0
+381,whole milk,1,2.0,organic milk,240 ,160 ,130 ,13 ,9 ,9 ,milk,0.0,usa,none
+382,pancake mix,4,9.0,flour,1/3,150 ,0 ,20 ,2 ,3 ,"milk, wheat, eggs, soy, tree nuts",1.0,usa,none
+383,roasted sunflower seeds (caramel flavor),3,6.0,sunflower seeds,30 ,190 ,220 ,6 ,15 ,7 ,sunflower seeds,none,thailand,3.0
+384,potato chips (vinegar),3,5.0,potatoes,1 ,140,180 ,15 ,9 ,2 ,nut oil,0.0,usa,4.0
+385,cheese ravioli,2,19.0,organic ricotta cheese,1 ,260,510,31,11,11,"egg, milk, wheat",0.0,usa,3.0
+386,oragnic whole milk,2,1.0,pasteurized oragnic milk,240 ,160,75 ,11 ,9 ,9 ,milk,0.0,usa,0.0
+387,maria's canned artichoke hearts,4,5.0,artichoke hearts,40,10,150,2,0,,none,1.0,peru,3.0
+388,raspberry lemonade,1,5.0,filtered water,240 ,110 ,15 ,27 ,0 ,0 ,none,0.0,usa,1.0
+389,miss vickies chips,3,3.0,potatoes,38.9,210,125 ,23 ,12 ,3 ,none,0.0,usa,1.0
+390,vitamin water (zero sugar),1,16.0,reverse osmosis water,591 ,0 ,0 ,0 ,0 ,0 ,none,1.0,georgia,3.0
+391,pretzel crackers,3,6.0,enriched wheat flour,28,110,270,24,0,2,wheat,1.0,usa,1.0
+392,maple syrup,2,1.0,maple syrup,30 ,110,0,27,0,0,none,0.0,canada,0.0
+393,chi sparkling water,1,9.0,carbonated water,330,0,15,5,0,0,none,0.0,china,3.0
+394,spam,4,6.0,pork with ham,56,180,770,1,16,7,none,0.0,"austin, mn",none
+395,ice cream,2,10.0,pasteurized organic cream and organic nonfat milk,120,330,30,28,23,4,"milk, soy",0.0,usa,2.0
+396, yogurt,2,1.0,yogurt,125,140,60,11,4.5,13,yogurt,0.0,usa,1.0
+397,taro boba ice cream,2,14.0,taro cube paste brix add,80 ,143 ,31 ,24 ,5 ,1 ,"milk, egg, soybean, gluten-containing grain products",1.0,taiwan,4.0
+398,corn,4,2.0,corn,125 ,60 ,10 ,0,1,1,none,0.0,china,2.0
+399,milk,1,4.0,organic milk,250 ,140 ,140 ,13 ,5 ,10 ,none,0.0,california,1.5
+400,nature valley oats 'n honey granola bars,3,13.0,whole grain oats,42,190 ,140 ,29 ,7 ,3 ,"peanuts, almonds, and pecan",1.0,usa,4.0
+401,kirkland shredded mexican-style blend cheese,2,21.0,monterey jack cheese,28 ,110 ,170 ,1 ,8 ,6 ,milk,0.0,usa,5.0
+402,seaweed,3,5.0,organic seaweed,1/5,20 ,40 ,0 ,1.5,1 ,sesame,0.0,korea,1.0
+403,spindrift,1,3.0,carbonated water,355 ,5,0 ,1 ,0 ,0 ,none,0.0,usa,1.0
+404,hint sparkling water,1,2.0,purified water,474 ,0 ,0 ,0 ,0 ,0 ,none,0.0,usa,1.0
+405,spam 25% less sodium,4,6.0,pork with ham mechanically,56,180 ,570,1,16,7,pork/chicken,0.0,usa,4.0
+406,ground beef,2,1.0,beef,112 ,150 ,65 ,0,4.5,24 ,none,0.0,usa,2.0
+407,gogo squirts,3,4.0,apple,90,70,0,16,0,0,apple,0.0,usa,2.0
+408,dried fruit,3,3.0,dried pears,40 ,,0 ,33 ,0 ,1 ,none,0.0,"usa, peru",1.5
+409,none,3,10.0,unbleached enriched flour,16,80,130,10,4.5,,"wheat, soy.",1.0,mexico,4.0
+410,trü frü frozen chocolate strawberries,2,3.0,strawberries,28,90 ,15,10,5,1,"milk, soy, tree nuts, peanuts",0.0,usa,2.0
+411,gatorade fruit punch + berry,1,13.0,water,360,80,160,22,0,0,none,none,unknown but distributed in us,5.0
+412,oven roasted turkey breast,2,6.0,organic turkey breast,55 ,50 ,380 ,1 ,0 ,11 ,none,0.0,likely usa,3.0
