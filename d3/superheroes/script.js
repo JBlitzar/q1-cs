@@ -1,12 +1,12 @@
 // Sample data
 let data;
 
-d3.csv("train.csv").then(function(data) {
+d3.csv("superheroes.csv").then(function(data) {
     console.log(data); // Log the data to the console
 
     // Process the data (for example, convert numeric values)
     data.forEach(d => {
-        const _attrs = ["Age", "PassengerId", "Survived", "Pclass", ""]
+        const _attrs = ["Height", "Weight"]
         _attrs.forEach((a)=>{
             d[a] = +d[a];
         })
@@ -23,11 +23,11 @@ svg.selectAll("rect") //selects all elements of rect, currently empty
     .data(data) // assigns data? idk
     .enter() // Enter the data in
     .append("circle") // Append rects for each
-    .attr("cx", (d, i) => d.Pclass) // Position each bar, d is data and I is i
-    .attr("cy", d => d.PassengerId) // Height of each bar
+    .attr("cx", (d, i) => d.Height) // Position each bar, d is data and I is i
+    .attr("cy", d => d.Weight) // Height of each bar
     .attr("width", (d, i) => 10) // Width of each bar
     .attr("r", d => 10) // Height from data
-    .attr("fill", (d,i) => {if(d.Survived){return "teal"};return "red"}); // Color
+    .attr("fill", (d,i) => {if(d.Alignment == "good"){return "teal"};return "red"}); // Color
 
 // Just scales
 const xScale = d3.scaleBand()
@@ -58,7 +58,7 @@ const tooltip = d3.select("body") // selects body
 
 svg.selectAll("circle")
     .on("mouseover", function(event, d) {
-        tooltip.style("visibility", "visible").text(d.Name);
+        tooltip.style("visibility", "visible").text(d.name);
     })
     .on("mousemove", function(event) {
         tooltip.style("top", (event.pageY - 10) + "px")
