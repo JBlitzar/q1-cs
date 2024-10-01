@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3.js Tutorial</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <svg width="600" height="400"></svg>
+    <script>
+        const svg = d3.select("svg");
+const margin = { top: 20, right: 30, bottom: 40, left: 40 };
+const width = +svg.attr("width") - margin.left - margin.right;
+const height = +svg.attr("height") - margin.top - margin.bottom;
+
+const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+const x0 = d3.scaleBand()
+    .domain(data.map(d => d.category))
+    .range([0, width])
+    .padding(0.1);
+
+const x1 = d3.scaleBand()
+    .domain(["value1", "value2"])
+    .range([0, x0.bandwidth()])
+    .padding(0.05);
+
+const y = d3.scaleLinear()
+    .domain([0, d3.max(data, d => Math.max(d.value1, d.value2))])
+    .nice()
+    .range([height, 0]);
+
+g.append("g")
+    .attr("class", "axis axis--x")
+    .attr("transform", `translate(0,${height})`)
+    .call(d3.axisBottom(x0));
+
+g.append("g")
+    .attr("class", "axis axis--y")
+    .call(d3.axisLeft(y));
+
+    </script>
+</body>
+</html>
