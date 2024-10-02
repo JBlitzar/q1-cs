@@ -60,13 +60,16 @@ function drawDotPlot() {
 }
 
 function updateDots() {
+    console.log("update!")
     // Get user-defined attribute expressions
     const cxExpression = ()=>document.getElementById("cx-input").value;
     const cyExpression = ()=>document.getElementById("cy-input").value;
     const fillExpression = ()=>document.getElementById("fill-input").value;
 
+    document.getElementById("graph").innerHTML = "";
+
     // Create circles
-    svg.selectAll("circle")
+    d3.select("svg").selectAll("circle")
         .data(data)
         .enter()
         .append("circle")

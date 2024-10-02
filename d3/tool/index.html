@@ -38,7 +38,7 @@
     <div id="drop-zone">Drag and drop a CSV file here</div>
     <div class="customization">
         <label for="cx-input">cx (e.g., d.Height):</label>
-        <input type="text" id="cx-input" value="d.Height"><br>
+        <input type="text" id="cx-input" value="d.Height * 2"><br>
         <label for="cy-input">cy (e.g., d.Weight):</label>
         <input type="text" id="cy-input" value="d.Weight"><br>
         <label for="fill-input">fill (e.g., d.Alignment === 'good' ? 'teal' : 'red'):</label>
@@ -56,7 +56,7 @@
         <input type="text" id="enum-input"><br>
         <button id="enum-button">Enumerate</button>
     </div>
-    <svg width="600" height="400"></svg>
+    <svg width="600" height="400" id="graph"></svg>
     <div class="tooltip"></div>
     <script src="script.js"></script>
 </body>
