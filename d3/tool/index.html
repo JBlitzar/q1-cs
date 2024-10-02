@@ -49,7 +49,7 @@
         <label for="r-input">r:</label>
         <input type="text" id="r-input" value="5"><br>
         <label for="hover-input">hover:</label>
-        <input type="text" id="hover-input" value="d.name"><br>
+        <input type="text" id="hover-input" value="`${d.name} the ${d.Race}`"><br>
         <button id="update-plot">Update Plot</button>
     </div>
     <div class="cast-enumerate">
@@ -63,6 +63,11 @@
         <label for="enum-input">Column to Enumerate:</label>
         <input type="text" id="enum-input"><br>
         <button id="enum-button">Enumerate</button>
+
+        <h3>Duplicate Columns</h3>
+        <label for="dup-input">Column to Duplicate:</label>
+        <input type="text" id="dup-input"><br>
+        <button id="dup-button">Duplicate</button>
     </div>
     
     <div class="tooltip"></div>

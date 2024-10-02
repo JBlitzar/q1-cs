@@ -108,6 +108,17 @@ document.getElementById("cast-button").addEventListener("click", () => {
     
 });
 
+document.getElementById("dup-button").addEventListener("click", () => {
+    const column = document.getElementById("dup-input").value;
+    data.forEach(d => {
+        if (d[column] !== undefined) {
+            d[`${column}_2`] = d[column];  // dupe
+        }
+    });
+    alert(`Column "${column}" has been duplicated to "${column}_2".`);
+    
+});
+
 // Handle enumeration of qualitative columns
 document.getElementById("enum-button").addEventListener("click", () => {
     const column = document.getElementById("enum-input").value;
