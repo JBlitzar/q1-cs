@@ -68,6 +68,7 @@ function updateDots() {
     const cyExpression = ()=>document.getElementById("cy-input").value;
     const rExpression = ()=>document.getElementById("r-input").value;
     const fillExpression = ()=>document.getElementById("fill-input").value;
+    const hoverExpression = ()=>document.getElementById("hover-input").value;
 
     document.getElementById("graph").innerHTML = "";
 
@@ -81,7 +82,7 @@ function updateDots() {
         .attr("r", d => eval(rExpression()))
         .attr("fill", d => eval(fillExpression()))
         .on("mouseover", function(event, d) {
-            tooltip.style("visibility", "visible").text(d.name);
+            tooltip.style("visibility", "visible").text(eval(hoverExpression()));
         })
         .on("mousemove", function(event) {
             tooltip.style("top", (event.pageY - 10) + "px")
