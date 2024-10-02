@@ -15,6 +15,7 @@ dropZone.on("dragleave", function() {
 
 dropZone.on("drop", function(event) {
     event.preventDefault();
+    document.getElementById("drop-zone").style="display:none";
     d3.select(this).style("background", "#fff");
     
     const files = event.dataTransfer.files;
@@ -23,6 +24,7 @@ dropZone.on("drop", function(event) {
         if (file.type === "text/csv") {
             d3.csv(URL.createObjectURL(file)).then(loadedData => {
                 data = loadedData;  // Store data globally
+                document.getElementById("col-names").innerText += data.columns
                 drawDotPlot();
             }).catch(error => {
                 console.error('Error loading the CSV file:', error);
@@ -64,6 +66,7 @@ function updateDots() {
     // Get user-defined attribute expressions
     const cxExpression = ()=>document.getElementById("cx-input").value;
     const cyExpression = ()=>document.getElementById("cy-input").value;
+    const rExpression = ()=>document.getElementById("r-input").value;
     const fillExpression = ()=>document.getElementById("fill-input").value;
 
     document.getElementById("graph").innerHTML = "";
@@ -75,7 +78,7 @@ function updateDots() {
         .append("circle")
         .attr("cx", d => eval(cxExpression()))
         .attr("cy", d => eval(cyExpression()))
-        .attr("r", 5)
+        .attr("r", d => eval(rExpression()))
         .attr("fill", d => eval(fillExpression()))
         .on("mouseover", function(event, d) {
             tooltip.style("visibility", "visible").text(d.name);
