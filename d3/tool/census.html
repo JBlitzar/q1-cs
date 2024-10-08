@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3.js Dot Plot from CSV</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #drop-zone {
+            width: 600px;
+            height: 400px;
+            border: 2px dashed #ccc;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .tooltip {
+            position: absolute;
+            background: lightgrey;
+            padding: 5px;
+            visibility: hidden;
+            border-radius: 4px;
+        }
+        .customization {
+            margin: 20px auto;
+            text-align: center;
+        }
+        .cast-enumerate {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <svg width="600" height="400" id="graph"></svg>
+    <div id="drop-zone">Drag and drop a CSV file here
+        
+    </div>
+    <div class="customization">
+        <label for="cx-input">cx (e.g., d.Height):</label>
+        <input type="text" id="cx-input" value="+d.Age * 20 + 20"><br>
+        <label for="cy-input">cy (e.g., d.Weight):</label>
+        <input type="text" id="cy-input" value="+d.Pets * 20 + 20"><br>
+        <label for="fill-input">fill (e.g., d.Alignment === 'good' ? 'teal' : 'red'):</label>
+        <input type="text" id="fill-input" value="`hsl(${+d.Age}, 100%, 50%)`"><br>
+        <label for="r-input">r:</label>
+        <input type="text" id="r-input" value="5"><br>
+        <label for="hover-input">hover:</label>
+        <input type="text" id="hover-input" value="`${d.Age} years old and has ${d.Pets} pets`"><br>
+        <button id="update-plot">Update Plot</button>
+    </div>
+    <div class="cast-enumerate">
+        <h3 id="col-names">Column names: </h3>
+        <h3>Cast Columns</h3>
+        <label for="cast-input">Column to Cast to Number:</label>
+        <input type="text" id="cast-input"><br>
+        <button id="cast-button">Cast</button><br>
+        
+        <h3>Enumerate Columns</h3>
+        <label for="enum-input">Column to Enumerate:</label>
+        <input type="text" id="enum-input"><br>
+        <button id="enum-button">Enumerate</button>
+
+        <h3>Duplicate Columns</h3>
+        <label for="dup-input">Column to Duplicate:</label>
+        <input type="text" id="dup-input"><br>
+        <button id="dup-button">Duplicate</button>
+    </div>
+    
+    <div class="tooltip"></div>
+    <script src="script.js"></script>
+</body>
+</html>

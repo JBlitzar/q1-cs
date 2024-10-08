@@ -77,12 +77,12 @@ function updateDots() {
         .data(data)
         .enter()
         .append("circle")
-        .attr("cx", d => eval(cxExpression()))
-        .attr("cy", d => eval(cyExpression()))
-        .attr("r", d => eval(rExpression()))
-        .attr("fill", d => eval(fillExpression()))
+        .attr("cx", d => eval(cxExpression()) || 0)
+        .attr("cy", d => eval(cyExpression()) || 0)
+        .attr("r", d => eval(rExpression()) || 0)
+        .attr("fill", d => eval(fillExpression()) || "red")
         .on("mouseover", function(event, d) {
-            tooltip.style("visibility", "visible").text(eval(hoverExpression()));
+            tooltip.style("visibility", "visible").text(eval(hoverExpression()) || "");
         })
         .on("mousemove", function(event) {
             tooltip.style("top", (event.pageY - 10) + "px")
