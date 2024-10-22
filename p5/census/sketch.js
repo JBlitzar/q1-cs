@@ -35,7 +35,7 @@ function setup(){
   // go through the data one row at a time
   for (var r = 0; r < rows.length; r++) {
 
-    pop.addPerson(new Person( rows[r]))
+    pop.addPerson(new Person( rows[r].obj))
     
     
   }
