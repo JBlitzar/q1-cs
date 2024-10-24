@@ -20,61 +20,10 @@
     </style>
   </head>
   <body>
+    <span id="time"></span>
     <div id="map"></div>
 
-    <script>
-      const map = L.map("map").setView([51.505, -0.09], 13);
-
-      // Add OpenStreetMap tiles
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        maxZoom: 19,
-        attribution: "&copy; OpenStreetMap contributors",
-      }).addTo(map);
-
-      const svgLayer = d3.select(map.getPanes().overlayPane).append("svg");
-      const g = svgLayer.append("g").attr("class", "leaflet-zoom-hide");
-
-      const data = [
-        { lat: 51.505, lng: -0.09 },
-        { lat: 51.51, lng: -0.1 },
-        { lat: 51.49, lng: -0.08 },
-      ];
-
-      function projectPoint(d) {
-        const point = map.latLngToLayerPoint(new L.LatLng(d.lat, d.lng));
-        return [point.x, point.y];
-      }
-
-      function update() {
-        const bounds = map.getBounds();
-        const topLeft = map.latLngToLayerPoint(bounds.getNorthWest());
-        const bottomRight = map.latLngToLayerPoint(bounds.getSouthEast());
-
-        svgLayer
-          .attr("width", bottomRight.x - topLeft.x)
-          .attr("height", bottomRight.y - topLeft.y)
-          .style("left", topLeft.x + "px")
-          .style("top", topLeft.y + "px");
-
-        g.attr("transform", "translate(" + -topLeft.x + "," + -topLeft.y + ")");
-
-        const circles = g.selectAll("circle").data(data);
-
-        circles
-          .enter()
-          .append("circle")
-          .attr("r", 8)
-          .attr("fill", "blue")
-          .merge(circles)
-          .attr("cx", (d) => projectPoint(d)[0])
-          .attr("cy", (d) => projectPoint(d)[1]);
-
-        circles.exit().remove();
-      }
-
-      map.on("viewreset", update);
-      map.on("move", update);
-      update();
-    </script>
+    <script src="person.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
