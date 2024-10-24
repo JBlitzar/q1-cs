@@ -6,8 +6,10 @@ function Person(attrs) {
   var lon = this.a["ZipLong"];
 
   lon = !!+lon ? lon : 0;
-  this.lat = lat;
-  this.lon = lon;
+  this.lat = +lat + Math.random() * 0.01;
+  this.lon = +lon + Math.random() * 0.01;
+  this.oglat = this.lat;
+  this.oglon = this.lon;
 
   this.r = 5;
   this.speed = 0.0000001;
@@ -28,10 +30,23 @@ function Person(attrs) {
     return d;
   };
 }
+
+Person.prototype.getTarget = function (time) {
+  if (this.a["Departure Time"]) {
+    if (time > this._parseTime(this.a["Departure Time"])) {
+      console.log("Go time");
+      return [37.560847, -122.381696];
+    }
+  }
+  return [this.oglat, this.oglon];
+};
 function Point(lat, lon) {
   this.lat = lat;
   this.lon = lon;
   this.r = 5;
+}
+Point.prototype.getTarget(t) = function(){
+    return [this.lat, this.lon]
 }
 
 function Population(people) {

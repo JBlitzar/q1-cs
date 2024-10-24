@@ -1,4 +1,4 @@
-const map = L.map("map").setView([37.560847, -122.381696], 9);
+const map = L.map("map").setView([37.560847, -122.381696], 10);
 
 // Add OpenStreetMap tiles
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -8,7 +8,10 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 
 const svgLayer = d3.select(map.getPanes().overlayPane).append("svg");
 const g = svgLayer.append("g").attr("class", "leaflet-zoom-hide");
-let data = [new Point(37.560847, -122.381696)];
+let data = []; //[new Point(37.560847, -122.381696)];
+let simdata;
+let simulation;
+
 d3.csv("census.csv")
   .then((loadedData) => {
     loadedData.forEach((element) => {
@@ -17,46 +20,59 @@ d3.csv("census.csv")
         data.push(p);
       }
     });
+    simdata = [...data];
     map.on("viewreset", update);
     map.on("move", update);
     update();
-    data.forEach((d) => {
-      d.x = d.lon; // Alias x to lon
-      d.y = d.lat; // Alias y to lat
+
+    simdata.forEach((d) => {
+      d.x = +d.lat;
+      d.y = +d.lon;
     });
 
-    const simulation = d3
-      .forceSimulation(data)
+    simulation = d3
+      .forceSimulation(simdata)
       .alphaTarget(0.3) // stay hot
       .velocityDecay(0.1) // low friction
-      .force("dx", d3.forceX().strength(0.01))
-      .force("dy", d3.forceY().strength(0.01))
+      //   .force(
+      //     "dx",
+      //     d3
+      //       .forceX((d) => {
+      //         d.getTarget(t)[0];
+      //       })
+      //       .strength(0.0006)
+      //   )
+      //   .force(
+      //     "dy",
+      //     d3
+      //       .forceY((d) => {
+      //         d.getTarget(t)[1];
+      //       })
+      //       .strength(0.0006)
+      //   )
+
       .force(
         "collide",
         d3
           .forceCollide()
-          .radius((d) => d.r + 1)
+          .radius((d) => d.r / 1000)
           .iterations(3)
       )
-      // .force("customForce", function () {
-      //   data.forEach((d, i) => {
-      //     if (i !== 0) {
-      //       const target = data[0];
-      //       const strength = 0.1;
+      //   .force("targeting", function () {
+      //     simdata.forEach((d, i) => {
+      //       const dx = d.getTarget(t)[0];
+      //       -d.x;
+      //       const dy = d.getTarget(t)[1];
+      //       -d.y;
 
-      //       const dlat = target.lat - d.lat;
-      //       const dlon = target.lon - d.lon;
-      //       if (dlat && dlon) {
-      //         // console.log(dlat);
-      //         // console.log(dlon);
-      //         // alert();
-      //         d.lat += dlat * strength;
-      //         d.lon += dlon * strength;
-      //       }
-      //     }
-      //   });
-      // })
-      .on("tick", update); // 'ticked' updates the rendering of nodes
+      //       d.x += dx / 10;
+      //       d.y += dy / 10;
+      //     });
+      //   })
+      .on("tick", () => {
+        simulation.alpha(1).restart();
+        update();
+      }); // 'ticked' updates the rendering of nodes
   })
   .catch((error) => {
     console.error("Error loading the CSV file:", error);
@@ -69,10 +85,10 @@ function projectPoint(d) {
 }
 
 function update() {
-  data.forEach((d) => {
-    if (d.x && d.y) {
-      d.lon = d.x; // Sync x to lon
-      d.lat = d.y; // Sync y to lat
+  data.forEach((d, i) => {
+    if (simdata[i].x && simdata[i].y) {
+      d.lon = simdata[i].y;
+      d.lat = simdata[i].x;
     }
   });
   //console.log("ud");
