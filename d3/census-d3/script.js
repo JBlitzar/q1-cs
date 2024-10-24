@@ -34,22 +34,22 @@ d3.csv("census.csv")
       .forceSimulation(simdata)
       .alphaTarget(0.3) // stay hot
       .velocityDecay(0.1) // low friction
-      //   .force(
-      //     "dx",
-      //     d3
-      //       .forceX((d) => {
-      //         d.getTarget(t)[0];
-      //       })
-      //       .strength(0.0006)
-      //   )
-      //   .force(
-      //     "dy",
-      //     d3
-      //       .forceY((d) => {
-      //         d.getTarget(t)[1];
-      //       })
-      //       .strength(0.0006)
-      //   )
+      .force(
+        "dx",
+        d3
+          .forceX((d) => {
+            d.getTarget(t)[0];
+          })
+          .strength(0.0006)
+      )
+      .force(
+        "dy",
+        d3
+          .forceY((d) => {
+            d.getTarget(t)[1];
+          })
+          .strength(0.0006)
+      )
 
       .force(
         "collide",
