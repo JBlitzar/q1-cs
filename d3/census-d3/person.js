@@ -45,9 +45,9 @@ function Point(lat, lon) {
   this.lon = lon;
   this.r = 5;
 }
-Point.prototype.getTarget(t) = function(){
-    return [this.lat, this.lon]
-}
+Point.prototype.getTarget = function (t) {
+  return [this.lat, this.lon];
+};
 
 function Population(people) {
   this.people = people || [];

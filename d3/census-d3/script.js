@@ -11,26 +11,14 @@ const g = svgLayer.append("g").attr("class", "leaflet-zoom-hide");
 let data = []; //[new Point(37.560847, -122.381696)];
 let simdata;
 let simulation;
-
-d3.csv("census.csv")
-  .then((loadedData) => {
-    loadedData.forEach((element) => {
-      let p = new Person(element);
-      if (p.isGood) {
-        data.push(p);
-      }
-    });
-    simdata = [...data];
-    map.on("viewreset", update);
-    map.on("move", update);
-    update();
-
-    simdata.forEach((d) => {
-      d.x = +d.lat;
-      d.y = +d.lon;
-    });
-
-    simulation = d3
+function getSim() {
+  simdata = [...data];
+  simdata.forEach((d) => {
+    d.x = +d.lat;
+    d.y = +d.lon;
+  });
+  return (
+    d3
       .forceSimulation(simdata)
       .alphaTarget(0.3) // stay hot
       .velocityDecay(0.1) // low friction
@@ -70,9 +58,23 @@ d3.csv("census.csv")
       //     });
       //   })
       .on("tick", () => {
-        simulation.alpha(1).restart();
         update();
-      }); // 'ticked' updates the rendering of nodes
+      })
+  ); // 'ticked' updates the rendering of nodes}
+}
+d3.csv("census.csv")
+  .then((loadedData) => {
+    loadedData.forEach((element) => {
+      let p = new Person(element);
+      if (p.isGood) {
+        data.push(p);
+      }
+    });
+    simulation = getSim();
+
+    map.on("viewreset", update);
+    map.on("move", update);
+    update();
   })
   .catch((error) => {
     console.error("Error loading the CSV file:", error);
@@ -127,3 +129,6 @@ function moveForwardInTime() {
 }
 setInterval(moveForwardInTime, 1);
 setInterval(update, 20);
+setInterval(() => {
+  simulation = getSim();
+}, 1000);
