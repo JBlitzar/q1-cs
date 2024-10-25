@@ -161,7 +161,10 @@ function moveForwardInTime() {
 
   }
 }
-setInterval(moveForwardInTime, 100);
+document.getElementById("start").onclick = function(){
+  setInterval(moveForwardInTime, 100);
+}
+
 setInterval(update, 20);
 
 const tooltip = d3.select("body") // selects body
