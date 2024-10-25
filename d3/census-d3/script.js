@@ -28,7 +28,7 @@ function getSim() {
           .forceX((d) => {
             return d.getTarget(t)[0];
           })
-          .strength(0.0006)
+          .strength(0.01)
       )
       .force(
         "dy",
@@ -36,7 +36,7 @@ function getSim() {
           .forceY((d) => {
             return d.getTarget(t)[1];
           })
-          .strength(0.0006)
+          .strength(0.01)
       )
 
       .force(
@@ -91,7 +91,9 @@ function update() {
     if (simdata[i].x && simdata[i].y) {
       d.lon = simdata[i].y;
       d.lat = simdata[i].x;
+
     }
+    
   });
   //console.log("ud");
   const bounds = map.getBounds();
@@ -112,12 +114,21 @@ function update() {
     .enter()
     .append("circle")
     .attr("r", (d) => d.r)
-    .attr("fill", "blue")
+    .attr("fill", (d) => d.fill)
     .merge(circles)
     .attr("cx", (d) => projectPoint(d)[0])
     .attr("cy", (d) => projectPoint(d)[1]);
 
   circles.exit().remove();
+
+  simdata = [...data];
+    simdata.forEach((d) => {
+      d.x = +d.lat;
+      d.y = +d.lon;
+    });
+    simulation.nodes(simdata)
+
+
 }
 
 const t = new Date();
@@ -126,9 +137,12 @@ t.setMinutes(0);
 function moveForwardInTime() {
   t.setMinutes(t.getMinutes() + 1);
   document.getElementById("time").innerText = t.toString();
+  if(t.getMinutes() % 15 == 0){
+    
+      //simulation = getSim();
+
+  }
 }
-setInterval(moveForwardInTime, 50);
+setInterval(moveForwardInTime, 100);
 setInterval(update, 20);
-setInterval(() => {
-  simulation = getSim();
-}, 200);
+

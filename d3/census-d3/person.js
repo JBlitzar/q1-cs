@@ -15,6 +15,8 @@ function Person(attrs) {
   this.speed = 0.0000001;
 
   this.label = `I was born in ${this.a["Birth Month"]}, and I travel by ${this.a["Commute"]}`;
+
+  this.fill = this.a["Role"] == "Nueva Teacher" ? "red" : "blue";
   // console.log(this.a["ZipLat"])
   // console.log(lat)
   // console.log(lon)
@@ -40,30 +42,30 @@ Person.prototype.getTarget = function (time) {
   }
   return [this.oglat, this.oglon];
 };
-function Point(lat, lon) {
-  this.lat = lat;
-  this.lon = lon;
-  this.r = 5;
-}
-Point.prototype.getTarget = function (t) {
-  return [this.lat, this.lon];
-};
+// function Point(lat, lon) {
+//   this.lat = lat;
+//   this.lon = lon;
+//   this.r = 5;
+// }
+// Point.prototype.getTarget = function (t) {
+//   return [this.lat, this.lon];
+// };
 
-function Population(people) {
-  this.people = people || [];
+// function Population(people) {
+//   this.people = people || [];
 
-  this.time = new Date();
-  this.time.setHours(0);
-  this.time.setMinutes(0);
-}
-Population.prototype.addPerson = function (person) {
-  if (person.isGood) {
-    this.people.push(person);
-  }
-};
+//   this.time = new Date();
+//   this.time.setHours(0);
+//   this.time.setMinutes(0);
+// }
+// Population.prototype.addPerson = function (person) {
+//   if (person.isGood) {
+//     this.people.push(person);
+//   }
+// };
 
-Population.prototype.update = function () {
-  this.time.setMinutes(this.time.getMinutes() + 1);
-  console.log(this.time);
-  //document.getElementById("t").innerHTML = this.time;
-};
+// Population.prototype.update = function () {
+//   this.time.setMinutes(this.time.getMinutes() + 1);
+//   console.log(this.time);
+//   //document.getElementById("t").innerHTML = this.time;
+// };

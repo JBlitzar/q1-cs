@@ -32,6 +32,51 @@ function Person(attrs){
         d.setMinutes( parseInt( time[2]) || 0 );
         return d;
      }
+     this.update = function(time){
+    
+        //console.log(this.a.obj["Departure Time"])
+        //console.dir(this.a)
+        if(this.a["Departure Time"]){
+            if(time > this._parseTime(this.a["Departure Time"])){ // time to go!
+                this.goal = createVector(37.560847, -122.381696) // nueva
+                //console.log("go time!")
+                // if(this.isGood){
+                //     console.log(this.pos.dist(this.goal))
+                // }
+                
+            }
+    
+        }
+    
+        
+        
+        if (
+            this.isGood && dist(mouseX, mouseY, this.pixelPos.x, this.pixelPos.y) < this.r
+          ) {
+            text(this.label, this.pixelPos.x, this.pixelPos.y);
+          }
+    
+        if(this.isGood && this.pos.dist(this.goal) > 0){
+            //console.log(`${this.goal.sub(this.pos)} z`)
+            this.addForce(
+                this.goal.sub(this.pos)
+                .normalize()
+                .mult(this.speed)
+                .mult(
+                    this.pos.dist(this.goal) ** 2
+                )
+            )
+            
+        }
+        //console.log(this.pos)
+        if(this.isGood && this.pos){
+            this.pos.add(this.velocity);
+        // console.log(this.velocity)
+        // console.log(this.pos)
+        }
+        this.velocity = createVector(0,0)
+        
+    }
      
 }
 
@@ -54,51 +99,7 @@ Person.prototype.compare = function(o){
     }
 }
 
-Person.prototype.update = function(time){
-    
-    //console.log(this.a.obj["Departure Time"])
-    //console.dir(this.a)
-    if(this.a["Departure Time"]){
-        if(time > this._parseTime(this.a["Departure Time"])){ // time to go!
-            this.goal = createVector(37.560847, -122.381696) // nueva
-            //console.log("go time!")
-            // if(this.isGood){
-            //     console.log(this.pos.dist(this.goal))
-            // }
-            
-        }
 
-    }
-
-    
-    
-    if (
-        this.isGood && dist(mouseX, mouseY, this.pixelPos.x, this.pixelPos.y) < this.r
-      ) {
-        text(this.label, this.pixelPos.x, this.pixelPos.y);
-      }
-
-    if(this.isGood && this.pos.dist(this.goal) > 0){
-        //console.log(`${this.goal.sub(this.pos)} z`)
-        this.addForce(
-            this.goal.sub(this.pos)
-            .normalize()
-            .mult(this.speed)
-            .mult(
-                this.pos.dist(this.goal) ** 2
-            )
-        )
-        
-    }
-    //console.log(this.pos)
-    if(this.isGood && this.pos){
-        this.pos.add(this.velocity);
-    // console.log(this.velocity)
-    // console.log(this.pos)
-    }
-    this.velocity = createVector(0,0)
-    
-}
 
 
 
