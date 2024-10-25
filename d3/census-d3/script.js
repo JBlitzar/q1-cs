@@ -26,7 +26,7 @@ function getSim() {
         "dx",
         d3
           .forceX((d) => {
-            d.getTarget(t)[0];
+            return d.getTarget(t)[0];
           })
           .strength(0.0006)
       )
@@ -34,7 +34,7 @@ function getSim() {
         "dy",
         d3
           .forceY((d) => {
-            d.getTarget(t)[1];
+            return d.getTarget(t)[1];
           })
           .strength(0.0006)
       )
@@ -127,8 +127,8 @@ function moveForwardInTime() {
   t.setMinutes(t.getMinutes() + 1);
   document.getElementById("time").innerText = t.toString();
 }
-setInterval(moveForwardInTime, 1);
+setInterval(moveForwardInTime, 50);
 setInterval(update, 20);
 setInterval(() => {
   simulation = getSim();
-}, 1000);
+}, 200);
