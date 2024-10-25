@@ -87,6 +87,18 @@ function projectPoint(d) {
 }
 
 function update() {
+  
+  d3.selectAll("circle")
+    .on("mouseover", function(event, d) {
+        tooltip.style("visibility", "visible").text("asdlfkjhasdflkhjasd");
+    })
+    .on("mousemove", function(event) {
+        tooltip.style("top", (event.pageY - 10) + "px")
+              .style("left", (event.pageX + 10) + "px");
+    })
+    .on("mouseout", function() {
+        tooltip.style("visibility", "hidden");
+    });
   data.forEach((d, i) => {
     if (simdata[i].x && simdata[i].y) {
       d.lon = simdata[i].y;
@@ -117,9 +129,15 @@ function update() {
     .attr("fill", (d) => d.fill)
     .merge(circles)
     .attr("cx", (d) => projectPoint(d)[0])
-    .attr("cy", (d) => projectPoint(d)[1]);
+    .attr("cy", (d) => projectPoint(d)[1])
+    .attr("stroke", "green")
+    .attr("stroke-width", (d)=>d.strokeWeight/d.r);
+  
 
-  circles.exit().remove();
+  //circles.exit().remove();
+  
+
+
 
   simdata = [...data];
     simdata.forEach((d) => {
@@ -145,4 +163,14 @@ function moveForwardInTime() {
 }
 setInterval(moveForwardInTime, 100);
 setInterval(update, 20);
+
+const tooltip = d3.select("body") // selects body
+  .append("div") // adds div
+  .style("position", "absolute") // sets options for div
+  .style("visibility", "hidden")
+  .style("background", "lightgrey")
+  .text("");
+
+  
+
 

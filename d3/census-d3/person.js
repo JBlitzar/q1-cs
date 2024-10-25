@@ -17,6 +17,8 @@ function Person(attrs) {
   this.label = `I was born in ${this.a["Birth Month"]}, and I travel by ${this.a["Commute"]}`;
 
   this.fill = this.a["Role"] == "Nueva Teacher" ? "red" : "blue";
+
+  this.strokeWeight = +this.a["Sleep Hours"]
   // console.log(this.a["ZipLat"])
   // console.log(lat)
   // console.log(lon)
