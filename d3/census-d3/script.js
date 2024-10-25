@@ -152,18 +152,24 @@ function update() {
 const t = new Date();
 t.setHours(5);
 t.setMinutes(0);
-function moveForwardInTime() {
-  t.setMinutes(t.getMinutes() + 1);
-  document.getElementById("time").innerText = t.toString();
-  if(t.getMinutes() % 15 == 0){
+// function moveForwardInTime() {
+//   t.setMinutes(t.getMinutes() + 1);
+//   document.getElementById("time").innerText = t.toString();
+//   if(t.getMinutes() % 15 == 0){
     
-      //simulation = getSim();
+//       //simulation = getSim();
 
-  }
-}
-document.getElementById("start").onclick = function(){
-  setInterval(moveForwardInTime, 100);
-}
+//   }
+// }
+// document.getElementById("start").onclick = function(){
+//   setInterval(moveForwardInTime, 100);
+// }
+
+document.addEventListener("wheel", (event) => {
+  console.log("meme")
+    t.setMinutes(t.getMinutes() + (event.deltaY > 0 ? 1 : -1)); 
+    document.getElementById("time").innerText = t.toString();
+});
 
 setInterval(update, 20);
 
@@ -177,3 +183,12 @@ const tooltip = d3.select("body") // selects body
   
 
 
+  function disableScroll() {
+    window.addEventListener('scroll', preventScroll, { passive: false });
+    window.addEventListener('wheel', preventScroll, { passive: false });
+    window.addEventListener('touchmove', preventScroll, { passive: false });
+}
+
+function preventScroll(event) {
+    event.preventDefault();
+}
