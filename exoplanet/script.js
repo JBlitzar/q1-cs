@@ -1,31 +1,28 @@
 var data = [];
-var nodes = []
-d3.csv("data.csv").then((d)=>{
-    d.forEach((point)=>{
-        if(point["pl_rade"]){
+d3.csv("data.csv").then((d) => {
+    d.forEach((point) => {
+        if (point["pl_rade"]) {
             data.push({
-                r:point["pl_rade"],
+                r: point["pl_rade"],
                 group: 1
-            })
+            });
         }
-    })
+    });
 
-    console.log(data)
-    data = data.slice(-100).map(Object.create)
-
-
-
+    console.log(data);
+    data = data.slice(-100).map(Object.create);
 
     const width = window.innerWidth;
     const height = window.innerHeight;
-    const canvas = document.getElementById("canvas");
-    canvas.width = width;
-    canvas.height = height;
-    const context = canvas.getContext("2d");
-    
+
+    const svg = d3.select("body").append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
     const color = d3.scaleOrdinal(d3.schemeTableau10);
-    
+
     const nodes = data.map(Object.create);
+
     const simulation = d3.forceSimulation(nodes)
         .alphaTarget(0.3)
         .velocityDecay(0.1)
@@ -34,38 +31,26 @@ d3.csv("data.csv").then((d)=>{
         .force("collide", d3.forceCollide().radius(d => d.r + 1).iterations(3))
         .force("charge", d3.forceManyBody().strength((d, i) => i ? 0 : -width * 2 / 3))
         .on("tick", ticked);
-    
-    canvas.addEventListener("pointermove", pointermoved);
-    canvas.addEventListener("touchmove", event => event.preventDefault());
-    
+
+    svg.on("pointermove", pointermoved);
+
     function pointermoved(event) {
         const [x, y] = d3.pointer(event);
         nodes[0].fx = x - width / 2;
         nodes[0].fy = y - height / 2;
     }
-    
+
+    const circles = svg.selectAll("circle")
+        .data(nodes.slice(1))
+        .enter().append("circle")
+        .attr("r", d => d.r)
+        .attr("fill", d => color(d.group));
+
     function ticked() {
-        context.clearRect(0, 0, width, height);
-        context.save();
-        context.translate(width / 2, height / 2);
-        for (let i = 1; i < nodes.length; ++i) {
-        const d = nodes[i];
-        context.beginPath();
-        context.moveTo(d.x + d.r, d.y);
-        context.arc(d.x, d.y, d.r, 0, 2 * Math.PI);
-        context.fillStyle = color(d.group);
-        context.fill();
-        }
-        context.restore();
+        circles
+            .attr("cx", d => width / 2 + d.x)
+            .attr("cy", d => height / 2 + d.y);
     }
-    
+
     window.addEventListener("unload", () => simulation.stop());
-
-})
-
-function $(s){
-    var a = document.querySelectorAll(s);
-    return a.length > 0 ? a : a[0];
-}
-
-
+});
