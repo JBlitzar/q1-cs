@@ -1,6 +1,10 @@
 var data = [];
 var useLog = false
 var simulation;
+function getRandomItems(array, numItems) {
+    const shuffled = array.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, numItems);
+}
 function $(s){
     var a = document.querySelectorAll(s);
     return a.length > 1 ? a : a[0];
@@ -14,7 +18,8 @@ $("#log").addEventListener('change', function(){
 })
 
 function getR(d){
-    return useLog ? Math.log(d.r) :  d.r
+    r = Math.abs(d.r) + 1
+    return useLog ? Math.log(r) :  r
 }
 const tooltip = d3.select("body") // selects body
     .append("div") // adds div
@@ -33,7 +38,7 @@ d3.csv("data.csv").then((d) => {
     });
 
     console.log(data);
-    data = data.slice(-100).map(Object.create);
+    data = getRandomItems(data,200).map(Object.create);
 
     const width = window.innerWidth;
     const height = window.innerHeight;
