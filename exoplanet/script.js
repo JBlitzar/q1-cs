@@ -3,24 +3,73 @@ var nodes = []
 d3.csv("data.csv").then((d)=>{
     d.forEach((point)=>{
         if(point["pl_rade"]){
-            data.push(point)
+            data.push({
+                r:point["pl_rade"],
+                
+            })
         }
     })
 
     console.log(data)
-    nodes = data.slice(-100)//.map(Object.create)
+    data = data.slice(-100).map(Object.create)
 
+
+
+
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    const canvas = document.getElementById("canvas");
+    canvas.width = width;
+    canvas.height = height;
+    const context = canvas.getContext("2d");
+    
+    const color = d3.scaleOrdinal(d3.schemeTableau10);
+    const k = width / 200;
+    const r = () => d3.randomUniform(k, k * 4)();
+    const n = 4;
+    
+    // const data = Array.from({ length: 200 }, (_, i) => ({
+    //     r: r(),
+    //     group: i && (i % n + 1)
+    // }));
+    
+    const nodes = data.map(Object.create);
     const simulation = d3.forceSimulation(nodes)
-    .alphaTarget(0.3) // stay hot
-    .velocityDecay(0.1) // low friction
-    .force("x", d3.forceX().strength(0.01))
-    .force("y", d3.forceY().strength(0.01))
-    .force("collide", d3.forceCollide().radius((d) =>{return 100}).iterations(3))
-    //.force("charge", d3.forceManyBody().strength((d, i) => i ? 0 : -width * 2 / 3))
-    .on("tick", ticked);
+        .alphaTarget(0.3)
+        .velocityDecay(0.1)
+        .force("x", d3.forceX().strength(0.01))
+        .force("y", d3.forceY().strength(0.01))
+        .force("collide", d3.forceCollide().radius(d => d.r + 1).iterations(3))
+        .force("charge", d3.forceManyBody().strength((d, i) => i ? 0 : -width * 2 / 3))
+        .on("tick", ticked);
+    
+    canvas.addEventListener("pointermove", pointermoved);
+    canvas.addEventListener("touchmove", event => event.preventDefault());
+    
+    function pointermoved(event) {
+        const [x, y] = d3.pointer(event);
+        nodes[0].fx = x - width / 2;
+        nodes[0].fy = y - height / 2;
+    }
+    
+    function ticked() {
+        context.clearRect(0, 0, width, height);
+        context.save();
+        context.translate(width / 2, height / 2);
+        for (let i = 1; i < nodes.length; ++i) {
+        const d = nodes[i];
+        context.beginPath();
+        context.moveTo(d.x + d.r, d.y);
+        context.arc(d.x, d.y, d.r, 0, 2 * Math.PI);
+        context.fillStyle = color(d.group);
+        context.fill();
+        }
+        context.restore();
+    }
+    
+    window.addEventListener("unload", () => simulation.stop());
 
 })
-const svg = d3.select("svg");
 
 function $(s){
     var a = document.querySelectorAll(s);
@@ -29,16 +78,17 @@ function $(s){
 
 
 
-var ticked = function(){
-    console.log(nodes)
-    svg.selectAll("circle")
-    .data(nodes)
-    .enter()
-    .append("circle")
-    .attr("x", (d, i) => d.x * 20 ) 
-    .attr("y", d => d.y * 20) 
-    .attr("r", (d, i) => d["pl_rade"] ? +d["pl_rade"]: 0)
-    .attr("fill", (d,i) => {if(d["pl_rade"]>= 100){return "teal"};return "red"}); // Color
+// var ticked = function(){
+//     console.log(nodes)
+//     svg.selectAll("circle")
+//     .data(nodes)
+//     .enter()
+//     .append("circle")
+//     .attr("x", (d, i) => d.x * 20 ) 
+//     .attr("y", d => d.y * 20) 
+//     .attr("r", (d, i) => d["pl_rade"] ? +d["pl_rade"]: 0)
+//     .attr("fill", (d,i) => {if(d["pl_rade"]>= 100){return "teal"};return "red"}); // Color
 
-    svg.selectAll("circle").exit().remove()
-}
+//     svg.selectAll("circle").exit().remove()
+// }
+
