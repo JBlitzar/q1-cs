@@ -5,7 +5,7 @@ d3.csv("data.csv").then((d)=>{
         if(point["pl_rade"]){
             data.push({
                 r:point["pl_rade"],
-                
+                group: 1
             })
         }
     })
@@ -24,14 +24,6 @@ d3.csv("data.csv").then((d)=>{
     const context = canvas.getContext("2d");
     
     const color = d3.scaleOrdinal(d3.schemeTableau10);
-    const k = width / 200;
-    const r = () => d3.randomUniform(k, k * 4)();
-    const n = 4;
-    
-    // const data = Array.from({ length: 200 }, (_, i) => ({
-    //     r: r(),
-    //     group: i && (i % n + 1)
-    // }));
     
     const nodes = data.map(Object.create);
     const simulation = d3.forceSimulation(nodes)
@@ -76,19 +68,4 @@ function $(s){
     return a.length > 0 ? a : a[0];
 }
 
-
-
-// var ticked = function(){
-//     console.log(nodes)
-//     svg.selectAll("circle")
-//     .data(nodes)
-//     .enter()
-//     .append("circle")
-//     .attr("x", (d, i) => d.x * 20 ) 
-//     .attr("y", d => d.y * 20) 
-//     .attr("r", (d, i) => d["pl_rade"] ? +d["pl_rade"]: 0)
-//     .attr("fill", (d,i) => {if(d["pl_rade"]>= 100){return "teal"};return "red"}); // Color
-
-//     svg.selectAll("circle").exit().remove()
-// }
 
