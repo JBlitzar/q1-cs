@@ -17,6 +17,10 @@
       position:absolute;
       top: 0;
     left: 0;
+    pointer-events: none
+}
+circle{
+  pointer-events: auto
 }
 
 .label {
@@ -24,6 +28,10 @@
   position: absolute;
   background: lightgray;
 }
+
+
+
+
       
       
     </style>
@@ -31,7 +39,19 @@
 <link rel="stylesheet" href="https://jblitzar.github.io/global.css">
   </head>
   <body>
-    <h1 style="padding:none;margin:none">Exoplanet Dataset</h1>
+    <svg></svg>
+    <div class="container">
+      <h2 style="padding:none;margin:none">Exoplanet Dataset</h2>
+    <br>
+    <div class="controls">
+      <label for="log">Use Log Scale</label>
+    <input type="checkbox" id="log" name="log"style="z-index: 5;" >
+
+    </div>
+    
+
+    </div>
+    
       
 
 
