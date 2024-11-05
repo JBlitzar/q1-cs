@@ -2,9 +2,8 @@ var data = [];
 
 const tooltip = d3.select("body") // selects body
     .append("div") // adds div
-    .style("position", "absolute") // sets options for div
+    .attr("class", "label") // sets options for div
     .style("visibility", "hidden")
-    .style("background", "lightgrey")
     .text("");
 d3.csv("data.csv").then((d) => {
     d.forEach((point) => {
