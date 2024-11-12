@@ -40,6 +40,32 @@ function getR(d) {
   
   return useLog ? l_k * Math.log(r) / Math.log(mr) : k * r / mr;
 }
+function getVisualR(d){
+  function getAttrR(d,a) {
+    mr = Math.max.apply(Math,
+      data.map((dd) => +dd["attrs"]["a"] ? +dd["attrs"]["a"] : 0).filter(function (value) {
+        return !Number.isNaN(value);
+    })
+    )
+    
+    
+  
+    r =  (Math.abs(d["attrs"]["a"]) + 1);
+  
+    const k = 50
+    const l_k = k /2;
+    
+    return useLog ? l_k * Math.log(r) / Math.log(mr) : k * r / mr;
+  }
+
+  var og= getAttrR(d, "pl_rade");
+  var err= getAttrR(d, "pl_radeerr2");
+  return og.map(function(item, index) {
+    // In this case item correspond to currentValue of array a, 
+    // using index to get value from array b
+    return item - err[index];
+  })
+}
 const normalizeRValues = (objects) =>
   objects.map(
     ({ r }) =>
@@ -157,6 +183,8 @@ d3.csv("data.csv").then((d) => {
         $("#i_orbit").innerText = `Orbits every ${plus_minus(d,"pl_orbper")} days`;
         $("#i_radius").innerText = `Radius: ${plus_minus(d,"pl_rade")} Earth radii`;
         $("#i_temp").innerText = `Temperature: ${plus_minus(d,"pl_eqt")} Kelvin`;
+
+        $("#i_ref").innerHTML = `Reference: ${d["attrs"]["pl_refname"]}` //FIXME: insecure
       })
   }
 
