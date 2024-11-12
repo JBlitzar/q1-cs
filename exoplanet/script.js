@@ -1,6 +1,7 @@
 var data = [];
 var useLog = false;
 var simulation;
+var last_clicked_item;
 function getRandomItems(array, numItems) {
   const shuffled = array.sort(() => 0.5 - Math.random());
   return shuffled.slice(0, numItems);
@@ -24,8 +25,20 @@ $("#log").addEventListener("change", function () {
 });
 
 function getR(d) {
-  r = Math.abs(d.r) + 1;
-  return useLog ? Math.log(r) : r;
+  mr = Math.max.apply(Math,
+    data.map((dd) => +dd.r ? +dd.r : 0).filter(function (value) {
+      return !Number.isNaN(value);
+  })
+  )
+  
+  
+
+  r =  (Math.abs(d.r) + 1);
+
+  const k = 50
+  const l_k = k /2;
+  
+  return useLog ? l_k * Math.log(r) / Math.log(mr) : k * r / mr;
 }
 const normalizeRValues = (objects) =>
   objects.map(
@@ -44,11 +57,12 @@ const tooltip = d3
   .text("");
 d3.csv("data.csv").then((d) => {
   d.forEach((point) => {
-    if (point["pl_rade"]) {
+    if (+point["pl_rade"]) {
       data.push({
         r: point["pl_rade"],
         group: 1,
         name: point["pl_name"],
+        attrs: point
       });
     }
   });
@@ -115,7 +129,35 @@ d3.csv("data.csv").then((d) => {
       })
       .on("mouseout", function () {
         tooltip.style("visibility", "hidden");
-      });
+      })
+      .on("click", function(event, d){
+        function plus_minus(d,attr){
+          return `${(+d["attrs"][attr]).toFixed(2)}±${Math.max(d["attrs"][attr+"err1"], d["attrs"][attr+"err2"]).toFixed(2)}`
+        }
+
+        if(d != last_clicked_item && $("#sidebar").classList.contains("on-screen")){
+          //lol
+        }else if(
+          d != last_clicked_item && !$("#sidebar").classList.contains("on-screen")
+        ){
+          $("#sidebar").classList.add('on-screen');
+        }else if (
+          d == last_clicked_item && $("#sidebar").classList.contains("on-screen")
+        ){
+          $("#sidebar").classList.remove('on-screen');
+        }
+
+        last_clicked_item = d;
+        
+
+
+        $("#i_name").innerText = d["attrs"]["pl_name"];
+        $("#i_host").innerText = `Host: ${d["attrs"]["hostname"]}`;
+        $("#i_discovery").innerText = `Discovered by ${d["attrs"]["disc_facility"]} in ${d["attrs"]["disc_year"]} with ${d["attrs"]["discoverymethod"]}`;
+        $("#i_orbit").innerText = `Orbits every ${plus_minus(d,"pl_orbper")} days`;
+        $("#i_radius").innerText = `Radius: ${plus_minus(d,"pl_rade")} Earth radii`;
+        $("#i_temp").innerText = `Temperature: ${plus_minus(d,"pl_eqt")} Kelvin`;
+      })
   }
 
   window.addEventListener("unload", () => simulation.stop());

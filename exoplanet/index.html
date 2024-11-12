@@ -29,6 +29,26 @@ circle{
   background: lightgray;
 }
 
+div .side{
+  position: absolute;
+  padding: 20px;
+  transition: 0.5s ease-in-out;
+
+  right: 0px;
+  width: 20vw;
+}
+
+.offscreen-right {
+  position: absolute;
+  transform: translateX(25vw);
+  transition: left 1s ease;
+}
+
+.on-screen {
+  transform: translateX(0);
+}
+
+
 
 
 
@@ -49,6 +69,19 @@ circle{
 
     </div>
     
+    <div class="side offscreen-right" id="sidebar">
+      <h3 id="i_name">Name</h3>
+      <br>
+      <p>
+        <ul>
+          <li id="i_host">Host</li>
+          <li id="i_discovery">Discovered with _ in _</li>
+          <li id="i_orbit">Orbits every _ days</li>
+          <li id="i_radius">Radius: </li>
+          <li id="i_temp">Temerparature: _ K</li>
+        </ul>
+      </p>
+    </div>
 
     </div>
     
