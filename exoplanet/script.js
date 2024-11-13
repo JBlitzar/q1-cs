@@ -161,11 +161,7 @@ d3.csv("data.csv").then((d) => {
           return `${(+d["attrs"][attr]).toFixed(2)}±${Math.max(d["attrs"][attr+"err1"], d["attrs"][attr+"err2"]).toFixed(2)}`
         }
 
-        if(d != last_clicked_item && $("#sidebar").classList.contains("on-screen")){
-          //lol
-        }else if(
-          d != last_clicked_item && !$("#sidebar").classList.contains("on-screen")
-        ){
+        if(! $("#sidebar").classList.contains("on-screen")){
           $("#sidebar").classList.add('on-screen');
         }else if (
           d == last_clicked_item && $("#sidebar").classList.contains("on-screen")
@@ -179,10 +175,11 @@ d3.csv("data.csv").then((d) => {
 
         $("#i_name").innerText = d["attrs"]["pl_name"];
         $("#i_host").innerText = `Host: ${d["attrs"]["hostname"]}`;
-        $("#i_discovery").innerText = `Discovered by ${d["attrs"]["disc_facility"]} in ${d["attrs"]["disc_year"]} with ${d["attrs"]["discoverymethod"]}`;
+        $("#i_discovery").innerText = `Discovered in ${d["attrs"]["disc_year"]} with ${d["attrs"]["discoverymethod"]}`;
         $("#i_orbit").innerText = `Orbits every ${plus_minus(d,"pl_orbper")} days`;
         $("#i_radius").innerText = `Radius: ${plus_minus(d,"pl_rade")} Earth radii`;
         $("#i_temp").innerText = `Temperature: ${plus_minus(d,"pl_eqt")} Kelvin`;
+        $("#i_spec").innerText = `Spectral type: ${d["attrs"]["st_spectype"]}`;
 
         $("#i_ref").innerHTML = `Reference: ${d["attrs"]["pl_refname"]}` //FIXME: insecure
       })

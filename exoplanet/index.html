@@ -13,47 +13,45 @@
       }
       body { margin: 0; }
     svg { 
-        display: block;
+      display: block;
       position:absolute;
       top: 0;
-    left: 0;
-    pointer-events: none
-}
-circle{
-  pointer-events: auto
-}
+      left: 0;
+      pointer-events: none
+    }
+    circle{
+      pointer-events: auto
+    }
 
-.label {
-  z-index: 2;
-  position: absolute;
-  background: lightgray;
-}
+    .label {
+      z-index: 2;
+      position: absolute;
+      background: lightgray;
+    }
 
-div .side{
-  position: absolute;
-  padding: 20px;
-  transition: 0.5s ease-in-out;
+    div .side{
+      position: absolute;
+      padding: 20px;
+      transition: 0.5s ease-in-out;
 
-  right: 0px;
-  width: 20vw;
-}
+      right: 0px;
+      width: 20vw;
+    }
 
-.offscreen-right {
-  position: absolute;
-  transform: translateX(25vw);
-  transition: left 1s ease;
-}
+    .offscreen-right {
+      position: absolute;
+      transform: translateX(25vw);
+      transition: left 1s ease;
+    }
 
-.on-screen {
-  transform: translateX(0);
-}
+    .on-screen {
+      transform: translateX(0);
+    }
 
+    h2 {
+      z-index : 4;
+    }
 
-
-
-
-      
-      
     </style>
 
 <link rel="stylesheet" href="https://jblitzar.github.io/global.css">
@@ -80,6 +78,7 @@ div .side{
           <li id="i_radius">Radius: </li>
           <li id="i_temp">Temerparature: _ K</li>
           <li id="i_ref">Reference:</li>
+          <li id="i_spec">Reference:</li>
         </ul>
       </p>
     </div>
