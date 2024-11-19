@@ -26,7 +26,7 @@ $("#log").addEventListener("change", function () {
     .alpha(1)
     .restart();
 });
-function getScale (nodes) {
+function getScale () {
   colorType = $("#color").value;
   var o = {
     "temp":"pl_eqt",
@@ -34,7 +34,7 @@ function getScale (nodes) {
     "none":null
   }
   scaleKey = o[colorType];
-  var valueExtent = d3.extent(nodes, d => +d["attrs"][scaleKey])
+  var valueExtent = d3.extent(window.data, d => +d["attrs"][scaleKey])
   
   var scale = d3.scaleSequential()
   .domain(valueExtent)
@@ -103,113 +103,123 @@ const tooltip = d3
   .attr("class", "label") // sets options for div
   .style("visibility", "hidden")
   .text("");
-d3.csv("data.csv").then((d) => {
-  d.forEach((point) => {
-    if (+point["pl_rade"]) {
-      data.push({
-        r: point["pl_rade"],
-        group: 1,
-        name: point["pl_name"],
-        attrs: point
-      });
+
+  $("#reset").onclick = function(){onDataLoaded(window._data)}
+function onDataLoaded(d){
+    d.forEach((point) => {
+      if (+point["pl_rade"]) {
+        data.push({
+          r: point["pl_rade"],
+          group: 1,
+          name: point["pl_name"],
+          attrs: point
+        });
+      }
+    });
+  
+    console.log(data);
+    data = getRandomItems(data, 200).map(Object.create);
+  
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+  
+    const svg = d3.select("svg").attr("width", width).attr("height", height);
+  
+    //const color = d3.scaleOrdinal(d3.schemeTableau10);
+  
+    const nodes = data.map(Object.create);
+  
+    scale = getScale(nodes)
+
+    window.nodes = nodes
+  
+    simulation = d3
+      .forceSimulation(nodes)
+      .alphaTarget(0.3)
+      .velocityDecay(0.1)
+      .force("x", d3.forceX().strength(0.01))
+      .force("y", d3.forceY().strength(0.01))
+      .force(
+        "collide",
+        d3
+          .forceCollide()
+          .radius((d) => getR(d) + 1)
+          .iterations(3)
+      )
+      .force(
+        "charge",
+        d3.forceManyBody().strength((d, i) => (i ? 0 : 0))
+      ) //-width * 2 / 3))
+      .on("tick", ticked);
+  
+    svg.on("pointermove", pointermoved);
+  
+    function pointermoved(event) {
+      const [x, y] = d3.pointer(event);
+      // nodes[0].fx = x - width / 2;
+      // nodes[0].fy = y - height / 2;
     }
-  });
-
-  console.log(data);
-  data = getRandomItems(data, 200).map(Object.create);
-
-  const width = window.innerWidth;
-  const height = window.innerHeight;
-
-  const svg = d3.select("svg").attr("width", width).attr("height", height);
-
-  //const color = d3.scaleOrdinal(d3.schemeTableau10);
-
-  const nodes = data.map(Object.create);
-
-  scale = getScale(nodes)
-
-  simulation = d3
-    .forceSimulation(nodes)
-    .alphaTarget(0.3)
-    .velocityDecay(0.1)
-    .force("x", d3.forceX().strength(0.01))
-    .force("y", d3.forceY().strength(0.01))
-    .force(
-      "collide",
-      d3
-        .forceCollide()
-        .radius((d) => getR(d) + 1)
-        .iterations(3)
-    )
-    .force(
-      "charge",
-      d3.forceManyBody().strength((d, i) => (i ? 0 : 0))
-    ) //-width * 2 / 3))
-    .on("tick", ticked);
-
-  svg.on("pointermove", pointermoved);
-
-  function pointermoved(event) {
-    const [x, y] = d3.pointer(event);
-    // nodes[0].fx = x - width / 2;
-    // nodes[0].fy = y - height / 2;
-  }
-
-  const circles = svg
-    .selectAll("circle")
-    .data(nodes)
-    .enter()
-    .append("circle")
-    .attr("r", (d) => d.r)
-    .attr("fill", (d) => {return scale(
-      +d["attrs"][scaleKey]
-    )});
-
-  function ticked() {
-    circles
-      .attr("cx", (d) => width / 2 + d.x)
-      .attr("cy", (d) => height / 2 + d.y)
-      .attr("r", (d) => getR(d))
-      .on("mouseover", function (event, d) {
-        tooltip.style("visibility", "visible").text(d["name"] + "");
-      })
-      .on("mousemove", function (event) {
-        tooltip
-          .style("top", event.pageY - 10 + "px")
-          .style("left", event.pageX + 10 + "px");
-      })
-      .on("mouseout", function () {
-        tooltip.style("visibility", "hidden");
-      })
-      .on("click", function(event, d){
-        function plus_minus(d,attr){
-          return `${(+d["attrs"][attr]).toFixed(2)}±${Math.max(d["attrs"][attr+"err1"], d["attrs"][attr+"err2"]).toFixed(2)}`
-        }
-
-        if(! $("#sidebar").classList.contains("on-screen")){
-          $("#sidebar").classList.add('on-screen');
-        }else if (
-          d == last_clicked_item && $("#sidebar").classList.contains("on-screen")
-        ){
-          $("#sidebar").classList.remove('on-screen');
-        }
-
-        last_clicked_item = d;
-        
-
-
-        $("#i_name").innerText = d["attrs"]["pl_name"];
-        $("#i_host").innerText = `Host: ${d["attrs"]["hostname"]}`;
-        $("#i_discovery").innerText = `Discovered in ${d["attrs"]["disc_year"]} with ${d["attrs"]["discoverymethod"]}`;
-        $("#i_orbit").innerText = `Orbits every ${plus_minus(d,"pl_orbper")} days`;
-        $("#i_radius").innerText = `Radius: ${plus_minus(d,"pl_rade")} Earth radii`;
-        $("#i_temp").innerText = `Temperature: ${plus_minus(d,"pl_eqt")} Kelvin`;
-        $("#i_spec").innerText = `Spectral type: ${d["attrs"]["sy_dist"]}`;
-
-        $("#i_ref").innerHTML = `Reference: ${d["attrs"]["pl_refname"]}` //FIXME: insecure
-      })
-  }
-
-  window.addEventListener("unload", () => simulation.stop());
-});
+  
+    const circles = svg
+      .selectAll("circle")
+      .data(nodes)
+      .enter()
+      .append("circle")
+      .attr("r", (d) => d.r)
+      .attr("fill", (d) => {return scale(
+        +d["attrs"][scaleKey]
+      )});
+  
+    function ticked() {
+      circles
+        .attr("cx", (d) => width / 2 + d.x)
+        .attr("cy", (d) => height / 2 + d.y)
+        .attr("r", (d) => getR(d))
+        .on("mouseover", function (event, d) {
+          tooltip.style("visibility", "visible").text(d["name"] + "");
+        })
+        .on("mousemove", function (event) {
+          tooltip
+            .style("top", event.pageY - 10 + "px")
+            .style("left", event.pageX + 10 + "px");
+        })
+        .on("mouseout", function () {
+          tooltip.style("visibility", "hidden");
+        })
+        .on("click", function(event, d){
+          function plus_minus(d,attr){
+            return `${(+d["attrs"][attr]).toFixed(2)}±${Math.max(d["attrs"][attr+"err1"], d["attrs"][attr+"err2"]).toFixed(2)}`
+          }
+  
+          if(! $("#sidebar").classList.contains("on-screen")){
+            $("#sidebar").classList.add('on-screen');
+          }else if (
+            d == last_clicked_item && $("#sidebar").classList.contains("on-screen")
+          ){
+            $("#sidebar").classList.remove('on-screen');
+          }
+  
+          last_clicked_item = d;
+          
+  
+  
+          $("#i_name").innerText = d["attrs"]["pl_name"];
+          $("#i_host").innerText = `Host: ${d["attrs"]["hostname"]}`;
+          $("#i_discovery").innerText = `Discovered in ${d["attrs"]["disc_year"]} with ${d["attrs"]["discoverymethod"]}`;
+          $("#i_orbit").innerText = `Orbits every ${plus_minus(d,"pl_orbper")} days`;
+          $("#i_radius").innerText = `Radius: ${plus_minus(d,"pl_rade")} Earth radii`;
+          $("#i_temp").innerText = `Temperature: ${plus_minus(d,"pl_eqt")} Kelvin`;
+          $("#i_spec").innerText = `Spectral type: ${d["attrs"]["sy_dist"]}`;
+  
+          $("#i_ref").innerHTML = `Reference: ${d["attrs"]["pl_refname"]}` //FIXME: insecure
+        })
+    }
+  
+    window.addEventListener("unload", () => simulation.stop());
+  
+}
+d3.csv("data.csv").then((d)=>{
+  onDataLoaded(d);
+  window._data = d
+}
+)
