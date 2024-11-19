@@ -37,7 +37,7 @@ function getScale (nodes) {
   
   var scale = d3.scaleSequential()
   .domain(valueExtent)
-  .interpolator(d3.interpolateRgbBasis(["#9da4bf", "#51597a", "#313b63"]));
+  .interpolator(d3.interpolateRgbBasis(["#7c9fbf", "#4e769c", "#294f73"]));
 
 
   return scale
