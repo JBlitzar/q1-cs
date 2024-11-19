@@ -126,6 +126,8 @@ d3.csv("data.csv").then((d) => {
 
   const nodes = data.map(Object.create);
 
+  scale = getScale()
+
   simulation = d3
     .forceSimulation(nodes)
     .alphaTarget(0.3)
