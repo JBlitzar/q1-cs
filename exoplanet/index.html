@@ -61,12 +61,6 @@
     <div class="container">
       <h2 style="padding:none;margin:none">Exoplanet Dataset</h2>
     <br>
-    <div class="controls">
-      <label for="log">Use Log Scale</label>
-    <input type="checkbox" id="log" name="log"style="z-index: 5;" checked >
-
-    </div>
-    
     <div class="side offscreen-right" id="sidebar">
       <h3 id="i_name">Name</h3>
       <br>
@@ -82,6 +76,37 @@
         </ul>
       </p>
     </div>
+    <div class="controls">
+      <br>
+      <button onclick="window.location.reload()">Reload Data!</button>
+      <br>
+      <br>
+      <label for="log">Use Log Scale</label>
+    <input type="checkbox" id="log" name="log"style="z-index: 5;" checked >
+
+    <br>
+
+
+    <label for="color">Color by:</label>
+    <select id="color" name="color" style="width: auto; padding: 5px; margin: 0">
+      <option value="temp">Temperature</option>
+      <option value="none">None</option>
+      <option value="spectral">Spectral Type</option>
+      
+      <option value="method">Discovery Method</option>
+      <option value="dist">Distance from earth</option>
+      
+    </select>
+
+    <br>
+    
+
+
+
+
+    </div>
+    
+    
 
     </div>
     

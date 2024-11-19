@@ -1,7 +1,10 @@
 var data = [];
-var useLog = false;
+var useLog = true;
 var simulation;
 var last_clicked_item;
+var colorType = "none";
+var scale = getScale()
+var scaleKey = "pl_eqt"
 function getRandomItems(array, numItems) {
   const shuffled = array.sort(() => 0.5 - Math.random());
   return shuffled.slice(0, numItems);
@@ -23,6 +26,24 @@ $("#log").addEventListener("change", function () {
     .alpha(1)
     .restart();
 });
+function getScale () {
+  colorType = $("#color").value;
+  var o = {
+    "temp":"pl_eqt",
+    "none":null
+  }
+  scaleKey = o[colorType];
+  var valueExtent = d3.extent(data, d => d["attrs"][scaleKey])
+
+  var scale = d3.scaleSequential()
+  .domain(valueExtent)
+  .interpolator(d3.interpolateViridis);
+
+
+  return scale
+  
+}
+$("#color").addEventListener("change", getScale);
 
 function getR(d) {
   mr = Math.max.apply(Math,
@@ -101,7 +122,7 @@ d3.csv("data.csv").then((d) => {
 
   const svg = d3.select("svg").attr("width", width).attr("height", height);
 
-  const color = d3.scaleOrdinal(d3.schemeTableau10);
+  //const color = d3.scaleOrdinal(d3.schemeTableau10);
 
   const nodes = data.map(Object.create);
 
@@ -138,7 +159,7 @@ d3.csv("data.csv").then((d) => {
     .enter()
     .append("circle")
     .attr("r", (d) => d.r)
-    .attr("fill", (d) => color(d.group));
+    .attr("fill", (d) => {console.log(d["attrs"][scaleKey]);return scale(+d["attrs"][scaleKey])});
 
   function ticked() {
     circles
@@ -179,7 +200,7 @@ d3.csv("data.csv").then((d) => {
         $("#i_orbit").innerText = `Orbits every ${plus_minus(d,"pl_orbper")} days`;
         $("#i_radius").innerText = `Radius: ${plus_minus(d,"pl_rade")} Earth radii`;
         $("#i_temp").innerText = `Temperature: ${plus_minus(d,"pl_eqt")} Kelvin`;
-        $("#i_spec").innerText = `Spectral type: ${d["attrs"]["st_spectype"]}`;
+        $("#i_spec").innerText = `Spectral type: ${d["attrs"]["sy_dist"]}`;
 
         $("#i_ref").innerHTML = `Reference: ${d["attrs"]["pl_refname"]}` //FIXME: insecure
       })
