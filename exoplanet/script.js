@@ -3,7 +3,7 @@ var useLog = true;
 var simulation;
 var last_clicked_item;
 var colorType = "none";
-var scale = getScale()
+var scale = null
 var scaleKey = "pl_eqt"
 function getRandomItems(array, numItems) {
   const shuffled = array.sort(() => 0.5 - Math.random());
@@ -26,18 +26,18 @@ $("#log").addEventListener("change", function () {
     .alpha(1)
     .restart();
 });
-function getScale () {
+function getScale (nodes) {
   colorType = $("#color").value;
   var o = {
     "temp":"pl_eqt",
     "none":null
   }
   scaleKey = o[colorType];
-  var valueExtent = d3.extent(data, d => d["attrs"][scaleKey])
+  var valueExtent = d3.extent(nodes, d => +d["attrs"][scaleKey])
 
   var scale = d3.scaleSequential()
   .domain(valueExtent)
-  .interpolator(d3.interpolateViridis);
+  .interpolator(d3.interpolatePlasma);
 
 
   return scale
@@ -126,7 +126,7 @@ d3.csv("data.csv").then((d) => {
 
   const nodes = data.map(Object.create);
 
-  scale = getScale()
+  scale = getScale(nodes)
 
   simulation = d3
     .forceSimulation(nodes)
@@ -161,7 +161,9 @@ d3.csv("data.csv").then((d) => {
     .enter()
     .append("circle")
     .attr("r", (d) => d.r)
-    .attr("fill", (d) => {console.log(d["attrs"][scaleKey]);return scale(+d["attrs"][scaleKey])});
+    .attr("fill", (d) => {return scale(
+      +d["attrs"][scaleKey]
+    )});
 
   function ticked() {
     circles
