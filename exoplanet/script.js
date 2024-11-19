@@ -34,10 +34,10 @@ function getScale (nodes) {
   }
   scaleKey = o[colorType];
   var valueExtent = d3.extent(nodes, d => +d["attrs"][scaleKey])
-
+  
   var scale = d3.scaleSequential()
   .domain(valueExtent)
-  .interpolator(d3.interpolateCool);
+  .interpolator(d3.interpolateRgbBasis(["#9da4bf", "#51597a", "#313b63"]));
 
 
   return scale
