@@ -37,7 +37,7 @@ function getScale (nodes) {
 
   var scale = d3.scaleSequential()
   .domain(valueExtent)
-  .interpolator(d3.interpolatePlasma);
+  .interpolator(d3.interpolateCool);
 
 
   return scale
