@@ -30,6 +30,7 @@ function getScale (nodes) {
   colorType = $("#color").value;
   var o = {
     "temp":"pl_eqt",
+    "dist": "sy_dist",
     "none":null
   }
   scaleKey = o[colorType];
