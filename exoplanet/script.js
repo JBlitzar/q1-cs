@@ -100,8 +100,11 @@ function updateSidebar(d) {
   $("#i_orbit").innerText = `Orbits every ${plusMinus("pl_orbper")} days`;
   $("#i_radius").innerText = `Radius: ${plusMinus("pl_rade")} Earth radii`;
   $("#i_temp").innerText = `Temperature: ${plusMinus("pl_eqt")} Kelvin`;
-  $("#i_spec").innerText = `Spectral type: ${d.attrs.st_spectype}`;
+  $("#i_spec").innerText = `Spectral type: ${
+    d.attrs.st_spectype ? d.attrs.st_spectype : "<blank>"
+  }`;
   $("#i_ref").innerHTML = `Reference: ${d.attrs.pl_refname}`;
+  $("#i_dist").innerText = `Distance from Earth: ${plusMinus("sy_dist")} pc`;
 }
 
 function onCircleClick(event, d) {
