@@ -163,7 +163,11 @@ function createVisualization() {
     .append("circle")
     .attr("fill", (d) => (scale ? scale(+d.attrs[scaleKey]) : "#999"))
     .on("mouseover", (event, d) =>
-      tooltip.style("visibility", "visible").text(d.name)
+      tooltip
+        .style("visibility", "visible")
+        .text(d.name)
+        .style("top", `${event.pageY - 10}px`)
+        .style("left", `${event.pageX + 10}px`)
     )
     .on("mousemove", (event) => {
       tooltip
