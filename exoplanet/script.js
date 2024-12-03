@@ -210,7 +210,34 @@ $("#reset").onclick = function () {
   onDataLoaded(window._data);
 };
 
+$("#distance_mode").onclick = function(){
+  if (simulation) {
+    simulation.stop();
+  }
+  d3.select("svg").selectAll("*").attr("cy", window.innerHeight / 2).attr("cx", (d)=>{
+    var p = data[d.index].attrs;
+
+    console.log(p)
+    
+    return +p["sy_dist"] ? window.innerWidth / 10 *Math.log(+p["sy_dist"]) : 1e100
+  })
+
+}
+
+var stats;
 d3.csv("data.csv").then((dataset) => {
   window._data = dataset;
   onDataLoaded(dataset);
+
+  //stats = new Statistics(Array.from(window._data), window._data.columns);
 });
+
+
+
+
+
+// function correlate(){
+  
+  
+//   var r = stats.correlationCoefficient('weight', 'height');
+// }
