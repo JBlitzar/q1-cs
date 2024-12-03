@@ -24,6 +24,8 @@ function getScale() {
     spectral: "st_spectype",
     method: "discoverymethod",
     year: "disc_year",
+    mass: "pl_bmasse",
+    rad: "pl_rade"
   };
   scaleKey = o[colorType];
 
