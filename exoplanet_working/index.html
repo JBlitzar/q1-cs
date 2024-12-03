@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exoplanet Dataset</title>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <style>
+
+      body {
+        overflow: hidden;
+      }
+      body { margin: 0; }
+    svg { 
+      display: block;
+      position:absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none
+    }
+    circle{
+      pointer-events: auto
+    }
+
+    .label {
+      z-index: 2;
+      position: absolute;
+      background: lightgray;
+    }
+
+    div .side{
+      position: absolute;
+      padding: 20px;
+      transition: 0.5s ease-in-out;
+
+      right: 0px;
+      width: 20vw;
+    }
+
+    .offscreen-right {
+      position: absolute;
+      transform: translateX(25vw);
+      transition: left 1s ease;
+    }
+
+    .on-screen {
+      transform: translateX(0);
+    }
+
+    h2 {
+      z-index : 4;
+    }
+
+    </style>
+
+<link rel="stylesheet" href="https://jblitzar.github.io/global.css">
+  </head>
+  <body>
+    <svg></svg>
+    <div class="container">
+      <h2 style="padding:none;margin:none">Exoplanet Dataset</h2>
+    <br>
+    <div class="side offscreen-right" id="sidebar">
+      <h3 id="i_name">Name</h3>
+      <br>
+      <p>
+        <ul>
+          <li id="i_host">Host</li>
+          <li id="i_discovery">Discovered with _ in _</li>
+          <li id="i_orbit">Orbits every _ days</li>
+          <li id="i_radius">Radius: </li>
+          <li id="i_temp">Temerparature: _ K</li>
+          <li id="i_ref">Reference:</li>
+          <li id="i_dist">Distance:</li>
+          <li id="i_spec">Spectral Type:</li>
+        </ul>
+      </p>
+    </div>
+    <div class="controls">
+      <br>
+      <button id="reset">Reload Data!</button>
+      <br>
+      <br>
+      <label for="log">Use Log Scale</label>
+    <input type="checkbox" id="log" name="log"style="z-index: 5;" checked >
+
+    <br>
+
+
+    <label for="color">Color by:</label>
+    <select id="color" name="color" style="width: auto; padding: 5px; margin: 0">
+      <option value="temp">Temperature</option>
+      <option value="none">None</option>
+      <option value="spectral">Spectral Type</option>
+      
+      <!--<option value="method">Discovery Method</option>-->
+      <option value="year">Discovery Year</option>
+      <option value="dist">Distance from earth</option>
+      <option value="mass">Mass</option>
+      <option value="rad">Radius</option>
+      
+    </select>
+
+    <br>
+    
+
+
+
+
+    </div>
+    
+    
+
+    </div>
+    
+      
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
