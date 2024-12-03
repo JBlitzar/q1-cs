@@ -214,7 +214,7 @@ $("#distance_mode").onclick = function(){
   if (simulation) {
     simulation.stop();
   }
-  d3.select("svg").selectAll("*").attr("cy", window.innerHeight / 2).attr("cx", (d)=>{
+  d3.select("svg").selectAll("*").transition().attr("cy", window.innerHeight / 2).attr("cx", (d)=>{
     var p = data[d.index].attrs;
 
     console.log(p)
