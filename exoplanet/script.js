@@ -210,19 +210,52 @@ $("#reset").onclick = function () {
   onDataLoaded(window._data);
 };
 
-$("#distance_mode").onclick = function(){
+let linearScale = d3.scaleLinear()
+  .domain([0, 100])
+  .range([0, window.innerWidth])
+
+
+function updatePositions() {
+  d3.select("svg").selectAll("*")
+    .transition()
+    .attr("cy", window.innerHeight / 2)
+    .attr("cx", (d) => {
+      const p = data[d.index].attrs;
+      console.log(p);
+      const syDist = +p["sy_dist"];
+      return syDist ? linearScale(syDist) : 1e100;
+    });
+}
+
+
+
+$("#distance_mode").onclick = function() {
   if (simulation) {
     simulation.stop();
   }
-  d3.select("svg").selectAll("*").transition().attr("cy", window.innerHeight / 2).attr("cx", (d)=>{
-    var p = data[d.index].attrs;
+  updatePositions();
 
-    console.log(p)
-    
-    return +p["sy_dist"] ? window.innerWidth / 10 *Math.log(+p["sy_dist"]) : 1e100
-  })
+  var virtualScrollY = 0
+window.addEventListener("wheel", (event) => {
+  event.preventDefault();
 
-}
+
+  virtualScrollY += event.deltaY * 50;
+  virtualScrollY = Math.max(0, virtualScrollY);
+  //virtualScrollY = Math.min(virtualScrollY, 2000);
+
+
+  linearScale.range([0, window.innerWidth / (1 + virtualScrollY / 1000)]);
+
+  updatePositions();
+
+}, { passive: false });
+
+  
+};
+
+
+
 
 var stats;
 d3.csv("data.csv").then((dataset) => {
