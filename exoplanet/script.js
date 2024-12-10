@@ -6,6 +6,8 @@ let scaleKey = "pl_eqt";
 let useLog = true;
 let colorType = "none";
 
+let smoothScrollRequestId = 0;
+
 function getRandomItems(array, numItems) {
   return array.sort(() => Math.random() - 0.5).slice(0, numItems);
 }
@@ -202,6 +204,8 @@ $("#reset").onclick = function () {
   if (simulation) {
     simulation.stop();
   }
+  $("#scale-svg").style.display = "none"
+  cancelAnimationFrame(smoothScrollRequestId)
 
   d3.select("svg").selectAll("*").remove();
 
@@ -217,7 +221,8 @@ let linearScale = d3.scaleLinear()
 
 function updatePositions() {
   d3.select("svg").selectAll("*")
-    .transition()
+  .transition()
+  .duration(300)
     .attr("cy", window.innerHeight * 2 / 3)
     .attr("cx", (d) => {
       const p = data[d.index].attrs;
@@ -228,6 +233,11 @@ function updatePositions() {
 }
 
 $("#distance_mode").onclick = function () {
+
+
+
+
+  $("#scale-svg").style.display = ""
   if (simulation) {
     simulation.stop();
   }
@@ -235,15 +245,16 @@ $("#distance_mode").onclick = function () {
 
   let virtualScrollY = 0;
   let velocity = 0;
-  const damping = 0.9; // Damping factor for smooth deceleration
-  const accelerationFactor = 0.2; // Factor to control acceleration
+  const damping = 0.9;
+  const accelerationFactor = 0.2;
 
-  // Define the initial scale and SVG setup
+
   const baseWidth = window.innerWidth;
   const scaleSvg = d3.select("#scale-svg");
+  scaleSvg.select("g").remove()
   const scaleGroup = scaleSvg.append("g").attr("transform", "translate(10,25)");
 
-  // Create the initial scale line
+
   const scaleLine = scaleGroup.append("line")
     .attr("x1", 0)
     .attr("y1", 0)
@@ -251,7 +262,7 @@ $("#distance_mode").onclick = function () {
     .attr("stroke", "black")
     .attr("stroke-width", 2);
 
-  // Create text to display the current scale value
+
   const scaleText = scaleGroup.append("text")
     .attr("x", 10)
     .attr("y", 20)
@@ -264,8 +275,7 @@ $("#distance_mode").onclick = function () {
     (event) => {
       event.preventDefault();
 
-      // Apply acceleration to velocity based on wheel delta
-      velocity += event.deltaY * accelerationFactor;
+      velocity += event.deltaY * accelerationFactor; // learn integration
     },
     { passive: false }
   );
@@ -275,39 +285,33 @@ $("#distance_mode").onclick = function () {
     const lineLength = currentScale * 200;
     scaleLine.attr("x2", lineLength);
 
-    // Update the scale text dynamically
+
     scaleText.text(`Scale: ${currentScale.toFixed(2)}`);
   }
 
   function smoothScroll() {
+    
     if (Math.abs(velocity) > 0.1 || Math.abs(virtualScrollY) > 0.1) {
-      // Update the virtual scroll position with velocity
+      // learn integration
       virtualScrollY += velocity;
 
-      // Clamp the scroll position to a minimum of 0
+      // learn clamping
       virtualScrollY = Math.max(0, virtualScrollY);
 
-      // Calculate the current scale dynamically
       const currentScale = baseWidth / (baseWidth + virtualScrollY);
 
-      // Adjust the scaling range dynamically
       linearScale.range([0, baseWidth / (1 + virtualScrollY / 1000)]);
 
-      // Update the scale visualization
       updateScaleDisplay(currentScale);
 
-      // Decelerate the velocity using damping
       velocity *= damping;
 
-      // Update positions
       updatePositions();
     }
 
-    // Continue the animation loop
-    requestAnimationFrame(smoothScroll);
+    smoothScrollRequestId = requestAnimationFrame(smoothScroll);
   }
 
-  // Start the animation loop
   smoothScroll();
 };
 
