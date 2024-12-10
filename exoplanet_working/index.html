@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <title>Exoplanet Dataset</title>
 
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/thisancog/statistics.js@master/statistics.min.js" integrity="sha384-ope8g8ILkKHF8FyHNdR3DpdtXNA2JhKOcKxI2Lts714NCTw6waYZVTp+He4kC4u1" crossorigin="anonymous"></script>
 
     <style>
 
@@ -58,6 +59,7 @@
   </head>
   <body>
     <svg></svg>
+   
     <div class="container">
       <h2 style="padding:none;margin:none">Exoplanet Dataset</h2>
     <br>
@@ -103,6 +105,8 @@
     </select>
 
     <br>
+    <br>
+    <button id="distance_mode">Distance mode</button>
     
 
 
@@ -113,6 +117,8 @@
     
 
     </div>
+    <svg id="scale-svg" width="100%" height="100" style="position: fixed; bottom: 0; left: 0; display: none"></svg>
+
     
       
 

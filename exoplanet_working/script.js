@@ -6,6 +6,8 @@ let scaleKey = "pl_eqt";
 let useLog = true;
 let colorType = "none";
 
+let smoothScrollRequestId = 0;
+
 function getRandomItems(array, numItems) {
   return array.sort(() => Math.random() - 0.5).slice(0, numItems);
 }
@@ -202,6 +204,8 @@ $("#reset").onclick = function () {
   if (simulation) {
     simulation.stop();
   }
+  $("#scale-svg").style.display = "none"
+  cancelAnimationFrame(smoothScrollRequestId)
 
   d3.select("svg").selectAll("*").remove();
 
@@ -210,7 +214,125 @@ $("#reset").onclick = function () {
   onDataLoaded(window._data);
 };
 
+let linearScale = d3.scaleLinear()
+  .domain([0, 100])
+  .range([0, window.innerWidth])
+
+
+function updatePositions() {
+  d3.select("svg").selectAll("*")
+  .transition()
+  .duration(300)
+    .attr("cy", window.innerHeight * 2 / 3)
+    .attr("cx", (d) => {
+      const p = data[d.index].attrs;
+      console.log(p);
+      const syDist = +p["sy_dist"];
+      return syDist ? linearScale(syDist) : 1e100;
+    });
+}
+
+$("#distance_mode").onclick = function () {
+
+
+
+
+  $("#scale-svg").style.display = ""
+  if (simulation) {
+    simulation.stop();
+  }
+  updatePositions();
+
+  let virtualScrollY = 0;
+  let velocity = 0;
+  const damping = 0.9;
+  const accelerationFactor = 0.2;
+
+
+  const baseWidth = window.innerWidth;
+  const scaleSvg = d3.select("#scale-svg");
+  scaleSvg.select("g").remove()
+  const scaleGroup = scaleSvg.append("g").attr("transform", "translate(10,25)");
+
+
+  const scaleLine = scaleGroup.append("line")
+    .attr("x1", 0)
+    .attr("y1", 0)
+    .attr("y2", 0)
+    .attr("stroke", "black")
+    .attr("stroke-width", 2);
+
+
+  const scaleText = scaleGroup.append("text")
+    .attr("x", 10)
+    .attr("y", 20)
+    .attr("fill", "black")
+    .attr("font-size", "14px")
+    .text("Scale: 1.0—Scroll to zoom!");
+
+  window.addEventListener(
+    "wheel",
+    (event) => {
+      event.preventDefault();
+
+      velocity += event.deltaY * accelerationFactor; // learn integration
+    },
+    { passive: false }
+  );
+
+  function updateScaleDisplay(currentScale) {
+
+    const lineLength = currentScale * 200;
+    scaleLine.attr("x2", lineLength);
+
+
+    scaleText.text(`Scale: ${currentScale.toFixed(2)}—Scroll to zoom!`);
+  }
+
+  function smoothScroll() {
+    
+    if (Math.abs(velocity) > 0.1 || Math.abs(virtualScrollY) > 0.1) {
+      // learn integration
+      virtualScrollY += velocity;
+
+      // learn clamping
+      virtualScrollY = Math.max(0, virtualScrollY);
+
+      const currentScale = baseWidth / (baseWidth + virtualScrollY);
+
+      linearScale.range([0, baseWidth / (1 + virtualScrollY / 1000)]);
+
+      updateScaleDisplay(currentScale);
+
+      velocity *= damping;
+
+      updatePositions();
+    }
+
+    smoothScrollRequestId = requestAnimationFrame(smoothScroll);
+  }
+
+  smoothScroll();
+};
+
+
+
+
+
+var stats;
 d3.csv("data.csv").then((dataset) => {
   window._data = dataset;
   onDataLoaded(dataset);
+
+  //stats = new Statistics(Array.from(window._data), window._data.columns);
 });
+
+
+
+
+
+// function correlate(){
+  
+  
+//   var r = stats.correlationCoefficient('weight', 'height');
+// }
