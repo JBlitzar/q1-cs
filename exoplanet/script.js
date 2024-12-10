@@ -228,31 +228,55 @@ function updatePositions() {
 }
 
 
-
-$("#distance_mode").onclick = function() {
+$("#distance_mode").onclick = function () {
   if (simulation) {
     simulation.stop();
   }
   updatePositions();
 
-  var virtualScrollY = 0
-window.addEventListener("wheel", (event) => {
-  event.preventDefault();
+  let virtualScrollY = 0;
+  let velocity = 0;
+  const damping = 0.9; // Damping factor for smooth deceleration
+  const accelerationFactor = 0.2; // Factor to control acceleration
 
+  window.addEventListener(
+    "wheel",
+    (event) => {
+      event.preventDefault();
 
-  virtualScrollY += event.deltaY * 50;
-  virtualScrollY = Math.max(0, virtualScrollY);
-  //virtualScrollY = Math.min(virtualScrollY, 2000);
+      // Apply acceleration to velocity based on wheel delta
+      velocity += event.deltaY * accelerationFactor;
+    },
+    { passive: false }
+  );
 
+  // Use `requestAnimationFrame` for smooth updates
+  function smoothScroll() {
+    if (Math.abs(velocity) > 0.1 || Math.abs(virtualScrollY) > 0.1) {
+      // Update the virtual scroll position with velocity
+      virtualScrollY += velocity;
 
-  linearScale.range([0, window.innerWidth / (1 + virtualScrollY / 1000)]);
+      // Clamp the scroll position to a minimum of 0
+      virtualScrollY = Math.max(0, virtualScrollY);
 
-  updatePositions();
+      // Adjust the scaling range dynamically
+      linearScale.range([0, window.innerWidth / (1 + virtualScrollY / 1000)]);
 
-}, { passive: false });
+      // Decelerate the velocity using damping
+      velocity *= damping;
 
-  
+      // Update positions
+      updatePositions();
+    }
+
+    // Continue the animation loop
+    requestAnimationFrame(smoothScroll);
+  }
+
+  // Start the animation loop
+  smoothScroll();
 };
+
 
 
 
