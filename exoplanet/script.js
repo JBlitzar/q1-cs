@@ -218,7 +218,7 @@ let linearScale = d3.scaleLinear()
 function updatePositions() {
   d3.select("svg").selectAll("*")
     .transition()
-    .attr("cy", window.innerHeight / 2)
+    .attr("cy", window.innerHeight * 2 / 3)
     .attr("cx", (d) => {
       const p = data[d.index].attrs;
       console.log(p);
@@ -226,7 +226,6 @@ function updatePositions() {
       return syDist ? linearScale(syDist) : 1e100;
     });
 }
-
 
 $("#distance_mode").onclick = function () {
   if (simulation) {
@@ -239,6 +238,27 @@ $("#distance_mode").onclick = function () {
   const damping = 0.9; // Damping factor for smooth deceleration
   const accelerationFactor = 0.2; // Factor to control acceleration
 
+  // Define the initial scale and SVG setup
+  const baseWidth = window.innerWidth;
+  const scaleSvg = d3.select("#scale-svg");
+  const scaleGroup = scaleSvg.append("g").attr("transform", "translate(10,25)");
+
+  // Create the initial scale line
+  const scaleLine = scaleGroup.append("line")
+    .attr("x1", 0)
+    .attr("y1", 0)
+    .attr("y2", 0)
+    .attr("stroke", "black")
+    .attr("stroke-width", 2);
+
+  // Create text to display the current scale value
+  const scaleText = scaleGroup.append("text")
+    .attr("x", 10)
+    .attr("y", 20)
+    .attr("fill", "black")
+    .attr("font-size", "14px")
+    .text("Scale: 1.0");
+
   window.addEventListener(
     "wheel",
     (event) => {
@@ -250,7 +270,15 @@ $("#distance_mode").onclick = function () {
     { passive: false }
   );
 
-  // Use `requestAnimationFrame` for smooth updates
+  function updateScaleDisplay(currentScale) {
+
+    const lineLength = currentScale * 200;
+    scaleLine.attr("x2", lineLength);
+
+    // Update the scale text dynamically
+    scaleText.text(`Scale: ${currentScale.toFixed(2)}`);
+  }
+
   function smoothScroll() {
     if (Math.abs(velocity) > 0.1 || Math.abs(virtualScrollY) > 0.1) {
       // Update the virtual scroll position with velocity
@@ -259,8 +287,14 @@ $("#distance_mode").onclick = function () {
       // Clamp the scroll position to a minimum of 0
       virtualScrollY = Math.max(0, virtualScrollY);
 
+      // Calculate the current scale dynamically
+      const currentScale = baseWidth / (baseWidth + virtualScrollY);
+
       // Adjust the scaling range dynamically
-      linearScale.range([0, window.innerWidth / (1 + virtualScrollY / 1000)]);
+      linearScale.range([0, baseWidth / (1 + virtualScrollY / 1000)]);
+
+      // Update the scale visualization
+      updateScaleDisplay(currentScale);
 
       // Decelerate the velocity using damping
       velocity *= damping;
