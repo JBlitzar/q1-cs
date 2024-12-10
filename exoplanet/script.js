@@ -268,7 +268,7 @@ $("#distance_mode").onclick = function () {
     .attr("y", 20)
     .attr("fill", "black")
     .attr("font-size", "14px")
-    .text("Scale: 1.0");
+    .text("Scale: 1.0—Scroll to zoom!");
 
   window.addEventListener(
     "wheel",
@@ -286,7 +286,7 @@ $("#distance_mode").onclick = function () {
     scaleLine.attr("x2", lineLength);
 
 
-    scaleText.text(`Scale: ${currentScale.toFixed(2)}`);
+    scaleText.text(`Scale: ${currentScale.toFixed(2)}—Scroll to zoom!`);
   }
 
   function smoothScroll() {
