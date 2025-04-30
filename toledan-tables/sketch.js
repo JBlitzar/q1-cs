@@ -12,9 +12,7 @@ function Planet(r, start, speed, name, pcolor) {
 }
 
 Planet.prototype.display = function () {
-  fill(this.pcolor || "#fff");
-  noStroke();
-  ellipse(this.x, this.y, 20, 20);
+  
   fill(0);
   stroke("#fff");
   strokeWeight(2);
@@ -32,7 +30,7 @@ Planet.prototype.display = function () {
 
   fill(this.pcolor || "#fff");
   noStroke();
-  ellipse(this.x, this.y, 20, 20);
+  ellipse(this.x, this.y, 15, 15);
 };
 
 Planet.prototype.update = function (t) {
