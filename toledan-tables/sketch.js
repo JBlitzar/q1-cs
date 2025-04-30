@@ -86,7 +86,7 @@ function setup() {
   SCALE *= min(width / 2, height / 2) / 500;
   earth = new Planet(0, 0, 0, "Earth", color(0, 0, 255));
   sun = Planet.ofTableRName(
-    [0, 0, 2, 0],
+    [1, 0, 0, 0],
     [0, 0, 59, 8],
     93 * SCALE,
     "Sun",
