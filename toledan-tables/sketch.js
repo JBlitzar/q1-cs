@@ -138,7 +138,7 @@ function setup() {
   planets.push(venus);
   planets.push(mercury);
 
-  for (var i = 0; i < 100; i++) {
+  for (var i = 0; i < (width * height) / 3000; i++) {
     starPositions.push({
       x: random(-width / 2, width / 2),
       y: random(-height / 2, height / 2),
